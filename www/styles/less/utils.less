@@ -98,3 +98,39 @@
     // line-height: 19.25px ;
   }
 }
+
+
+/******** COLUMN SYSTEM ********/
+
+
+@col-nbr: 12;
+@col-gut-nbr: 11;
+@col-gut-width: "@{margin}";
+
+@col-base-calc: "((100% - @{col-gut-nbr} * @{col-gut-width}) / @{col-nbr})" ;
+
+@col-1:  calc(~"@{col-base-calc}");
+@col-2:  calc(~"@{col-base-calc} * 2 + (1 * @{margin})");
+@col-3:  calc(~"@{col-base-calc} * 3 + (2 * @{margin})");
+@col-4:  calc(~"@{col-base-calc} * 4 + (3 * @{margin})");
+@col-5:  calc(~"@{col-base-calc} * 5 + (4 * @{margin})");
+@col-6:  calc(~"@{col-base-calc} * 6 + (5 * @{margin})");
+@col-7:  calc(~"@{col-base-calc} * 7 + (6 * @{margin})");
+@col-8:  calc(~"@{col-base-calc} * 8 + (7 * @{margin})");
+@col-9:  calc(~"@{col-base-calc} * 9 + (8 * @{margin})");
+@col-10: calc(~"@{col-base-calc} * 10 + (9 * @{margin})");
+@col-11: calc(~"@{col-base-calc} * 11 + (10 * @{margin})");
+@col-12: calc(~"@{col-base-calc} * 12 + (11 * @{margin})");
+
+.col-1{width: @col-1;}
+.col-2{width: @col-2;}
+.col-3{width: @col-3;}
+.col-4{width: @col-4;}
+.col-5{width: @col-5;}
+.col-6{width: @col-6;}
+.col-7{width: @col-7;}
+.col-8{width: @col-8;}
+.col-9{width: @col-9;}
+.col-10{width: @col-10;}
+.col-11{width: @col-11;}
+.col-12{width: @col-12;}
