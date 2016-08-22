@@ -1,0 +1,47 @@
+header {
+    background-color: yellow;
+    position: fixed;
+    width: calc(100vw - 100px);
+    height: 100px;
+    top: 0px;
+    left: 100px;
+}
+
+.left-panel {
+    position: fixed;
+    background-color: grey;
+    width: 100px;
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+}
+
+.content {
+    width: calc(100vw - 100px);
+    height: calc(100vh - 100px);
+    position: fixed;
+    top: 100px;
+    left: 100px;
+}
+
+.col-0, .col-1, .col-2 {
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    width: calc(100% / 3);
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.col-0 {
+    background-color: red;
+}
+
+.col-1 {
+    background-color: blue;
+}
+
+.col-2 {
+    background-color: green;
+}
