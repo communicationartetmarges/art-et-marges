@@ -1,0 +1,202 @@
+article.index {
+    .absolute();
+    overflow: auto;
+
+    .index-header {
+        position: relative;
+        margin-bottom: @margin * 4;
+
+
+        @media @landscape-xs {
+            margin-bottom: @margin;
+        }
+
+        h1.title {
+            width: calc(~"100% - 250px - @{margin}");
+            display: inline-block;
+            padding: 0px;
+        }
+
+        .index-links {
+            .absolute(@left:initial; @top:initial; @right:0px; @bottom: 5px;);
+            .font(@family:"LMMono10"; @size:100%;);
+            width: 250px;
+            text-align: right;
+
+            a{
+                text-decoration: none;
+                padding: 0 @margin / 4;
+                color: #000;
+
+                &:hover {text-decoration: underline;}
+            }
+
+
+            @media @landscape-xs  {
+                .absolute(@left:initial; @top:-@HeaderH / 1.5; @right:0px; @bottom: initial;);
+                text-align: center;
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    section {
+        padding: @margin * 2;
+
+        @media @landscape-xs  {
+            padding: @margin * 2 @margin / 2 ;
+        }
+    }
+}
+
+section.infos {
+    background-color: @colorACabout;
+    padding: 2 * @margin 150px 150px 150px !important;
+
+    @media @landscape-xs  {
+        padding: @margin / 2 !important;
+        padding-top: @HeaderH !important;
+        padding-bottom: @margin * 4 !important;
+        background: @colorACabout;
+    }
+
+
+    .text {
+        .font(@size:140%);
+        line-height: 140%;
+        max-width: 26em;
+    }
+}
+
+section.footer {
+    background-color: @colorACcontact;
+    min-height: auto !important;
+
+    .details {
+        address {
+            margin-bottom: 2em;
+            p {
+                line-height: 140%;
+                &.company-name {
+                    font-style: italic;
+                    margin-bottom: 0.5em;
+                }
+                padding: 0;
+            }
+        }
+        .people {
+            span {
+                display: block;
+            }
+        }
+
+    }
+}
+
+section.jobs {
+    padding-top: @margin * 4;
+
+
+    @media @landscape-xs  {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        padding-bottom: 0px !important;
+
+        h1.section-title {text-align: center;}
+    }
+
+    .content {
+        // display: flex;
+        // flex-flow: row wrap;
+
+        margin-left: -2 * @margin;
+
+
+        @media @landscape-xs  {
+            margin: 0;
+        }
+
+        &::after {
+            content: ".";
+            visibility: hidden;
+            display: block;
+            height: 0;
+            clear:both;
+        }
+    }
+}
+
+
+.job-teaser {
+    position: relative;
+    display: block;
+    float: left;
+    background: #fafafa;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: -webkit-calc(~"100% / 3 - 2 * @{margin}");
+    width: calc(~"100% / 3 - 2 * @{margin}");
+    height: 100vh / 2.66;
+    margin-top: @margin;
+    margin-right: 0;
+    margin-bottom: @margin;
+    margin-left: 2 * @margin;
+    box-sizing: border-box;
+
+    @media @landscape-xs  {
+        width: 100vw;
+        min-width: 100vw;
+        height: 100vh;
+        margin: @margin 0 0 0;
+    }
+
+    @media @portrait-s  {
+        width: 100vw;
+        min-width: 100vw;
+        height: 100vh / 2.66;
+        margin: @margin 0 0 0;
+    }
+}
+
+.job-link {
+    .absolute(@z-index:100);
+    border-radius: 3px;
+    transition: box-shadow 0.6s;
+    box-shadow: none;
+
+    &:hover {
+        transition: box-shadow 0.6s;
+        box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.5);
+    }
+
+    @media @landscape-xs {
+        transition: none;
+        box-shadow: none;
+        &:hover {
+            transition: none;
+            box-shadow: none;
+        }
+    }
+}
+
+.info-teaser {
+    .absolute(@top:initial;);
+}
+
+.info-teaser > h1.title {
+    .font(@family:"LMMono10"; @size:85%;);
+    display: block;
+    padding: @margin / 2;
+    padding-bottom: @margin / 4;
+    background-color: #fafafa;
+}
+.info-teaser > h2 {
+    .font(@family:"LMMono10"; @size:75%;);
+    display: block;
+    padding: @margin / 2;
+    padding-top: @margin / 4;
+    background-color: #fafafa;
+}

@@ -1,0 +1,100 @@
+/******** MEDIA QUERIES ********/
+
+
+// we set up width min and max for a tablet, below we load mobile query, above we use normal style
+// we use min-device-width instead of min-width to make it works on android browsers (at least GS2 on Kitkat)
+
+//VIEWPORT SIZES
+@large:  1920px;
+@medium: 1344px;
+@small:  1280px;
+@xsmall:  767px;
+
+
+//VIEWPORT SIZES VALUES (used in proportionnal fontsize)
+
+@large-V:  1920;
+@medium-V: 1344;
+@small-V:  1280;
+@xsmall-V:  767;
+
+//VIEWPORT SIZES + ORIENTATION
+
+@landscape-l: ~"only screen and (min-device-width: @{large})";
+@landscape-m: ~"only screen and (max-device-width: @{medium})";
+@landscape-s: ~"only screen and (max-device-width: @{small})";
+@landscape-xs: ~"only screen and (max-device-width: @{xsmall})";
+@portrait-s:  ~"only screen and (max-device-width: @{small}) and (orientation: portrait)";
+
+/******** VARIABLES ********/
+
+@baseFontFamilly : "LMSans10";
+@baseFontSize : 16px;
+@baseLineHeight: 100%;
+@baseFontColor: #000;
+
+@margin: 18px;
+@margin-mob: 12px;
+
+@HeaderH : 3 * @margin;
+
+@colorACabout:  #95F3B1;
+@colorACjobs:  #fff;
+@colorACcontact:#FFDFEB;
+
+
+/******** MIXINS ********/
+
+.absolute(@top:0px; @right:0px; @bottom:0px; @left:0px; @z-index:1){
+	position: absolute;
+	top:@top;
+	right:@right;
+	bottom:@bottom;
+	left:@left;
+	z-index: @z-index;
+}
+
+.font(
+	@family:@baseFontFamilly; @weight:normal; @style:initial; @size:18px; @line-height:@baseLineHeight; @color:@baseFontColor){
+	font-family: @family;
+	font-weight: @weight;
+	font-style: @style;
+	font-size: @size;
+	line-height: @line-height;
+	color:@color;
+}
+
+
+
+/**PROPORTIONAL FONTSIZE & LINE-HEIGHT**/
+
+@operator : 5;
+@maxFontSize: @baseFontSize + @operator ;
+
+/*@media (min-width: 200px) and (max-width: 800px) {
+  body {
+    font-size: calc( 4pt + 2 * ( ( 100vw - 200px) / 600 )) !important;
+    line-height: calc( 5.5pt + 2.75 * ( ( 100vw - 200px) / 600 )) !important;
+  }
+}*/
+
+@media (max-width: @xsmall) {
+  body {
+    font-size: @baseFontSize  !important;
+    // line-height: 16.5px ;
+  }
+}
+
+@media (min-width: @xsmall) and (max-width: @large) {
+  body {
+    font-size: calc(~"@{baseFontSize} + @{operator} * ( (100vw - @{xsmall}) / (@{large-V} - @{xsmall-V}) )")  !important;
+    // line-height: calc(~"16.5px + 2.75 * ( (100vw - @{xsmall}) / (@{large-V} - @{xsmall-V}) )") ;
+  }
+}
+
+@media (min-width: @large) {
+  body {
+    font-size: @maxFontSize !important;
+    // line-height: 19.25px ;
+  }
+}
