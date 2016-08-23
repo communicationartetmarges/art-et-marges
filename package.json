@@ -1,0 +1,23 @@
+{
+  "name": "art-et-marges",
+  "version": "1.0.0",
+  "description": "Art et Marges website and tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "node scripts/compile_less.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atelier-cartographique/art-et-marges.git"
+  },
+  "author": "atelier cartographique",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atelier-cartographique/art-et-marges/issues"
+  },
+  "homepage": "https://github.com/atelier-cartographique/art-et-marges#readme",
+  "dependencies": {
+    "less": "^2.7.1"
+  }
+}
