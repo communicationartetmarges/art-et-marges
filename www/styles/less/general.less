@@ -19,6 +19,7 @@ p {
 
 header {
     position: fixed;
+    z-index: 1;
     width: calc(~"100vw - @{leftpanelW}");
     height: 100px;
     top: 0px;
@@ -43,6 +44,7 @@ header {
 
     address {
         .vertical-gradient(#ffffff; 25%; @green; 100%);
+        .inner-shadow;
         height: @HeaderH / 4 * 3;
 
         .col-4.street:before{
@@ -58,11 +60,10 @@ header {
     }
 
     .navigation {
-        .absolute(initial; 0px; 0px; 0px);
+        .absolute(initial; 0px; 0px; 0px; 2);
         .inner-shadow;
-        height: @HeaderH / 4 * 1;
-        float: none;
-        clear: both;
+        font-size: 90%;
+        height: @HeaderH / 4;
         text-align: center;
         text-transform: uppercase;
         border-top: @border;
@@ -78,6 +79,10 @@ header {
         a {
             border-bottom: 5px solid transparent;
             color: @blue;
+            font-weight: 200;
+            text-shadow: 0px 0px 2px #fff,
+                         0px 0px 2px #fff,
+                         0px 0px 2px #fff;
             &:hover {
                 border-bottom: 5px solid @blue;
                 cursor: pointer;
