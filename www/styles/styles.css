@@ -341,7 +341,37 @@ header .navigation a:hover {
   color: #ffffff;
   border: 1px solid #000;
   margin-top: 10px;
-  margin-bottom: 10px;
   margin-left: -11px;
   padding: 0 10px;
+}
+article h1 {
+  font-size: 200%;
+  margin: 20px 0;
+}
+article h2 {
+  text-indent: 40px;
+  text-decoration: underline;
+  font-weight: bold;
+  display: block;
+  float: none;
+  clear: both;
+  margin: 10px 0;
+}
+article .date {
+  font-size: 125%;
+  margin: 10px 0;
+  text-indent: 40px;
+}
+article .date .start,
+article .date .end {
+  float: none;
+  clear: both;
+  margin: 5px 0;
+}
+article .note {
+  text-indent: 40px;
+  font-style: italic;
+}
+article p {
+  text-indent: 40px;
 }
