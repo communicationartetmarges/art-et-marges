@@ -27,9 +27,18 @@ header {
 
 
     .lang-switch {
+        .absolute(@padding; 0px; initial, initial);
         width: auto;
-        position: absolute;
-        right: 0px;
+        color: @green;
+        background-color: #000000;
+        padding: @padding / 2;
+
+        a {
+            color: @green;
+            &:active {
+                color: #ffffff;
+            }
+        }
     }
 
     address {

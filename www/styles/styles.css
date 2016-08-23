@@ -260,9 +260,22 @@ header {
   left: 100px;
 }
 header .lang-switch {
-  width: auto;
   position: absolute;
+  top: 10px;
   right: 0px;
+  bottom: initial, initial;
+  left: initial;
+  z-index: 1;
+  width: auto;
+  color: #14ff97;
+  background-color: #000000;
+  padding: 5px;
+}
+header .lang-switch a {
+  color: #14ff97;
+}
+header .lang-switch a:active {
+  color: #ffffff;
 }
 header address {
   background: #ffffff;
