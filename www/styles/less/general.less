@@ -94,7 +94,7 @@ header {
     }
 
     .share img {
-        width: calc(~"100% / 3 - @{padding} / 3");
+        width: calc(~"100% / 3 - (@{padding} + 1px) / 3");
 
         &:nth-child(n+2) {
             margin-left: @padding * 2;

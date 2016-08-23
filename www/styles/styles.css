@@ -332,7 +332,7 @@ header .navigation a:hover {
   margin-bottom: 20px;
 }
 .left-panel .share img {
-  width: calc(100% / 3 - 10px / 3);
+  width: calc(100% / 3 - (10px + 1px) / 3);
 }
 .left-panel .share img:nth-child(n+2) {
   margin-left: 20px;
