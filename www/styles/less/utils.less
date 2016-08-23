@@ -28,7 +28,7 @@
 
 /******** VARIABLES ********/
 
-@baseFontFamilly : "LMSans10";
+@baseFontFamilly : "LMSans10"; //TO BE CHANGED !!
 @baseFontSize : 16px;
 @baseLineHeight: 100%;
 @baseFontColor: #000;
@@ -36,11 +36,10 @@
 @margin: 18px;
 @margin-mob: 12px;
 
-@HeaderH : 3 * @margin;
+@HeaderH : 100px;
+@leftpanelW : 100px;
 
-@colorACabout:  #95F3B1;
-@colorACjobs:  #fff;
-@colorACcontact:#FFDFEB;
+@blue : blue;
 
 
 /******** MIXINS ********/
@@ -134,3 +133,12 @@
 .col-10{width: @col-10;}
 .col-11{width: @col-11;}
 .col-12{width: @col-12;}
+
+// some other things
+*[class^="col-"]{
+    float:left;
+
+    &:nth-child(n+2){
+        margin-left: @margin; // will add right margin after 1st column element
+    }
+}
