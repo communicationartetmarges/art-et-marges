@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "style": "node scripts/compile_less.js"
+    "style": "node scripts/compile_less.js",
+    "watch_style": "node scripts/watch_less.js"
   },
   "repository": {
     "type": "git",

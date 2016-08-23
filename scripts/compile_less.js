@@ -30,10 +30,19 @@ function writeCSS (css) {
 }
 
 
-fs.readFile(SRC_PATH, callback(data => {
-    less.render(data.toString('utf8'), LESS_OPTIONS)
-        .then(out => {
-            writeCSS(out.css);
-        }, error);
-    })
-);
+
+function compile_less () {
+    fs.readFile(SRC_PATH, callback(data => {
+        less.render(data.toString('utf8'), LESS_OPTIONS)
+            .then(out => {
+                writeCSS(out.css);
+            }, error);
+        })
+    );
+}
+
+module.exports = compile_less;
+
+if (null === module.parent) {
+    compile_less();
+}
