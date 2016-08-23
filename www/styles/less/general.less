@@ -35,6 +35,17 @@ header {
     address {
         .vertical-gradient(#ffffff; 25%; @green; 100%);
         height: @HeaderH / 4 * 3;
+
+        .col-4.street:before{
+        content: "";
+        display: block;
+        float: left;
+        height: @HeaderH / 4 * 3;
+        width: @HeaderH / 4 * 3;
+        background: url('svg/belgique.svg') center no-repeat;
+        background-size: cover;
+        border: @padding solid transparent;
+        }
     }
 
     .navigation {
@@ -69,11 +80,26 @@ header {
 .left-panel {
     .vertical-gradient(@grey; 0%; #ffffff; 50%);
     border-right: @border;
+    padding: @padding;
     position: fixed;
     width: @leftpanelW;
     height: 100vh;
     top: 0px;
     left: 0px;
+
+    .logo img {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2 * @padding;
+    }
+
+    .share img {
+        width: calc(~"100% / 3 - @{padding} / 3");
+
+        &:nth-child(n+2) {
+            margin-left: @padding * 2;
+        }
+    }
 }
 
 .content {
