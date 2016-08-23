@@ -11,13 +11,12 @@ p {
 
 
 header {
-    background-color: yellow;
     position: fixed;
     width: calc(~"100vw - @{leftpanelW}");
     height: 100px;
     top: 0px;
     left: 100px;
-    border-bottom: 1px solid #000;
+    border-bottom: @border;
 
 
     .lang-switch {
@@ -27,17 +26,18 @@ header {
     }
 
     address {
-
+        .vertical-gradient(#ffffff; 25%; @green; 100%);
+        height: @HeaderH / 4 * 3;
     }
 
     .navigation {
-        .absolute(initial 0px 0px 0px); //BUG TO BE FIXED
-        height: 20px;
+        .absolute(initial; 0px; 0px; 0px);
+        height: @HeaderH / 4 * 1;
         float: none;
         clear: both;
         text-align: center;
         text-transform: uppercase;
-        border-top: 1px solid #000;
+        border-top: @border;
 
         span {
             border-bottom: 5px solid transparent;
@@ -59,8 +59,9 @@ header {
 }
 
 .left-panel {
+    .vertical-gradient(@grey; 0%; #ffffff; 50%);
+    border-right: @border;
     position: fixed;
-    background-color: grey;
     width: @leftpanelW;
     height: 100vh;
     top: 0px;
@@ -76,7 +77,10 @@ header {
 
     //for the column system
     section[class^="col-"]{
+        .inner-shadow;
         overflow-y: auto;
         height: 100%;
+        box-sizing: border-box;
+        border: 0.5px solid @grey;
     }
 }

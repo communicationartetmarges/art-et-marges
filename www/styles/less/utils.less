@@ -36,15 +36,29 @@
 @margin: 18px;
 @margin-mob: 12px;
 
+@border: 1px solid #000;
+
 @HeaderH : 100px;
 @leftpanelW : 100px;
 
 @blue : blue;
+@grey: #c8c8c8;
+@green: #14ff97;
+
+
+/****BOX-SHADOW****/
+
+.inner-shadow{
+    -webkit-box-shadow: 0 0 10px 0px @grey inset;
+    -moz-box-shadow: 0 0 10px 0px @grey inset;
+    box-shadow: 0 0 10px 0px @grey inset;
+}
+
 
 
 /******** MIXINS ********/
 
-.absolute(@top:0px; @right:0px; @bottom:0px; @left:0px; @z-index:1){
+.absolute(@top:initial; @right:initial; @bottom:initial; @left:initial; @z-index:1){
 	position: absolute;
 	top:@top;
 	right:@right;
@@ -64,6 +78,13 @@
 }
 
 
+.vertical-gradient(@colorA:#ffffff; @colorA-pos:0%; @colorB:#000000; @colorB-pos:100%){
+    background: @colorA; /* Old browsers */
+    background: -moz-linear-gradient(top, @colorA @colorA-pos, @colorB @colorB-pos); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, @colorA @colorA-pos, @colorB @colorB-pos); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, @colorA @colorA-pos, @colorB @colorB-pos); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@colorA', endColorstr='@colorB',GradientType=0 ); /* IE6-9 */
+}
 
 /**PROPORTIONAL FONTSIZE & LINE-HEIGHT**/
 
@@ -104,22 +125,22 @@
 
 @col-nbr: 12;
 @col-gut-nbr: 11;
-@col-gut-width: "@{margin}";
+@col-gut-width: 0px;
 
 @col-base-calc: "((100% - @{col-gut-nbr} * @{col-gut-width}) / @{col-nbr})" ;
 
 @col-1:  calc(~"@{col-base-calc}");
-@col-2:  calc(~"@{col-base-calc} * 2 + (1 * @{margin})");
-@col-3:  calc(~"@{col-base-calc} * 3 + (2 * @{margin})");
-@col-4:  calc(~"@{col-base-calc} * 4 + (3 * @{margin})");
-@col-5:  calc(~"@{col-base-calc} * 5 + (4 * @{margin})");
-@col-6:  calc(~"@{col-base-calc} * 6 + (5 * @{margin})");
-@col-7:  calc(~"@{col-base-calc} * 7 + (6 * @{margin})");
-@col-8:  calc(~"@{col-base-calc} * 8 + (7 * @{margin})");
-@col-9:  calc(~"@{col-base-calc} * 9 + (8 * @{margin})");
-@col-10: calc(~"@{col-base-calc} * 10 + (9 * @{margin})");
-@col-11: calc(~"@{col-base-calc} * 11 + (10 * @{margin})");
-@col-12: calc(~"@{col-base-calc} * 12 + (11 * @{margin})");
+@col-2:  calc(~"@{col-base-calc} * 2 + (1 * @{col-gut-width})");
+@col-3:  calc(~"@{col-base-calc} * 3 + (2 * @{col-gut-width})");
+@col-4:  calc(~"@{col-base-calc} * 4 + (3 * @{col-gut-width})");
+@col-5:  calc(~"@{col-base-calc} * 5 + (4 * @{col-gut-width})");
+@col-6:  calc(~"@{col-base-calc} * 6 + (5 * @{col-gut-width})");
+@col-7:  calc(~"@{col-base-calc} * 7 + (6 * @{col-gut-width})");
+@col-8:  calc(~"@{col-base-calc} * 8 + (7 * @{col-gut-width})");
+@col-9:  calc(~"@{col-base-calc} * 9 + (8 * @{col-gut-width})");
+@col-10: calc(~"@{col-base-calc} * 10 + (9 * @{col-gut-width})");
+@col-11: calc(~"@{col-base-calc} * 11 + (10 * @{col-gut-width})");
+@col-12: calc(~"@{col-base-calc} * 12 + (11 * @{col-gut-width})");
 
 .col-1{width: @col-1;}
 .col-2{width: @col-2;}
@@ -139,6 +160,6 @@
     float:left;
 
     &:nth-child(n+2){
-        margin-left: @margin; // will add right margin after 1st column element
+        margin-left: @col-gut-width; // will add right margin after 1st column element
     }
 }
