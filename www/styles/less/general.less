@@ -102,12 +102,43 @@ header {
         color: #ffffff;
         border: @border;
         margin-top: @padding;
-        margin-bottom: @padding;
+        // margin-bottom: @padding;
         margin-left: -@padding - 1px;
         padding: 0 @padding;
     }
 }
 
 article {
-    h1 {}
+    h1 {
+        font-size: 200%;
+        margin: @padding * 2 0;
+    }
+
+    h2 {
+        text-indent: 4 * @padding;
+        text-decoration: underline;
+        font-weight: bold;
+        display: block;
+        float: none;
+        clear: both;
+        margin: @padding 0;
+    }
+    .date {
+        font-size: 125%;
+        margin: @padding 0;
+        text-indent: 4 * @padding;
+
+        .start, .end {
+            float: none;
+            clear: both;
+            margin: @padding/2 0;
+        }
+    }
+    .note {
+        text-indent: 4 * @padding;
+        font-style: italic;
+    }
+    p {
+        text-indent: 4 * @padding;
+    }
 }
