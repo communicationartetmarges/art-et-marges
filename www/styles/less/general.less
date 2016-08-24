@@ -1,6 +1,6 @@
 
 body {
-    .font(@line-height: 122%;);
+    .font(@line-height: 133%;);
     height: 100%;
 
 }
@@ -11,11 +11,6 @@ a {
     &:hover{
     }
 }
-
-p {
-    padding-top: @margin / 2;
-}
-
 
 header {
     position: fixed;
@@ -41,16 +36,18 @@ header {
 
         a {
             color: @green;
-            &:active {
-                color: #ffffff;
-            }
+        }
+
+        .active a {
+            color: #ffffff;
         }
     }
 
     address {
-        .vertical-gradient(#ffffff; 25%; @green; 100%);
+        .vertical-gradient(#ffffff; 25%; @green; 80%);
         .inner-shadow;
-        height: @HeaderH / 4 * 3;
+        height: 100%;
+        padding-top: @padding;
         display: flex;
 
         @media @xs {
@@ -58,6 +55,7 @@ header {
             display: block;
             height: auto;
             padding-bottom: @padding;
+            padding-top: 0px;
         }
 
         .street, .phone, .web {
@@ -69,18 +67,18 @@ header {
         }
 
         .phone, .web {
-            @media @xs {text-indent: @HeaderH / 4 * 2;}
+            @media @xs {margin-left : @HeaderH / 4 * 3;}
         }
 
         .street {
-            height: @HeaderH / 4 * 2;
+            // height: @HeaderH / 4 * 2;
 
             &:before{
             content: "";
             display: block;
             float: left;
             height: @HeaderH / 4 * 2;
-            width: @HeaderH / 4 * 2;
+            width: @HeaderH / 4 * 3;
             background: url('svg/belgique.svg') center no-repeat;
             background-size: cover;
             border: @padding solid transparent;
@@ -91,8 +89,9 @@ header {
     .navigation {
         .absolute(initial; 0px; 0px; 0px; 2);
         .inner-shadow;
+        background-color: #fff;
         font-size: 90%;
-        height: @HeaderH / 4;
+        height: auto;
         text-align: center;
         text-transform: uppercase;
         border-top: @border;
@@ -122,6 +121,8 @@ header {
                 cursor: pointer;
             }
         }
+
+        .active a {border-bottom: 5px solid @blue;}
     }
 }
 
@@ -190,19 +191,19 @@ header {
             padding: 0 @padding;
         }
 
-        &.left-column {
+        &.c8 {
             .col-8;
-            @media @s {.col-6;}
+            // @media @s {.col-6;}
             @media @xs {.col-12;}
         }
 
-        &.right-column {
+        &.c4 {
             .col-4;
-            @media @s {.col-6;}
+            // @media @s {.col-6;}
             @media @xs {.col-12;}
         }
 
-        &.left-column, &.right-column {
+        &.c4, &.c8 {
             .inner-shadow;
             overflow-y: auto;
             height: 100%;
@@ -224,6 +225,7 @@ header {
 
 article {
     h1 {
+        font-family: 'thebigfont';
         font-size: 200%;
         margin: @padding * 2 0;
     }
@@ -231,16 +233,22 @@ article {
     h2 {
         text-indent: 4 * @padding;
         text-decoration: underline;
-        font-weight: bold;
+        font-weight: 400;
         display: block;
         float: none;
         clear: both;
-        margin: @padding 0;
+        margin-top: @padding 0;
     }
+
+    .body {
+        margin-top: @padding;
+    }
+
     .date {
-        font-size: 125%;
+        font-size: 140%;
         margin: @padding 0;
         text-indent: 4 * @padding;
+        font-weight: 200;
 
         .start, .end {
             float: none;
