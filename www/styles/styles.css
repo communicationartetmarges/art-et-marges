@@ -251,7 +251,7 @@ body {
   font-weight: normal;
   font-style: initial;
   font-size: 18px;
-  line-height: 133%;
+  line-height: 160%;
   color: #000;
   height: 100%;
   width: 100%;
@@ -308,7 +308,7 @@ header address {
   -webkit-box-shadow: 0 0 15px 0px #c8c8c8 -20% inset;
   -moz-box-shadow: 0 0 15px 0px #b4b4b4 inset;
   box-shadow: 0 0 15px 0px #b4b4b4 inset;
-  height: calc(100% - 21px + 15px);
+  height: calc(100% - 25px + 15px);
   margin-top: -15px;
   padding-top: 25px;
   display: flex;
@@ -365,7 +365,7 @@ header .navigation {
   box-shadow: 0 0 15px 0px #b4b4b4 inset;
   background-color: #fff;
   font-size: 90%;
-  height: 21px;
+  height: 25px;
   text-align: center;
   text-transform: uppercase;
   border-top: 1px solid #000;
