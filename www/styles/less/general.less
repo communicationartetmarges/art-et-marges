@@ -24,8 +24,13 @@ header {
     height: 100px;
     top: 0px;
     left: 100px;
-    // border-bottom: 1px solid @grey;
 
+    @media @xs {
+        position: relative;
+        left: 0px;
+        width: 100%;
+        height: auto;
+    }
 
     .lang-switch {
         .absolute(@padding; 0px; initial, initial);
@@ -46,16 +51,40 @@ header {
         .vertical-gradient(#ffffff; 25%; @green; 100%);
         .inner-shadow;
         height: @HeaderH / 4 * 3;
+        display: flex;
 
-        .col-4.street:before{
-        content: "";
-        display: block;
-        float: left;
-        height: @HeaderH / 4 * 3;
-        width: @HeaderH / 4 * 3;
-        background: url('svg/belgique.svg') center no-repeat;
-        background-size: cover;
-        border: @padding solid transparent;
+        @media @xs {
+            .no-shadow;
+            display: block;
+            height: auto;
+            padding-bottom: @padding;
+        }
+
+        .street, .phone, .web {
+            .col-4;
+
+            @media @xs {
+                .col-12;
+            }
+        }
+
+        .phone, .web {
+            @media @xs {text-indent: @HeaderH / 4 * 2;}
+        }
+
+        .street {
+            height: @HeaderH / 4 * 2;
+
+            &:before{
+            content: "";
+            display: block;
+            float: left;
+            height: @HeaderH / 4 * 2;
+            width: @HeaderH / 4 * 2;
+            background: url('svg/belgique.svg') center no-repeat;
+            background-size: cover;
+            border: @padding solid transparent;
+            }
         }
     }
 
@@ -67,6 +96,11 @@ header {
         text-align: center;
         text-transform: uppercase;
         border-top: @border;
+
+        @media @xs {
+            height: auto;
+            position: relative;
+        }
 
         span:nth-child(n+2)::before {
             content: "|";
@@ -101,6 +135,14 @@ header {
     top: 0px;
     left: 0px;
 
+    @media @xs {
+        position: relative;
+        height: auto;
+        width: 100%;
+        border: 0px;
+        padding: @padding 35%;
+    }
+
     .logo img {
         width: 100%;
         text-align: center;
@@ -122,30 +164,62 @@ header {
     position: fixed;
     top: 100px;
     left: 100px;
+    display: flex;
 
-    //specification for the column system
-    section[class^="col-"]{
-        .inner-shadow;
-        overflow-y: auto;
-        height: 100%;
-        box-sizing: border-box;
-        border: @border;
-        border-left: 0px;
-        padding: @padding;
+    @media @xs {
+        // overflow-y: auto;
+        position: relative;
+        display: block;
+        width: 100%;
+        left: 0px;
+        top: auto;
     }
 
-    .label {
-        display: inline-block;
-        background-color: red;
-        text-align: center;
-        text-transform: uppercase;
-        color: #ffffff;
-        border: @border;
-        margin-top: @padding;
-        // margin-bottom: @padding;
-        margin-left: -@padding - 1px;
-        padding: 0 @padding;
+    section{
+
+        .label {
+            display: inline-block;
+            background-color: red;
+            text-align: center;
+            text-transform: uppercase;
+            color: #ffffff;
+            border: @border;
+            margin-top: @padding;
+            // margin-bottom: @padding;
+            margin-left: -@padding - 1px;
+            padding: 0 @padding;
+        }
+
+        &.left-column {
+            .col-8;
+            @media @s {.col-6;}
+            @media @xs {.col-12;}
+        }
+
+        &.right-column {
+            .col-4;
+            @media @s {.col-6;}
+            @media @xs {.col-12;}
+        }
+
+        &.left-column, &.right-column {
+            .inner-shadow;
+            overflow-y: auto;
+            height: 100%;
+            box-sizing: border-box;
+            border: @border;
+            border-left: 0px;
+            padding: @padding;
+            padding-bottom: 2 * @padding;
+
+            @media @xs {
+                height: auto;
+                border-left: @border;
+            }
+        }
     }
+
+
 }
 
 article {

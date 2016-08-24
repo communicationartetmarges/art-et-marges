@@ -139,6 +139,11 @@ table {
   -moz-box-shadow: 0 0 10px 0px #c8c8c8 inset;
   box-shadow: 0 0 10px 0px #c8c8c8 inset;
 }
+.no-shadow {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
 /******** MIXINS ********/
 /**PROPORTIONAL FONTSIZE & LINE-HEIGHT**/
 /*@media (min-width: 200px) and (max-width: 800px) {
@@ -149,17 +154,17 @@ table {
 }*/
 @media (max-width: 767px) {
   body {
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
 }
 @media (min-width: 767px) and (max-width: 1920px) {
   body {
-    font-size: calc(16px + 5 * ( (100vw - 767px) / (1920 - 767) )) !important;
+    font-size: calc(14px + 5 * ( (100vw - 767px) / (1920 - 767) )) !important;
   }
 }
 @media (min-width: 1920px) {
   body {
-    font-size: 21px !important;
+    font-size: 19px !important;
   }
 }
 /******** COLUMN SYSTEM ********/
@@ -260,6 +265,14 @@ header {
   top: 0px;
   left: 100px;
 }
+@media only screen and (max-width: 767px) {
+  header {
+    position: relative;
+    left: 0px;
+    width: 100%;
+    height: auto;
+  }
+}
 header .lang-switch {
   position: absolute;
   top: 10px;
@@ -293,13 +306,45 @@ header address {
   -moz-box-shadow: 0 0 10px 0px #c8c8c8 inset;
   box-shadow: 0 0 10px 0px #c8c8c8 inset;
   height: 75px;
+  display: flex;
 }
-header address .col-4.street:before {
+@media only screen and (max-width: 767px) {
+  header address {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    display: block;
+    height: auto;
+    padding-bottom: 10px;
+  }
+}
+header address .street,
+header address .phone,
+header address .web {
+  width: calc(((100% - 11 * 0px) / 12) * 4 + (3 * 0px));
+}
+@media only screen and (max-width: 767px) {
+  header address .street,
+  header address .phone,
+  header address .web {
+    width: calc(((100% - 11 * 0px) / 12) * 12 + (11 * 0px));
+  }
+}
+@media only screen and (max-width: 767px) {
+  header address .phone,
+  header address .web {
+    text-indent: 50px;
+  }
+}
+header address .street {
+  height: 50px;
+}
+header address .street:before {
   content: "";
   display: block;
   float: left;
-  height: 75px;
-  width: 75px;
+  height: 50px;
+  width: 50px;
   background: url('svg/belgique.svg') center no-repeat;
   background-size: cover;
   border: 10px solid transparent;
@@ -319,6 +364,12 @@ header .navigation {
   text-align: center;
   text-transform: uppercase;
   border-top: 1px solid #000;
+}
+@media only screen and (max-width: 767px) {
+  header .navigation {
+    height: auto;
+    position: relative;
+  }
 }
 header .navigation span:nth-child(n+2)::before {
   content: "|";
@@ -358,6 +409,15 @@ header .navigation a:hover {
   top: 0px;
   left: 0px;
 }
+@media only screen and (max-width: 767px) {
+  .left-panel {
+    position: relative;
+    height: auto;
+    width: 100%;
+    border: 0px;
+    padding: 10px 35%;
+  }
+}
 .left-panel .logo img {
   width: 100%;
   text-align: center;
@@ -375,19 +435,18 @@ header .navigation a:hover {
   position: fixed;
   top: 100px;
   left: 100px;
+  display: flex;
 }
-.content section[class^="col-"] {
-  -webkit-box-shadow: 0 0 10px 0px #c8c8c8 inset;
-  -moz-box-shadow: 0 0 10px 0px #c8c8c8 inset;
-  box-shadow: 0 0 10px 0px #c8c8c8 inset;
-  overflow-y: auto;
-  height: 100%;
-  box-sizing: border-box;
-  border: 1px solid #000;
-  border-left: 0px;
-  padding: 10px;
+@media only screen and (max-width: 767px) {
+  .content {
+    position: relative;
+    display: block;
+    width: 100%;
+    left: 0px;
+    top: auto;
+  }
 }
-.content .label {
+.content section .label {
   display: inline-block;
   background-color: red;
   text-align: center;
@@ -397,6 +456,52 @@ header .navigation a:hover {
   margin-top: 10px;
   margin-left: -11px;
   padding: 0 10px;
+}
+.content section.left-column {
+  width: calc(((100% - 11 * 0px) / 12) * 8 + (7 * 0px));
+}
+@media only screen and (max-width: 1280px) {
+  .content section.left-column {
+    width: calc(((100% - 11 * 0px) / 12) * 6 + (5 * 0px));
+  }
+}
+@media only screen and (max-width: 767px) {
+  .content section.left-column {
+    width: calc(((100% - 11 * 0px) / 12) * 12 + (11 * 0px));
+  }
+}
+.content section.right-column {
+  width: calc(((100% - 11 * 0px) / 12) * 4 + (3 * 0px));
+}
+@media only screen and (max-width: 1280px) {
+  .content section.right-column {
+    width: calc(((100% - 11 * 0px) / 12) * 6 + (5 * 0px));
+  }
+}
+@media only screen and (max-width: 767px) {
+  .content section.right-column {
+    width: calc(((100% - 11 * 0px) / 12) * 12 + (11 * 0px));
+  }
+}
+.content section.left-column,
+.content section.right-column {
+  -webkit-box-shadow: 0 0 10px 0px #c8c8c8 inset;
+  -moz-box-shadow: 0 0 10px 0px #c8c8c8 inset;
+  box-shadow: 0 0 10px 0px #c8c8c8 inset;
+  overflow-y: auto;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-left: 0px;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+@media only screen and (max-width: 767px) {
+  .content section.left-column,
+  .content section.right-column {
+    height: auto;
+    border-left: 1px solid #000;
+  }
 }
 article h1 {
   font-size: 200%;

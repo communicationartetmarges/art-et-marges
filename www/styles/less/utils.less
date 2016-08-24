@@ -20,16 +20,16 @@
 
 //VIEWPORT SIZES + ORIENTATION
 
-@landscape-l: ~"only screen and (min-device-width: @{large})";
-@landscape-m: ~"only screen and (max-device-width: @{medium})";
-@landscape-s: ~"only screen and (max-device-width: @{small})";
-@landscape-xs: ~"only screen and (max-device-width: @{xsmall})";
-@portrait-s:  ~"only screen and (max-device-width: @{small}) and (orientation: portrait)";
+@l: ~"only screen and (min-width: @{large})";
+@mm: ~"only screen and (max-width: @{medium})";
+@s: ~"only screen and (max-width: @{small})";
+@xs: ~"only screen and (max-width: @{xsmall})";
+// @portrait-s:  ~"only screen and (max-width: @{xsmall}) and (orientation: portrait)";
 
 /******** VARIABLES ********/
 
-@baseFontFamilly : 'antiqueolive'; 
-@baseFontSize : 16px;
+@baseFontFamilly : 'antiqueolive';
+@baseFontSize : 14px;
 @baseLineHeight: 100%;
 @baseFontColor: #000;
 
@@ -53,6 +53,12 @@
     -webkit-box-shadow: 0 0 10px 0px @grey inset;
     -moz-box-shadow: 0 0 10px 0px @grey inset;
     box-shadow: 0 0 10px 0px @grey inset;
+}
+
+.no-shadow{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
 
