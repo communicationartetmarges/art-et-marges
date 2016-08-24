@@ -152,14 +152,14 @@ table {
     line-height: calc( 5.5pt + 2.75 * ( ( 100vw - 200px) / 600 )) !important;
   }
 }*/
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   body {
     font-size: 14px !important;
   }
 }
-@media (min-width: 767px) and (max-width: 1920px) {
+@media (min-width: 600px) and (max-width: 1920px) {
   body {
-    font-size: calc(14px + 5 * ( (100vw - 767px) / (1920 - 767) )) !important;
+    font-size: calc(14px + 5 * ( (100vw - 600px) / (1920 - 600) )) !important;
   }
 }
 @media (min-width: 1920px) {
@@ -265,7 +265,7 @@ header {
   top: 0px;
   left: 100px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   header {
     position: relative;
     left: 0px;
@@ -308,7 +308,7 @@ header address {
   height: 75px;
   display: flex;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   header address {
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
@@ -323,14 +323,14 @@ header address .phone,
 header address .web {
   width: calc(((100% - 11 * 0px) / 12) * 4 + (3 * 0px));
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   header address .street,
   header address .phone,
   header address .web {
     width: calc(((100% - 11 * 0px) / 12) * 12 + (11 * 0px));
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   header address .phone,
   header address .web {
     text-indent: 50px;
@@ -365,7 +365,7 @@ header .navigation {
   text-transform: uppercase;
   border-top: 1px solid #000;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   header .navigation {
     height: auto;
     position: relative;
@@ -409,7 +409,7 @@ header .navigation a:hover {
   top: 0px;
   left: 0px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   .left-panel {
     position: relative;
     height: auto;
@@ -437,7 +437,7 @@ header .navigation a:hover {
   left: 100px;
   display: flex;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   .content {
     position: relative;
     display: block;
@@ -465,7 +465,7 @@ header .navigation a:hover {
     width: calc(((100% - 11 * 0px) / 12) * 6 + (5 * 0px));
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   .content section.left-column {
     width: calc(((100% - 11 * 0px) / 12) * 12 + (11 * 0px));
   }
@@ -478,7 +478,7 @@ header .navigation a:hover {
     width: calc(((100% - 11 * 0px) / 12) * 6 + (5 * 0px));
   }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   .content section.right-column {
     width: calc(((100% - 11 * 0px) / 12) * 12 + (11 * 0px));
   }
@@ -496,7 +496,7 @@ header .navigation a:hover {
   padding: 10px;
   padding-bottom: 20px;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   .content section.left-column,
   .content section.right-column {
     height: auto;
