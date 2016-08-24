@@ -2,7 +2,7 @@
 body {
     .font(@line-height: 133%;);
     height: 100%;
-
+    width: 100%;
 }
 
 a {
@@ -44,16 +44,18 @@ header {
     }
 
     address {
-        .vertical-gradient(#ffffff; 25%; @green; 80%);
+        .vertical-gradient(#ffffff; 25%; @green; 100%);
         .inner-shadow;
-        height: 100%;
-        padding-top: @padding;
+        height: calc(~"100% - @{navH} + 15px"); //15px are used to hide the top shadow
+        margin-top: -15px;
+        padding-top: @padding + 15px;;
         display: flex;
 
         @media @xs {
             .no-shadow;
             display: block;
             height: auto;
+            margin-top: 0px;
             padding-bottom: @padding;
             padding-top: 0px;
         }
@@ -185,7 +187,7 @@ header {
             text-transform: uppercase;
             color: #ffffff;
             border: @border;
-            margin-top: @padding;
+            // margin-top: @padding;
             // margin-bottom: @padding;
             margin-left: -@padding - 1px;
             padding: 0 @padding;
