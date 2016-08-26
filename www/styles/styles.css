@@ -213,12 +213,12 @@ table {
 @font-face {
   font-family: 'thebigfont';
   font-weight: normal;
-  font-style: italic;
-  src: url('fonts/thebigfont.woff2') format('woff2'), url('fonts/thebigfont.woff') format('woff');
+  font-style: normal;
+  src: url('fonts/AMM_SHRIFT-medium.woff') format('woff'), url('fonts/AMM_SHRIFT_2.ttf') format('ttf');
 }
 @font-face {
   font-family: 'antiqueolive';
-  font-weight: 600;
+  font-weight: bold;
   font-style: normal;
   src: url('fonts/antiqueolive-bol-webfont.woff2') format('woff2'), url('fonts/antiqueolive-bol-webfont.woff') format('woff');
 }
@@ -230,21 +230,9 @@ table {
 }
 @font-face {
   font-family: 'antiqueolive';
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
   src: url('fonts/antiqueolive-reg-webfont.woff2') format('woff2'), url('fonts/antiqueolive-reg-webfont.woff') format('woff');
-}
-@font-face {
-  font-family: 'antiqueolive';
-  font-weight: 300;
-  font-style: normal;
-  src: url('fonts/AntiqueOlive-Light.woff') format('woff');
-}
-@font-face {
-  font-family: 'antiqueolive';
-  font-weight: 200;
-  font-style: normal;
-  src: url('fonts/AntiqueOlive-ExtraLight.woff') format('woff');
 }
 body {
   font-family: 'antiqueolive';
@@ -259,6 +247,7 @@ body {
 a {
   color: blue;
   text-decoration: none;
+  border-bottom: 1px solid;
 }
 header {
   position: fixed;
@@ -290,6 +279,7 @@ header .lang-switch {
 }
 header .lang-switch a {
   color: #14ff97;
+  border: none;
 }
 header .lang-switch .active a {
   color: #ffffff;
@@ -397,6 +387,7 @@ header .navigation a:hover {
 }
 header .navigation .active a {
   border-bottom: 5px solid blue;
+  font-weight: bold;
 }
 .left-panel {
   background: #c8c8c8;
@@ -437,6 +428,9 @@ header .navigation .active a {
 .left-panel .share img:nth-child(n+2) {
   margin-left: 20px;
 }
+.left-panel a {
+  border: none;
+}
 .content {
   width: calc(100vw - 100px);
   height: calc(100vh - 100px);
@@ -464,8 +458,20 @@ header .navigation .active a {
   margin-left: -11px;
   padding: 0 10px;
 }
+.content section article {
+  margin-top: 1em;
+}
 .content section.c8 {
   width: calc(((100% - 11 * 0px) / 12) * 8 + (7 * 0px));
+}
+.content section.c8 .article .title .date {
+  text-indent: 0;
+}
+.content section.c8 .article .title .date section {
+  display: inline;
+}
+.content section.c8 .article .title .pict img {
+  width: 100%;
 }
 @media only screen and (max-width: 767px) {
   .content section.c8 {
@@ -474,6 +480,9 @@ header .navigation .active a {
 }
 .content section.c4 {
   width: calc(((100% - 11 * 0px) / 12) * 4 + (3 * 0px));
+}
+.content section.c4 .article .title .pict img {
+  width: 100%;
 }
 @media only screen and (max-width: 767px) {
   .content section.c4 {
@@ -508,7 +517,7 @@ article h1 {
 article h2 {
   text-indent: 40px;
   text-decoration: underline;
-  font-weight: 400;
+  font-weight: bold;
   display: block;
   float: none;
   clear: both;
@@ -531,6 +540,7 @@ article .date .end {
 }
 article .note {
   text-indent: 40px;
+  font-weight: bold;
 }
 article p {
   text-indent: 40px;

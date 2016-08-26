@@ -8,6 +8,7 @@ body {
 a {
     color: @blue;
     text-decoration: none;
+    border-bottom: 1px solid;
     &:hover{
     }
 }
@@ -36,6 +37,7 @@ header {
 
         a {
             color: @green;
+            border: none;
         }
 
         .active a {
@@ -124,7 +126,10 @@ header {
             }
         }
 
-        .active a {border-bottom: 5px solid @blue;}
+        .active a {
+            border-bottom: 5px solid @blue;
+            font-weight: bold;
+        }
     }
 }
 
@@ -158,6 +163,10 @@ header {
         &:nth-child(n+2) {
             margin-left: @padding * 2;
         }
+    }
+
+    a {
+        border: none;
     }
 }
 
@@ -193,14 +202,42 @@ header {
             padding: 0 @padding;
         }
 
+        article {
+            margin-top: 1em;
+        }
+
         &.c8 {
             .col-8;
+            .article {
+                .title {
+                    .date {
+                        text-indent: 0;
+                        section {
+                            display: inline;
+                        }
+                    }
+                    .pict {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
             // @media @s {.col-6;}
             @media @xs {.col-12;}
         }
 
         &.c4 {
             .col-4;
+            .article {
+                .title {
+                    .pict {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
             // @media @s {.col-6;}
             @media @xs {.col-12;}
         }
@@ -235,7 +272,7 @@ article {
     h2 {
         text-indent: 4 * @padding;
         text-decoration: underline;
-        font-weight: 400;
+        font-weight: bold;
         display: block;
         float: none;
         clear: both;
@@ -261,6 +298,7 @@ article {
     .note {
         text-indent: 4 * @padding;
         // font-style: italic;
+        font-weight: bold;
     }
     p {
         text-indent: 4 * @padding;
