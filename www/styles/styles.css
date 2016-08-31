@@ -558,3 +558,10 @@ article p {
   text-indent: 40px;
   font-weight: 200;
 }
+article .newsletter-wrapper {
+  text-indent: 0px;
+  margin-top: 10px;
+  height: 75px;
+  width: 75%;
+  margin-left: 12.5%;
+}
