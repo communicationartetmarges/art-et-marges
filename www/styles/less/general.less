@@ -71,7 +71,10 @@ header {
         }
 
         .phone, .web {
-            @media @xs {margin-left : @HeaderH / 4 * 3;}
+            @media @xs {
+                margin-left : @HeaderH / 4 * 3;
+                width: calc(~"100% - @{HeaderH} / 4 * 3")
+            }
         }
 
         .street {
@@ -158,7 +161,7 @@ header {
     }
 
     .share img {
-        width: calc(~"100% / 3 - (@{padding} + 1px) / 3");
+        width: calc(~"100% / 3 - (@{padding} + 2px) / 3");
 
         &:nth-child(n+2) {
             margin-left: @padding * 2;
@@ -267,6 +270,7 @@ article {
         font-family: 'ammshrift';
         font-size: 200%;
         margin: @padding * 2 0;
+        line-height: 125%;
     }
 
     h2 {

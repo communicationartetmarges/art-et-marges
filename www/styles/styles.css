@@ -331,6 +331,7 @@ header address .web {
   header address .phone,
   header address .web {
     margin-left: 75px;
+    width: calc(100% - 100px / 4 * 3);
   }
 }
 header address .street:before {
@@ -423,7 +424,7 @@ header .navigation .active a {
   margin-bottom: 20px;
 }
 .left-panel .share img {
-  width: calc(100% / 3 - (10px + 1px) / 3);
+  width: calc(100% / 3 - (10px + 2px) / 3);
 }
 .left-panel .share img:nth-child(n+2) {
   margin-left: 20px;
@@ -513,6 +514,7 @@ article h1 {
   font-family: 'ammshrift';
   font-size: 200%;
   margin: 20px 0;
+  line-height: 125%;
 }
 article h2 {
   text-indent: 40px;
