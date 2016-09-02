@@ -234,6 +234,115 @@ table {
   font-style: normal;
   src: url('fonts/antiqueolive-reg-webfont.woff2') format('woff2'), url('fonts/antiqueolive-reg-webfont.woff') format('woff');
 }
+.front-content {
+  width: calc(100vw - 100px);
+  height: calc(100vh - 100px);
+  position: fixed;
+  top: 100px;
+  left: 100px;
+  overflow-y: auto;
+}
+@media only screen and (max-width: 767px) {
+  .front-content {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    left: 0px;
+    top: auto;
+    overflow: hidden;
+  }
+}
+.front-content .front-line {
+  display: flex;
+  width: 100%;
+  height: calc((100vw - 100px) / 3 * 1.2);
+}
+@media only screen and (max-width: 767px) {
+  .front-content .front-line {
+    display: block;
+    height: auto;
+  }
+}
+.front-content .front-line .front-cell-small {
+  width: calc(100% / 3);
+}
+.front-content .front-line .front-cell-big {
+  width: calc(100% / 3 * 2);
+}
+.front-content .front-line .front-cell-small,
+.front-content .front-line .front-cell-big {
+  -webkit-box-shadow: 0 0 15px 0px #c8c8c8 -20% inset;
+  -moz-box-shadow: 0 0 15px 0px #b4b4b4 inset;
+  box-shadow: 0 0 15px 0px #b4b4b4 inset;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-left: 0px;
+  border-bottom: 0px;
+}
+@media only screen and (max-width: 767px) {
+  .front-content .front-line .front-cell-small,
+  .front-content .front-line .front-cell-big {
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid #000;
+  }
+}
+.front-content .front-line .front-cell-small .title,
+.front-content .front-line .front-cell-big .title {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+}
+/**BACKGROUND IMAGE SYSTEM**/
+.front-content article {
+  position: relative;
+  height: calc((100vw - 100px) / 3 * 1.2);
+  background: center no-repeat;
+  background-size: cover;
+  mix-blend-mode: multiply;
+}
+@media only screen and (max-width: 767px) {
+  .front-content article {
+    height: 100vw;
+  }
+}
+.front-content article.cell-1 {
+  background-image: url("../medias/front/sauver_le_monde/avion.jpg");
+}
+.front-content article.cell-2 {
+  background-image: url("../medias/front/multi-ordinary/Multi-ordinary-afficheWEB.jpg");
+}
+.front-content article.cell-3 {
+  background-image: url("../medias/front/a_vivre_au_musee/avivreaumusee-1.jpg");
+}
+@media only screen and (max-width: 767px) {
+  .front-content article.cell-1 {
+    background-image: url("../medias/front/sauver_le_monde/avion-769.jpg");
+  }
+  .front-content article.cell-2 {
+    background-image: url("../medias/front/multi-ordinary/Multi-ordinary-afficheWEB-769.jpg");
+  }
+  .front-content article.cell-3 {
+    background-image: url("../medias/front/a_vivre_au_musee/avivreaumusee-1-769.jpg");
+  }
+}
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 body {
   font-family: 'antiqueolive';
   font-weight: normal;
