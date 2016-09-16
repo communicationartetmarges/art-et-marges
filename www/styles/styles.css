@@ -375,9 +375,9 @@ header {
   position: fixed;
   z-index: 1;
   width: calc(100vw - 150px);
-  height: 100px;
+  height: 75px;
   top: 0px;
-  left: 100px;
+  left: 150px;
   font-size: 12px;
 }
 @media only screen and (max-width: 767px) {
