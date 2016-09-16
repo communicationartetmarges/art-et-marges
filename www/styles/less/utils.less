@@ -29,8 +29,8 @@
 /******** VARIABLES ********/
 
 @baseFontFamilly : 'antiqueolive';
-@baseFontSize : 14px;
-@baseLineHeight: 100%;
+@baseFontSize : 12px;
+// @baseLineHeight: 50%;
 @baseFontColor: #000;
 
 @margin: 18px;
@@ -112,21 +112,21 @@
 @media (max-width: @xsmall) {
   body {
     font-size: @baseFontSize  !important;
-    // line-height: 16.5px ;
+    // line-height: @baseLineHeight ;
   }
 }
 
 @media (min-width: @xsmall) and (max-width: @large) {
   body {
     font-size: calc(~"@{baseFontSize} + @{operator} * ( (100vw - @{xsmall}) / (@{large-V} - @{xsmall-V}) )")  !important;
-    // line-height: calc(~"16.5px + 2.75 * ( (100vw - @{xsmall}) / (@{large-V} - @{xsmall-V}) )") ;
+    // line-height: calc(~"@{baseLineHeight} + 2.75 * ( (100vw - @{xsmall}) / (@{large-V} - @{xsmall-V}) )") ;
   }
 }
 
 @media (min-width: @large) {
   body {
     font-size: @maxFontSize !important;
-    // line-height: 19.25px ;
+    // line-height: @baseLineHeight + 2.75 ;
   }
 }
 

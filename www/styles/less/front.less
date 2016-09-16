@@ -10,6 +10,10 @@
     left: @leftpanelW;
     overflow-y: auto;
 
+    &.ytp-title-text {
+        color: @blue;
+    }
+
     @media @xs {
         position: relative;
         display: block;
@@ -53,6 +57,16 @@
                 z-index: 1;
                 text-align: center;
                 width: 100%;
+
+                h1 {
+                    font-size: 70px;
+                }
+                .date {
+                    // font-size: 30px;
+                    // text-shadow: none;
+                    // display: flex;
+                    // justify-content: center;
+                }
             }
 
             .link-wrapper {

@@ -158,17 +158,17 @@ table {
 }*/
 @media (max-width: 767px) {
   body {
-    font-size: 14px !important;
+    font-size: 12px !important;
   }
 }
 @media (min-width: 767px) and (max-width: 1920px) {
   body {
-    font-size: calc(14px + 5 * ( (100vw - 767px) / (1920 - 767) )) !important;
+    font-size: calc(12px + 5 * ( (100vw - 767px) / (1920 - 767) )) !important;
   }
 }
 @media (min-width: 1920px) {
   body {
-    font-size: 19px !important;
+    font-size: 17px !important;
   }
 }
 /******** COLUMN SYSTEM ********/
@@ -246,6 +246,9 @@ table {
   left: 150px;
   overflow-y: auto;
 }
+.front-content.ytp-title-text {
+  color: blue;
+}
 @media only screen and (max-width: 767px) {
   .front-content {
     position: relative;
@@ -299,6 +302,10 @@ table {
   z-index: 1;
   text-align: center;
   width: 100%;
+}
+.front-content .front-line .front-cell-small .title h1,
+.front-content .front-line .front-cell-big .title h1 {
+  font-size: 70px;
 }
 .front-content .front-line .front-cell-small .link-wrapper a,
 .front-content .front-line .front-cell-big .link-wrapper a {
@@ -361,7 +368,7 @@ body {
   font-weight: normal;
   font-style: initial;
   font-size: 18px;
-  line-height: 160%;
+  line-height: 130%;
   color: #000;
   height: 100%;
   width: 100%;
@@ -639,12 +646,12 @@ article .title {
 }
 article h1 {
   font-family: 'ammshrift';
-  font-size: 70px;
-  margin: 20px 0;
+  font-size: 30px;
+  margin-top: 20px;
   line-height: 100%;
+  color: blue;
 }
 article h2 {
-  text-indent: 40px;
   text-decoration: underline;
   font-weight: bold;
   display: block;
@@ -656,23 +663,16 @@ article .body {
   margin-top: 10px;
 }
 article .date {
-  font-size: 36px;
-  margin: 10px 0;
-  text-indent: 40px;
-  font-weight: 200;
-}
-article .date .start,
-article .date .end {
-  float: none;
-  clear: both;
-  margin: 5px 0;
+  font-size: 30px;
+  text-shadow: none;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
 }
 article .note {
-  text-indent: 40px;
   font-weight: bold;
 }
 article p {
-  text-indent: 40px;
   font-weight: 200;
 }
 article .newsletter-wrapper {

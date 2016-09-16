@@ -1,6 +1,6 @@
 
 body {
-    .font(@line-height: 160%;);
+    .font(@line-height: 130%;);
     height: 100%;
     width: 100%;
 }
@@ -286,13 +286,14 @@ article {
 
     h1 {
         font-family: 'ammshrift';
-        font-size: 70px;
-        margin: @padding * 2 0;
+        font-size: 30px;
+        margin-top: @padding * 2;
         line-height: 100%;
+        color: @blue;
     }
 
     h2 {
-        text-indent: 4 * @padding;
+        // text-indent: 4 * @padding;
         text-decoration: underline;
         font-weight: bold;
         display: block;
@@ -306,24 +307,28 @@ article {
     }
 
     .date {
-        font-size: 36px;
-        margin: @padding 0;
-        text-indent: 4 * @padding;
-        font-weight: 200;
+        font-size: 30px;
+        text-shadow: none;
+        display: flex;
+        justify-content: center;
+        // font-size: 36px;
+        margin: @padding * 2 0;
+        // // text-indent: 4 * @padding;
+        // font-weight: 200;
 
         .start, .end {
-            float: none;
-            clear: both;
-            margin: @padding/2 0;
+            // float: none;
+            // clear: both;
+            // margin: @padding/2 0;
         }
     }
     .note {
-        text-indent: 4 * @padding;
+        // text-indent: 4 * @padding;
         // font-style: italic;
         font-weight: bold;
     }
     p {
-        text-indent: 4 * @padding;
+        // text-indent: 4 * @padding;
         font-weight: 200;
         // font-size: 95%;
     }
