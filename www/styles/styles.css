@@ -477,13 +477,6 @@ header address .web {
     width: calc(((100% - 11 * 0px) / 12) * 12 + (11 * 0px));
   }
 }
-@media only screen and (max-width: 767px) {
-  header address .phone,
-  header address .web {
-    margin-left: 56.25px;
-    width: calc(100% - 75px / 4 * 3);
-  }
-}
 header .navigation {
   position: absolute;
   top: initial;
@@ -597,7 +590,11 @@ header .navigation .active a {
   color: #ffffff;
   border: 1px solid #000;
   margin-left: -11px;
+  margin-top: 20px;
   padding: 0 10px;
+}
+.content section .label:first-child {
+  margin-top: 0;
 }
 .content section article {
   margin-top: 1em;
@@ -670,14 +667,17 @@ article h2 {
   margin-top: 10px 0;
 }
 article .body {
-  margin-top: 10px;
+  margin-top: 5px;
+}
+article .image-wrapper img {
+  width: 100%;
 }
 article .date {
   font-size: 30px;
   text-shadow: none;
   display: flex;
   justify-content: flex-start;
-  margin: 20px 0;
+  margin-top: 20px;
 }
 article .note {
   font-weight: bold;
@@ -691,4 +691,15 @@ article .newsletter-wrapper {
   height: 75px;
   width: 75%;
   margin-left: 12.5%;
+}
+.c4 h1 {
+  font-size: 30px;
+}
+.c4 .date {
+  font-size: 100%;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.c8 h1 {
+  font-size: 55px;
 }

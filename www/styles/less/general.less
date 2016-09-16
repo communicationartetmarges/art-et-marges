@@ -83,12 +83,12 @@ header {
             }
         }
 
-        .phone, .web {
-            @media @xs {
-                margin-left : @HeaderH / 4 * 3;
-                width: calc(~"100% - @{HeaderH} / 4 * 3")
-            }
-        }
+        // .phone, .web {
+        //     @media @xs {
+        //         margin-left : @HeaderH / 4 * 3;
+        //         width: calc(~"100% - @{HeaderH} / 4 * 3")
+        //     }
+        // }
 
         .street {
             // height: @HeaderH / 4 * 2;
@@ -215,7 +215,12 @@ header {
             // margin-top: @padding;
             // margin-bottom: @padding;
             margin-left: -@padding - 1px;
+            margin-top: @padding * 2;
             padding: 0 @padding;
+
+            &:first-child {
+                margin-top: 0;
+            }
         }
 
         article {
@@ -303,8 +308,10 @@ article {
     }
 
     .body {
-        margin-top: @padding;
+        margin-top: @padding / 2;
     }
+
+    .image-wrapper img {width: 100%;}
 
     .date {
         font-size: 30px;
@@ -312,7 +319,7 @@ article {
         display: flex;
         justify-content: flex-start;
         // font-size: 36px;
-        margin: @padding * 2 0;
+        margin-top: @padding * 2;
         // // text-indent: 4 * @padding;
         // font-weight: 200;
 
@@ -340,4 +347,17 @@ article {
         width: 75%;
         margin-left: 12.5%;
     }
+}
+
+.c4 {
+    h1 { font-size: 30px;}
+    .date {
+        font-size: 100%;
+        margin-top: 0;
+        margin-bottom: @padding;
+    }
+}
+
+.c8 {
+    h1 { font-size: 55px}
 }
