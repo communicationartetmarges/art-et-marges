@@ -559,8 +559,8 @@ header .navigation .active a {
   width: calc(100vw - 150px);
   height: calc(100vh - 75px);
   position: fixed;
-  top: 100px;
-  left: 100px;
+  top: 75px;
+  left: 150px;
   display: flex;
 }
 @media only screen and (max-width: 767px) {
