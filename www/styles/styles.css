@@ -307,6 +307,10 @@ table {
 .front-content .front-line .front-cell-big .title h1 {
   font-size: 70px;
 }
+.front-content .front-line .front-cell-small .title .date,
+.front-content .front-line .front-cell-big .title .date {
+  justify-content: center;
+}
 .front-content .front-line .front-cell-small .link-wrapper a,
 .front-content .front-line .front-cell-big .link-wrapper a {
   position: absolute;
@@ -315,6 +319,12 @@ table {
   bottom: 0;
   right: 0;
   z-index: 1;
+}
+.front-content .front-line .video-cell iframe {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /**BACKGROUND IMAGE SYSTEM**/
 .front-content article {
@@ -666,7 +676,7 @@ article .date {
   font-size: 30px;
   text-shadow: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 20px 0;
 }
 article .note {
