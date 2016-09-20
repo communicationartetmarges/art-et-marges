@@ -407,6 +407,10 @@ a {
   text-decoration: none;
   border-bottom: 1px solid;
 }
+ul li:before {
+  content: '•';
+  margin-right: 5px;
+}
 header {
   position: fixed;
   z-index: 1;
@@ -706,6 +710,7 @@ article .note {
 }
 article p {
   font-weight: 200;
+  margin: 5px 0;
 }
 article .newsletter-wrapper {
   text-indent: 0px;
