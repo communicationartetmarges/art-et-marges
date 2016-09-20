@@ -410,6 +410,7 @@ a {
 ul li:before {
   content: '•';
   margin-right: 5px;
+  color: blue;
 }
 header {
   position: fixed;
