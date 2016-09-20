@@ -359,6 +359,7 @@ table {
     background-image: url("../medias/front/a_vivre_au_musee/avivreaumusee-1-769.jpg");
   }
 }
+/**VIDEO STUFF**/
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -372,6 +373,24 @@ table {
   left: 0;
   width: 100%;
   height: 100%;
+}
+/**BACKGROUND IMAGE SYSTEM**/
+.info-content .background-img {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.info-content article.info-img {
+  margin: 0px !important;
+  height: 100%;
+  background: left no-repeat;
+  background-size: cover;
+  mix-blend-mode: multiply;
+  background-image: url("../medias/infos/tour-de-brol.jpg");
+}
+@media only screen and (max-width: 767px) {
+  .info-content article.info-img {
+    display: none;
+  }
 }
 body {
   font-family: 'antiqueolive';
