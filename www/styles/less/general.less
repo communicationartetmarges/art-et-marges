@@ -173,18 +173,30 @@ header {
         padding: @padding 35%;
     }
 
-    .logo img {
-        width: 100%;
-        text-align: center;
-        margin-bottom: 2 * @padding;
+    .logo {
+        width: 75%;
+        margin: auto;
+        img {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 2 * @padding;
+        }
     }
 
-    .share img {
-        width: calc(~"100% / 3 - (@{padding} + 2px) / 3");
+    .share {
+        width: 75%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-        &:nth-child(n+2) {
-            margin-left: @padding * 2;
-        }
+        a{width: 30%;}
+        // a:last-child {margin-right: 0px;}
+
+
+        // img {width: calc(~"75% / 3 - (@{padding} + 2px) / 3");}
+        img {width: 100%;}
+
     }
 
     a {

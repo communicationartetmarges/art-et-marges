@@ -575,16 +575,27 @@ header .navigation .active a {
     padding: 10px 35%;
   }
 }
+.left-panel .logo {
+  width: 75%;
+  margin: auto;
+}
 .left-panel .logo img {
   width: 100%;
   text-align: center;
   margin-bottom: 20px;
 }
-.left-panel .share img {
-  width: calc(100% / 3 - (10px + 2px) / 3);
+.left-panel .share {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.left-panel .share img:nth-child(n+2) {
-  margin-left: 20px;
+.left-panel .share a {
+  width: 30%;
+}
+.left-panel .share img {
+  width: 100%;
 }
 .left-panel a {
   border: none;
