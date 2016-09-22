@@ -36,7 +36,7 @@ header {
     }
 
     .lang-switch {
-        .absolute(17px; 0px; initial, initial);
+        .absolute(17px; @padding; initial, initial);
         width: auto;
         color: @green;
         background-color: #000000;
@@ -57,7 +57,8 @@ header {
         .inner-shadow;
         height: calc(~"100% - @{navH} + 15px"); //15px are used to hide the top shadow
         margin-top: -15px;
-        padding-top: @padding + 15px;;
+        padding-top: @padding + 15px;
+        padding-left: @padding;
         display: flex;
 
         a {
@@ -333,7 +334,7 @@ article {
         // text-align: center;
         img {
         max-width: 100%;
-        max-height: 60vh;
+        max-height: 75vh;
         width: auto;
         }
     }
@@ -361,7 +362,7 @@ article {
     p {
         // text-indent: 4 * @padding;
         font-weight: 200;
-        margin: 5px 0;
+        // margin: 5px 0;
         // font-size: 95%;
     }
 
@@ -374,8 +375,10 @@ article {
     }
 }
 
+//OVERRIDES
+
 .c4 {
-    h1 { font-size: 30px;}
+    h1 { font-size: @small-title;}
     .date {
         font-size: 100%;
         margin-top: 0;
@@ -385,4 +388,9 @@ article {
 
 .c8 {
     h1 { font-size: 55px}
+}
+
+.activ {
+    h1 {font-size: @small-title;}
+    .date {margin-top: 0;}
 }

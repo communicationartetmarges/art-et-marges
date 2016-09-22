@@ -432,7 +432,7 @@ header {
 header .lang-switch {
   position: absolute;
   top: 17px;
-  right: 0px;
+  right: 10px;
   bottom: initial, initial;
   left: initial;
   z-index: 1;
@@ -465,6 +465,7 @@ header address {
   height: calc(100% - 25px + 15px);
   margin-top: -15px;
   padding-top: 25px;
+  padding-left: 10px;
   display: flex;
 }
 header address a {
@@ -706,7 +707,7 @@ article .body {
 }
 article .image-wrapper img {
   max-width: 100%;
-  max-height: 60vh;
+  max-height: 75vh;
   width: auto;
 }
 article .date {
@@ -725,7 +726,6 @@ article .note {
 }
 article p {
   font-weight: 200;
-  margin: 5px 0;
 }
 article .newsletter-wrapper {
   text-indent: 0px;
@@ -735,7 +735,7 @@ article .newsletter-wrapper {
   margin-left: 12.5%;
 }
 .c4 h1 {
-  font-size: 30px;
+  font-size: 35px;
 }
 .c4 .date {
   font-size: 100%;
@@ -744,4 +744,10 @@ article .newsletter-wrapper {
 }
 .c8 h1 {
   font-size: 55px;
+}
+.activ h1 {
+  font-size: 35px;
+}
+.activ .date {
+  margin-top: 0;
 }
