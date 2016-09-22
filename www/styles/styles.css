@@ -431,7 +431,7 @@ header {
 }
 header .lang-switch {
   position: absolute;
-  top: 10px;
+  top: 17px;
   right: 0px;
   bottom: initial, initial;
   left: initial;
@@ -439,7 +439,7 @@ header .lang-switch {
   width: auto;
   color: #14ff97;
   background-color: #000000;
-  padding: 5px;
+  padding: 0px 5px;
 }
 header .lang-switch a {
   color: #14ff97;
@@ -705,6 +705,9 @@ article .date {
   justify-content: flex-start;
   margin-top: 20px;
   line-height: 100%;
+}
+article .date .end:before {
+  content: "\00a0" '-';
 }
 article .note {
   font-weight: bold;
