@@ -592,6 +592,12 @@ header .navigation .active a {
   text-align: center;
   margin-bottom: 20px;
 }
+.left-panel p {
+  color: blue;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
 .left-panel .share {
   width: 75%;
   margin: auto;
