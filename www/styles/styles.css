@@ -523,6 +523,13 @@ header .navigation {
   header .navigation {
     height: 21px;
     position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header .navigation span:nth-child(n+2)::before {
+    content: "";
+    display: none !important;
   }
 }
 header .navigation span:nth-child(n+2)::before {
@@ -693,6 +700,7 @@ article h1 {
   margin-top: 20px;
   line-height: 100%;
   color: blue;
+  word-wrap: break-word;
 }
 article h2 {
   text-decoration: underline;

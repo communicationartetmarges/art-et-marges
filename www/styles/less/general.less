@@ -123,9 +123,18 @@ header {
         text-transform: uppercase;
         border-top: @border;
 
+
         @media @xs {
             height: 21px;
             position: relative;
+            display: flex;
+            justify-content: space-around;;
+            align-items: center;
+
+            span:nth-child(n+2)::before {
+                content: "";
+                display: none !important;
+            }
         }
 
         span:nth-child(n+2)::before {
@@ -314,6 +323,7 @@ article {
         margin-top: @padding * 2;
         line-height: 100%;
         color: @blue;
+        word-wrap: break-word;
     }
 
     h2 {
