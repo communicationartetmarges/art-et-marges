@@ -823,7 +823,7 @@ article .image-wrapper img {
   width: auto;
 }
 article .date {
-  font-size: 30px;
+  font-size: 25px;
   text-shadow: none;
   display: flex;
   justify-content: flex-start;
@@ -835,9 +835,6 @@ article .date .end:before {
 }
 article .note {
   font-weight: bold;
-}
-article p {
-  font-weight: 200;
 }
 article .newsletter-wrapper {
   text-indent: 0px;

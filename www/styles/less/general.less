@@ -181,14 +181,7 @@ header {
     top: 0px;
     left: 0px;
 
-    @media @xs {
-        display: none;
-        // position: relative;
-        // height: auto;
-        // width: 100%;
-        // border: 0px;
-        // padding: @padding 35%;
-    }
+    @media @xs {display: none;}
 
     .logo {
         width: 75%;
@@ -224,7 +217,6 @@ header {
     display: flex;
 
     @media @xs {
-        // overflow-y: auto;
         position: relative;
         display: block;
         width: 100%;
@@ -241,8 +233,6 @@ header {
             text-transform: uppercase;
             color: #ffffff;
             border: @border;
-            // margin-top: @padding;
-            // margin-bottom: @padding;
             margin-left: -@padding - 1px;
             margin-top: @padding * 2;
             padding: 0 @padding;
@@ -328,7 +318,6 @@ article {
     }
 
     h2 {
-        // text-indent: 4 * @padding;
         text-decoration: underline;
         font-weight: bold;
         display: block;
@@ -342,7 +331,6 @@ article {
     }
 
     .image-wrapper {
-        // text-align: center;
         img {
         max-width: 100%;
         max-height: 75vh;
@@ -351,14 +339,11 @@ article {
     }
 
     .date {
-        font-size: 30px;
+        font-size: 25px;
         text-shadow: none;
         display: flex;
         justify-content: flex-start;
-        // font-size: 36px;
         margin-top: @padding * 2;
-        // // text-indent: 4 * @padding;
-        // font-weight: 200;
         line-height: 100%;
 
         .end:before {
@@ -366,15 +351,7 @@ article {
         }
     }
     .note {
-        // text-indent: 4 * @padding;
-        // font-style: italic;
         font-weight: bold;
-    }
-    p {
-        // text-indent: 4 * @padding;
-        font-weight: 200;
-        // margin: 5px 0;
-        // font-size: 95%;
     }
 
     .newsletter-wrapper {
