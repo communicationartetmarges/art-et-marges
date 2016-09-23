@@ -50,6 +50,12 @@ header {
         .active a {
             color: #ffffff;
         }
+
+        @media @xs {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
     }
 
     address {
@@ -87,30 +93,35 @@ header {
 
             @media @xs {
                 .col-12;
+                font-size: 10px;
+                margin-top : @padding;
             }
         }
+    }
 
-        // .phone, .web {
-        //     @media @xs {
-        //         margin-left : @HeaderH / 4 * 3;
-        //         width: calc(~"100% - @{HeaderH} / 4 * 3")
-        //     }
-        // }
+    .mobile-header-elements {
+        display: none; //HIDDEN BY DEFAULT
+        position: absolute;
+        width: 100px;
+        margin-left: calc(~"50vw - (100px/2)");
+        top: 0;
+        // background: red;
+        text-align: center;
 
-        .street {
-            // height: @HeaderH / 4 * 2;
+        a {border: none;}
+        p {display: none;}
+        img {height: 107px;}
 
-            // &:before{
-            // content: "";
-            // display: block;
-            // float: left;
-            // height: @HeaderH / 4 * 2;
-            // width: @HeaderH / 4 * 3;
-            // background: url('svg/belgique.svg') center no-repeat;
-            // background-size: cover;
-            // border: @padding solid transparent;
-            // }
+        .share {
+            .share-buttons;
+            position: absolute;
+            bottom: -44px;
+            right: -85px;
         }
+
+
+        @media @xs {display: block;} //WE SHOW IT ON MOBILE
+
     }
 
     .navigation {
@@ -176,11 +187,12 @@ header {
     left: 0px;
 
     @media @xs {
-        position: relative;
-        height: auto;
-        width: 100%;
-        border: 0px;
-        padding: @padding 35%;
+        display: none;
+        // position: relative;
+        // height: auto;
+        // width: 100%;
+        // border: 0px;
+        // padding: @padding 35%;
     }
 
     .logo {
@@ -202,24 +214,10 @@ header {
     }
 
     .share {
-        width: 75%;
-        margin: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        a{width: 25%;}
-        // a:last-child {margin-right: 0px;}
-
-
-        // img {width: calc(~"75% / 3 - (@{padding} + 2px) / 3");}
-        img {width: 100%;}
-
+        .share-buttons;
     }
 
-    a {
-        border: none;
-    }
+    a {border: none;}
 }
 
 .content {
