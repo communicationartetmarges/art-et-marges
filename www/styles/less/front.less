@@ -22,7 +22,7 @@
         left: 0px;
         top: auto;
         overflow: hidden;
-}
+    }
 
     .front-line {
         display: flex;
@@ -87,6 +87,24 @@
             align-items: center;
         }
     }
+
+    .logo-wrapper {
+        .inner-shadow;
+        height: initial;
+        padding: 3 * @padding @padding;
+        border: 1px solid #000;
+        border-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        img {
+            max-width: 100px;
+            max-height: 65px;
+            margin: @padding;
+        }
+    }
 }
 
 
@@ -120,11 +138,15 @@
 
 /**VIDEO STUFF**/
 
+.front-content .cell-4 {
+    height: 100%;
+}
+
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
-	height: 0;
+	height: 100%;
 }
 .videoWrapper iframe {
 	position: absolute;
