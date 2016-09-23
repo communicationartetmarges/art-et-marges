@@ -36,7 +36,7 @@ header {
     }
 
     .lang-switch {
-        .absolute(17px; @padding; initial, initial);
+        .absolute(@padding; 0; initial, initial);
         width: auto;
         color: @green;
         background-color: #000000;
@@ -52,9 +52,7 @@ header {
         }
 
         @media @xs {
-            position: absolute;
-            top: 0;
-            right: 0;
+            .absolute(0; 0; initial, initial);
         }
     }
 
@@ -63,7 +61,7 @@ header {
         .inner-shadow;
         height: calc(~"100% - @{navH} + 15px"); //15px are used to hide the top shadow
         margin-top: -15px;
-        padding-top: @padding + 15px;
+        padding-top: @padding + 12px;
         padding-left: @padding;
         display: flex;
 
@@ -101,11 +99,8 @@ header {
 
     .mobile-header-elements {
         display: none; //HIDDEN BY DEFAULT
-        position: absolute;
+        .absolute(0; initial; initial; calc(~"50vw - (100px/2)"));
         width: 100px;
-        margin-left: calc(~"50vw - (100px/2)");
-        top: 0;
-        // background: red;
         text-align: center;
 
         a {border: none;}
@@ -114,11 +109,8 @@ header {
 
         .share {
             .share-buttons;
-            position: absolute;
-            bottom: -44px;
-            right: -85px;
+            .absolute(initial; -85px; -44px; initial);
         }
-
 
         @media @xs {display: block;} //WE SHOW IT ON MOBILE
 
