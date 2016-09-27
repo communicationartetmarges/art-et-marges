@@ -751,7 +751,7 @@ header .navigation .active a {
 .content section.c8 .article .title .date section {
   display: inline;
 }
-.content section.c8 .article .title .pict img {
+.content section.c8 .article .title .image-wrapper img {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
@@ -834,6 +834,14 @@ article .caption {
 }
 article .note {
   font-weight: bold;
+  color: blue;
+}
+article .note.cooperation {
+  padding-top: 5px;
+}
+article .note.footnote {
+  padding-top: 5px;
+  font-weight: normal;
 }
 article .newsletter-wrapper {
   text-indent: 0px;
