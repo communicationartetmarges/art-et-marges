@@ -10,10 +10,6 @@
     left: @leftpanelW;
     overflow-y: auto;
 
-    &.ytp-title-text {
-        color: @blue;
-    }
-
     @media @xs {
         position: relative;
         display: block;
@@ -22,7 +18,7 @@
         left: 0px;
         top: auto;
         overflow: hidden;
-}
+    }
 
     .front-line {
         display: flex;
@@ -53,6 +49,7 @@
             }
 
             .title {
+                .text-shadow;
                 position: absolute;
                 z-index: 1;
                 text-align: center;
@@ -62,20 +59,13 @@
                     font-size: 70px;
                 }
                 .date {
-                    // font-size: 30px;
-                    // text-shadow: none;
-                    // display: flex;
                     justify-content: center;
                 }
             }
 
             .link-wrapper {
                 a {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    bottom: 0;
-                    right: 0;
+                    .absolute(0;0;0;0);
                     z-index: 1;
                 }
             }
@@ -86,6 +76,26 @@
             justify-content: center;
             align-items: center;
         }
+    }
+
+    .logo-wrapper {
+        background-color: #000;
+        height: initial;
+        padding: @padding @padding;
+        border: @border;
+        border-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        img {
+            max-width: 75px;
+            max-height: 30px;
+            margin: @padding;
+        }
+
+        @media @xs {border-left: @border;}
     }
 }
 
@@ -103,13 +113,13 @@
         @media @xs {height: 100vw;}
 
         &.cell-1{background-image: url("../medias/front/sauver_le_monde/avion.jpg")}
-        &.cell-2{background-image: url("../medias/front/multi-ordinary/Multi-ordinary-afficheWEB.jpg")}
+        &.cell-2{background-image: url("../medias/front/multi-ordinary/Multi-ordinary.jpg")}
         &.cell-3{background-image: url("../medias/front/a_vivre_au_musee/avivreaumusee-1.jpg")}
         // &.cell-4{background-image: url("../medias/front/sauver_le_monde/avion.jpg")}
 
         @media @xs {
             &.cell-1{background-image: url("../medias/front/sauver_le_monde/avion-769.jpg")}
-            &.cell-2{background-image: url("../medias/front/multi-ordinary/Multi-ordinary-afficheWEB-769.jpg")}
+            &.cell-2{background-image: url("../medias/front/multi-ordinary/Multi-ordinary.jpg")}
             &.cell-3{background-image: url("../medias/front/a_vivre_au_musee/avivreaumusee-1-769.jpg")}
             // &.cell-4{background-image: url("../medias/front/sauver_le_monde/avion.jpg")}
         }
@@ -117,16 +127,21 @@
     }
 }
 
+
+/**VIDEO STUFF**/
+
+.front-content .cell-4 {
+    height: 100%;
+}
+
 .videoWrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
-	height: 0;
+	height: 100%;
 }
 .videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
+    .absolute(0; initial; initial; 0);
 	width: 100%;
 	height: 100%;
 }

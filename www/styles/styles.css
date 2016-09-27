@@ -133,6 +133,19 @@ table {
 }
 /******** MEDIA QUERIES ********/
 /******** VARIABLES ********/
+.share-buttons {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.share-buttons a {
+  width: 25%;
+}
+.share-buttons img {
+  width: 100%;
+}
 /****BOX-SHADOW****/
 .inner-shadow {
   -webkit-box-shadow: 0 0 15px 0px #c8c8c8 -20% inset;
@@ -246,9 +259,6 @@ table {
   left: 150px;
   overflow-y: auto;
 }
-.front-content.ytp-title-text {
-  color: blue;
-}
 @media only screen and (max-width: 767px) {
   .front-content {
     position: relative;
@@ -298,6 +308,7 @@ table {
 }
 .front-content .front-line .front-cell-small .title,
 .front-content .front-line .front-cell-big .title {
+  text-shadow: 1px 0px 17px #fff, 1px 0px 17px #fff, 1px 0px 17px #fff;
   position: absolute;
   z-index: 1;
   text-align: center;
@@ -315,9 +326,9 @@ table {
 .front-content .front-line .front-cell-big .link-wrapper a {
   position: absolute;
   top: 0;
-  left: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
+  left: 0;
   z-index: 1;
 }
 .front-content .front-line .video-cell iframe {
@@ -325,6 +336,27 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.front-content .logo-wrapper {
+  background-color: #000;
+  height: initial;
+  padding: 10px 10px;
+  border: 1px solid #000;
+  border-left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.front-content .logo-wrapper img {
+  max-width: 75px;
+  max-height: 30px;
+  margin: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .front-content .logo-wrapper {
+    border-left: 1px solid #000;
+  }
 }
 /**BACKGROUND IMAGE SYSTEM**/
 .front-content article {
@@ -343,7 +375,7 @@ table {
   background-image: url("../medias/front/sauver_le_monde/avion.jpg");
 }
 .front-content article.cell-2 {
-  background-image: url("../medias/front/multi-ordinary/Multi-ordinary-afficheWEB.jpg");
+  background-image: url("../medias/front/multi-ordinary/Multi-ordinary.jpg");
 }
 .front-content article.cell-3 {
   background-image: url("../medias/front/a_vivre_au_musee/avivreaumusee-1.jpg");
@@ -353,25 +385,50 @@ table {
     background-image: url("../medias/front/sauver_le_monde/avion-769.jpg");
   }
   .front-content article.cell-2 {
-    background-image: url("../medias/front/multi-ordinary/Multi-ordinary-afficheWEB-769.jpg");
+    background-image: url("../medias/front/multi-ordinary/Multi-ordinary.jpg");
   }
   .front-content article.cell-3 {
     background-image: url("../medias/front/a_vivre_au_musee/avivreaumusee-1-769.jpg");
   }
+}
+/**VIDEO STUFF**/
+.front-content .cell-4 {
+  height: 100%;
 }
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
   /* 16:9 */
   padding-top: 25px;
-  height: 0;
+  height: 100%;
 }
 .videoWrapper iframe {
   position: absolute;
   top: 0;
+  right: initial;
+  bottom: initial;
   left: 0;
+  z-index: 1;
   width: 100%;
   height: 100%;
+}
+/**BACKGROUND IMAGE SYSTEM**/
+.info-content .background-img {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.info-content article.info-img {
+  margin: 0px !important;
+  height: 100%;
+  background: left no-repeat;
+  background-size: cover;
+  mix-blend-mode: multiply;
+  background-image: url("../medias/infos/tour-de-brol.jpg");
+}
+@media only screen and (max-width: 767px) {
+  .info-content article.info-img {
+    display: none;
+  }
 }
 body {
   font-family: 'antiqueolive';
@@ -387,6 +444,11 @@ a {
   color: blue;
   text-decoration: none;
   border-bottom: 1px solid;
+}
+ul li:before {
+  content: '•';
+  margin-right: 5px;
+  color: blue;
 }
 header {
   position: fixed;
@@ -408,14 +470,14 @@ header {
 header .lang-switch {
   position: absolute;
   top: 10px;
-  right: 0px;
+  right: 0;
   bottom: initial, initial;
   left: initial;
   z-index: 1;
   width: auto;
   color: #14ff97;
   background-color: #000000;
-  padding: 5px;
+  padding: 0px 5px;
 }
 header .lang-switch a {
   color: #14ff97;
@@ -423,6 +485,16 @@ header .lang-switch a {
 }
 header .lang-switch .active a {
   color: #ffffff;
+}
+@media only screen and (max-width: 767px) {
+  header .lang-switch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: initial, initial;
+    left: initial;
+    z-index: 1;
+  }
 }
 header address {
   background: #ffffff;
@@ -440,7 +512,8 @@ header address {
   box-shadow: 0 0 15px 0px #b4b4b4 inset;
   height: calc(100% - 25px + 15px);
   margin-top: -15px;
-  padding-top: 25px;
+  padding-top: 22px;
+  padding-left: 10px;
   display: flex;
 }
 header address a {
@@ -475,6 +548,52 @@ header address .web {
   header address .phone,
   header address .web {
     width: calc(((100% - 11 * 0px) / 12) * 12 + (11 * 0px));
+    font-size: 10px;
+    margin-top: 10px;
+  }
+}
+header .mobile-header-elements {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: initial;
+  bottom: initial;
+  left: calc(50vw - (100px/2));
+  z-index: 1;
+  width: 100px;
+  text-align: center;
+}
+header .mobile-header-elements a {
+  border: none;
+}
+header .mobile-header-elements p {
+  display: none;
+}
+header .mobile-header-elements img {
+  height: 107px;
+}
+header .mobile-header-elements .share {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: initial;
+  right: -85px;
+  bottom: -44px;
+  left: initial;
+  z-index: 1;
+}
+header .mobile-header-elements .share a {
+  width: 25%;
+}
+header .mobile-header-elements .share img {
+  width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  header .mobile-header-elements {
+    display: block;
   }
 }
 header .navigation {
@@ -493,11 +612,21 @@ header .navigation {
   text-align: center;
   text-transform: uppercase;
   border-top: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media only screen and (max-width: 767px) {
   header .navigation {
     height: 21px;
     position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header .navigation span:nth-child(n+2)::before {
+    content: "";
+    display: none !important;
   }
 }
 header .navigation span:nth-child(n+2)::before {
@@ -544,23 +673,37 @@ header .navigation .active a {
 }
 @media only screen and (max-width: 767px) {
   .left-panel {
-    position: relative;
-    height: auto;
-    width: 100%;
-    border: 0px;
-    padding: 10px 35%;
+    display: none;
   }
+}
+.left-panel .logo {
+  width: 75%;
+  margin: auto;
 }
 .left-panel .logo img {
   width: 100%;
   text-align: center;
   margin-bottom: 20px;
 }
-.left-panel .share img {
-  width: calc(100% / 3 - (10px + 2px) / 3);
+.left-panel p {
+  color: blue;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  font-size: 12px;
 }
-.left-panel .share img:nth-child(n+2) {
-  margin-left: 20px;
+.left-panel .share {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-panel .share a {
+  width: 25%;
+}
+.left-panel .share img {
+  width: 100%;
 }
 .left-panel a {
   border: none;
@@ -608,7 +751,7 @@ header .navigation .active a {
 .content section.c8 .article .title .date section {
   display: inline;
 }
-.content section.c8 .article .title .pict img {
+.content section.c8 .article .title .image-wrapper img {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
@@ -648,7 +791,6 @@ header .navigation .active a {
   }
 }
 article .title {
-  text-shadow: 1px 0px 17px #fff, 1px 0px 17px #fff, 1px 0px 17px #fff;
   color: blue;
 }
 article h1 {
@@ -657,6 +799,7 @@ article h1 {
   margin-top: 20px;
   line-height: 100%;
   color: blue;
+  word-wrap: break-word;
 }
 article h2 {
   text-decoration: underline;
@@ -670,22 +813,33 @@ article .body {
   margin-top: 5px;
 }
 article .image-wrapper img {
-  max-width: 100%;
-  max-height: 60vh;
-  width: auto;
+  width: 100%;
 }
 article .date {
-  font-size: 30px;
+  font-size: 25px;
   text-shadow: none;
   display: flex;
   justify-content: flex-start;
-  margin-top: 20px;
+  line-height: 100%;
+}
+article .date .end:before {
+  content: "\00a0" '-';
+}
+article .caption {
+  font-size: 8px;
+  display: block;
+  margin-top: -5px;
 }
 article .note {
   font-weight: bold;
+  color: blue;
 }
-article p {
-  font-weight: 200;
+article .note.cooperation {
+  padding-top: 5px;
+}
+article .note.footnote {
+  padding-top: 5px;
+  font-weight: normal;
 }
 article .newsletter-wrapper {
   text-indent: 0px;
@@ -695,7 +849,7 @@ article .newsletter-wrapper {
   margin-left: 12.5%;
 }
 .c4 h1 {
-  font-size: 30px;
+  font-size: 35px;
 }
 .c4 .date {
   font-size: 100%;
@@ -704,4 +858,12 @@ article .newsletter-wrapper {
 }
 .c8 h1 {
   font-size: 55px;
+}
+.activ h1 {
+  font-size: 35px;
+}
+.activ .date {
+  font-size: 100%;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
