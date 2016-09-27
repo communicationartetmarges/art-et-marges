@@ -858,5 +858,7 @@ article .newsletter-wrapper {
   font-size: 35px;
 }
 .activ .date {
+  font-size: 100%;
   margin-top: 0;
+  margin-bottom: 5px;
 }
