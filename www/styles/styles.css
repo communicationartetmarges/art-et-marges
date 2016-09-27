@@ -340,11 +340,9 @@ table {
   align-items: center;
 }
 .front-content .logo-wrapper {
-  -webkit-box-shadow: 0 0 15px 0px #c8c8c8 -20% inset;
-  -moz-box-shadow: 0 0 15px 0px #b4b4b4 inset;
-  box-shadow: 0 0 15px 0px #b4b4b4 inset;
+  background-color: #000;
   height: initial;
-  padding: 30px 10px;
+  padding: 10px 10px;
   border: 1px solid #000;
   border-left: 0px;
   display: flex;
@@ -353,8 +351,8 @@ table {
   flex-wrap: wrap;
 }
 .front-content .logo-wrapper img {
-  max-width: 100px;
-  max-height: 65px;
+  max-width: 75px;
+  max-height: 30px;
   margin: 10px;
 }
 @media only screen and (max-width: 767px) {
@@ -827,7 +825,6 @@ article .date {
   text-shadow: none;
   display: flex;
   justify-content: flex-start;
-  margin-top: 20px;
   line-height: 100%;
 }
 article .date .end:before {
