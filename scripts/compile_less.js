@@ -2,12 +2,14 @@
 const less = require('less'),
     path = require('path'),
     fs = require('fs');
-
+var LessPluginAutoPrefix = require('less-plugin-autoprefix'),
+        autoprefixPlugin = new LessPluginAutoPrefix({browsers: ["last 2 versions"]});
 
 const SRC_PATH = path.resolve('./www/styles/less/styles.less');
 const TARGET_PATH = path.resolve('./www/styles/styles.css');
 const LESS_OPTIONS = {
-    filename: SRC_PATH
+    filename: SRC_PATH,
+    plugins: [autoprefixPlugin] 
 };
 
 function callback (fn) {
