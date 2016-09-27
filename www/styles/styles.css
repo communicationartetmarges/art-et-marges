@@ -830,6 +830,11 @@ article .date {
 article .date .end:before {
   content: "\00a0" '-';
 }
+article .caption {
+  font-size: 8px;
+  display: block;
+  margin-top: -5px;
+}
 article .note {
   font-weight: bold;
 }
