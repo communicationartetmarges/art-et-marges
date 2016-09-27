@@ -259,9 +259,6 @@ table {
   left: 150px;
   overflow-y: auto;
 }
-.front-content.ytp-title-text {
-  color: blue;
-}
 @media only screen and (max-width: 767px) {
   .front-content {
     position: relative;
@@ -311,6 +308,7 @@ table {
 }
 .front-content .front-line .front-cell-small .title,
 .front-content .front-line .front-cell-big .title {
+  text-shadow: 1px 0px 17px #fff, 1px 0px 17px #fff, 1px 0px 17px #fff;
   position: absolute;
   z-index: 1;
   text-align: center;
@@ -793,7 +791,6 @@ header .navigation .active a {
   }
 }
 article .title {
-  text-shadow: 1px 0px 17px #fff, 1px 0px 17px #fff, 1px 0px 17px #fff;
   color: blue;
 }
 article h1 {
