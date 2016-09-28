@@ -583,7 +583,7 @@ header .mobile-header-elements .share {
   position: absolute;
   top: initial;
   right: -85px;
-  bottom: -44px;
+  bottom: 0px;
   left: initial;
   z-index: 1;
 }
@@ -592,6 +592,9 @@ header .mobile-header-elements .share a {
 }
 header .mobile-header-elements .share img {
   width: 100%;
+}
+header .mobile-header-elements .share img {
+  height: 20px;
 }
 @media only screen and (max-width: 767px) {
   header .mobile-header-elements {
