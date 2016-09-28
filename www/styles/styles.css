@@ -359,6 +359,7 @@ table {
 @media only screen and (max-width: 767px) {
   .front-content .logo-wrapper {
     border-left: 1px solid #000;
+    text-align: center;
   }
 }
 /**BACKGROUND IMAGE SYSTEM**/
