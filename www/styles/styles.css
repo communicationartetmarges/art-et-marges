@@ -586,6 +586,8 @@ header .mobile-header-elements .share {
   bottom: 0px;
   left: initial;
   z-index: 1;
+  width: 75px;
+  height: 23px;
 }
 header .mobile-header-elements .share a {
   width: 25%;
