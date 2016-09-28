@@ -574,20 +574,23 @@ header .mobile-header-elements img {
 header .mobile-header-elements .share {
   width: 75%;
   margin: auto;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-          align-items: center;
   position: absolute;
   top: initial;
   right: -85px;
   bottom: 0px;
   left: initial;
   z-index: 1;
-  width: 75px;
-  height: 23px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  align-content: center;
+  -webkit-box-align: center;
+          align-items: center;
 }
 header .mobile-header-elements .share a {
   width: 25%;
@@ -597,6 +600,10 @@ header .mobile-header-elements .share img {
 }
 header .mobile-header-elements .share img {
   height: 20px;
+  -webkit-box-flex: 0;
+          flex: 0 1 auto;
+  -webkit-align-self: auto;
+  align-self: auto;
 }
 @media only screen and (max-width: 767px) {
   header .mobile-header-elements {
