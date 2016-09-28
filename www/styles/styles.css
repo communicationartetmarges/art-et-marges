@@ -598,6 +598,9 @@ header .mobile-header-elements .share a {
 header .mobile-header-elements .share img {
   width: 100%;
 }
+header .mobile-header-elements .share a {
+  display: inline-block;
+}
 header .mobile-header-elements .share img {
   height: 20px;
   -webkit-box-flex: 0;
