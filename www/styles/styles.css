@@ -877,6 +877,10 @@ article .newsletter-wrapper {
   width: 75%;
   margin-left: 12.5%;
 }
+article .credits {
+  color: blue;
+  font-size: 10px;
+}
 .c4 h1 {
   font-size: 35px;
 }
