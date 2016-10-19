@@ -375,25 +375,7 @@ table {
     height: 100vw;
   }
 }
-.front-content article.cell-1 {
-  background-image: url("../medias/front/sauver_le_monde/avion.jpg");
-}
-.front-content article.cell-2 {
-  background-image: url("../medias/expos/mesmer.jpg");
-}
-.front-content article.cell-3 {
-  background-image: url("../medias/front/a_vivre_au_musee/avivreaumusee-1.jpg");
-}
 @media only screen and (max-width: 767px) {
-  .front-content article.cell-1 {
-    background-image: url("../medias/front/sauver_le_monde/avion-769.jpg");
-  }
-  .front-content article.cell-2 {
-    background-image: url("../medias/expos/mesmer.jpg");
-  }
-  .front-content article.cell-3 {
-    background-image: url("../medias/front/a_vivre_au_musee/avivreaumusee-1-769.jpg");
-  }
 }
 /**VIDEO STUFF**/
 .front-content .cell-4 {
@@ -834,6 +816,10 @@ article h2 {
 article .body {
   margin-top: 5px;
 }
+article .image-wrapper .image-container {
+  padding-bottom: 66%;
+  background-size: cover;
+}
 article .image-wrapper img {
   width: 100%;
 }
@@ -853,7 +839,6 @@ article .caption {
   color: blue;
   font-size: 8px;
   display: block;
-  margin-top: -5px;
 }
 article .note {
   font-weight: bold;

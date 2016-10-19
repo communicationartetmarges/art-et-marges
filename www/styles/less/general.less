@@ -337,7 +337,6 @@ header {
 
 article {
     .title {
-        // .text-shadow;
         color: @blue;
     }
 
@@ -364,10 +363,11 @@ article {
     }
 
     .image-wrapper {
+        .image-container {
+            padding-bottom: 66%; // intrinsic ratio
+            background-size: cover;
+        }
         img {
-        // max-width: 100%;
-        // max-height: 100vh;
-        // width: auto;
         width: 100%;
         }
     }
@@ -377,7 +377,6 @@ article {
         text-shadow: none;
         display: flex;
         justify-content: flex-start;
-        // margin-top: @padding * 2;
         line-height: 100%;
 
         .end:before {
@@ -389,7 +388,6 @@ article {
         color: @blue;
         font-size: 8px;
         display: block;
-        margin-top: -5px;
     }
 
     .note {
@@ -399,7 +397,6 @@ article {
         &.cooperation {padding-top: @padding / 2;}
         &.footnote {padding-top: @padding / 2; font-weight: normal;}
         &.logo img{
-            // max-width: 50px;
             max-height: 60px;
             margin: @padding;
         }
