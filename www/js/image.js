@@ -10,6 +10,10 @@
     var IMG_URL_SUFFIX = '.jpg';
     var DATA_ATTRIBUTE = 'image';
 
+    if (window.location.protocol === 'file:' ) {
+        IMG_URL_PREFIX = '../medias/images/';
+    }
+
     function attribute () {
         return 'data-' + DATA_ATTRIBUTE;
     }
