@@ -858,9 +858,10 @@ article .note.logo img {
 article .newsletter-wrapper {
   text-indent: 0px;
   margin-top: 10px;
-  height: 75px;
+  height: 100px;
   width: 75%;
   margin-left: 12.5%;
+  overflow-y: hidden;
 }
 article .credits {
   color: blue;
