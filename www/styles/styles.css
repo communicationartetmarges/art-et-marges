@@ -798,8 +798,8 @@ article .title {
   color: blue;
 }
 article h1 {
-  font-family: 'ammshrift';
-  font-size: 30px;
+  font-family: 'antiqueolive';
+  font-size: 20px;
   margin-top: 20px;
   line-height: 100%;
   color: blue;
@@ -876,7 +876,7 @@ article .credits {
   margin-bottom: 10px;
 }
 .c8 h1 {
-  font-size: 55px;
+  font-size: 45px;
 }
 .activ h1 {
   font-size: 35px;

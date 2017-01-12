@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/atelier-cartographique/art-et-marges#readme",
   "dependencies": {
-    "less": "^2.7.1"
+    "less": "^2.7.1",
+    "less-plugin-autoprefix": "^1.5.1"
   }
 }
