@@ -149,6 +149,9 @@ table {
 .share-buttons img {
   width: 100%;
 }
+.tmp-site {
+  margin-top: 26px;
+}
 /****BOX-SHADOW****/
 .inner-shadow {
   box-shadow: 0 0 15px 0px #b4b4b4 inset;
@@ -314,6 +317,7 @@ table {
 }
 .front-content .front-line .front-cell-small .title h1,
 .front-content .front-line .front-cell-big .title h1 {
+  font-family: 'ammshrift';
   font-size: 70px;
 }
 .front-content .front-line .front-cell-small .title .date,
