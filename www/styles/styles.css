@@ -299,6 +299,22 @@ table {
   border-left: 0px;
   border-bottom: 0px;
 }
+.front-content .front-line .front-cell-small .label,
+.front-content .front-line .front-cell-big .label {
+  display: inline-block;
+  background-color: red;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid #000;
+  margin-left: -11px;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+.front-content .front-line .front-cell-small .label:first-child,
+.front-content .front-line .front-cell-big .label:first-child {
+  margin-top: 0;
+}
 @media only screen and (max-width: 767px) {
   .front-content .front-line .front-cell-small,
   .front-content .front-line .front-cell-big {

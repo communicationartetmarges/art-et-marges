@@ -35,6 +35,23 @@
 
         .front-cell-small,
         .front-cell-big {
+
+            .label {
+                display: inline-block;
+                background-color: red;
+                text-align: center;
+                text-transform: uppercase;
+                color: #ffffff;
+                border: @border;
+                margin-left: -@padding - 1px;
+                margin-top: @padding * 2;
+                padding: 0 @padding;
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+
             .inner-shadow;
             overflow-y: hidden;
             box-sizing: border-box;
