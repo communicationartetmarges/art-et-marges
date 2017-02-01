@@ -817,6 +817,9 @@ header .navigation .active a {
 article .title {
   color: blue;
 }
+article .title.infos h1 {
+  font-size: 30px;
+}
 article h1 {
   font-family: 'antiqueolive';
   font-size: 20px;
