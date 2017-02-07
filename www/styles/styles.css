@@ -152,6 +152,9 @@ table {
 .tmp-site {
   margin-top: 26px;
 }
+.tmp-site p {
+  padding-bottom: 18px;
+}
 /****BOX-SHADOW****/
 .inner-shadow {
   box-shadow: 0 0 15px 0px #b4b4b4 inset;
