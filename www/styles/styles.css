@@ -449,10 +449,20 @@ body {
   height: 100%;
   width: 100%;
 }
+strong {
+  font-weight: bold;
+  color: blue;
+}
 a {
   color: blue;
   text-decoration: none;
   border-bottom: 1px solid;
+}
+a:hover {
+  cursor: pointer;
+}
+ul li {
+  padding-top: 3px;
 }
 ul li:before {
   content: '•';
@@ -754,6 +764,9 @@ header .navigation .active a {
     top: auto;
   }
 }
+.content p {
+  padding: 4px 0px;
+}
 .content section .label {
   display: inline-block;
   background-color: red;
@@ -791,7 +804,7 @@ header .navigation .active a {
 .content section.c4 {
   width: calc(((100% - 11 * 0px) / 12) * 4 + (3 * 0px));
 }
-.content section.c4 .article .title .pict img {
+.content section.c4 article .title .pict img {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
@@ -810,11 +823,20 @@ header .navigation .active a {
   padding: 10px;
   padding-bottom: 20px;
 }
+.content section.c4 article,
+.content section.c8 article {
+  padding: 20px;
+  padding-top: 0px;
+}
 @media only screen and (max-width: 767px) {
   .content section.c4,
   .content section.c8 {
     height: auto;
     border-left: 1px solid #000;
+  }
+  .content section.c4 article,
+  .content section.c8 article {
+    padding: 0px;
   }
 }
 article .title {
@@ -827,6 +849,7 @@ article h1 {
   font-family: 'antiqueolive';
   font-size: 20px;
   margin-top: 20px;
+  margin-bottom: 10px;
   line-height: 100%;
   color: blue;
   word-wrap: break-word;
