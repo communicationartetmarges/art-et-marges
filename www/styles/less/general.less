@@ -365,7 +365,7 @@ article {
 
     h1 {
         font-family: @baseFontFamilly;
-        font-size: 20px;
+        font-size: @small-title;
         margin-top: @padding * 2;
         margin-bottom: @padding;
         line-height: 100%;
@@ -374,12 +374,16 @@ article {
     }
 
     h2 {
+        font-family: @baseFontFamilly;
+        font-size: 20px;
+        line-height: normal;
         text-decoration: underline;
         font-weight: bold;
-        display: block;
+        // display: block;
+        color: @blue;
         float: none;
         clear: both;
-        margin-top: @padding 0;
+        margin: @padding 0;
     }
 
     .body {
@@ -444,7 +448,6 @@ article {
 //OVERRIDES
 
 .c4 {
-    h1 { font-size: @small-title;}
     .date {
         font-size: 100%;
         margin-top: 0;
@@ -452,12 +455,12 @@ article {
     }
 }
 
-.c8 {
-    h1 { font-size: 45px}
-}
+// .c8 {
+//     h1 { font-size: 45px}
+// }
 
 .activ {
-    h1 {font-size: @small-title;}
+    // h1 {font-size: @small-title;}
     .date {
         font-size: 100%;
         margin-top: 0;

@@ -847,7 +847,7 @@ article .title.infos h1 {
 }
 article h1 {
   font-family: 'antiqueolive';
-  font-size: 20px;
+  font-size: 35px;
   margin-top: 20px;
   margin-bottom: 10px;
   line-height: 100%;
@@ -855,12 +855,15 @@ article h1 {
   word-wrap: break-word;
 }
 article h2 {
+  font-family: 'antiqueolive';
+  font-size: 20px;
+  line-height: normal;
   text-decoration: underline;
   font-weight: bold;
-  display: block;
+  color: blue;
   float: none;
   clear: both;
-  margin-top: 10px 0;
+  margin: 10px 0;
 }
 article .body {
   margin-top: 5px;
@@ -916,19 +919,10 @@ article .credits {
   color: blue;
   font-size: 10px;
 }
-.c4 h1 {
-  font-size: 35px;
-}
 .c4 .date {
   font-size: 100%;
   margin-top: 0;
   margin-bottom: 10px;
-}
-.c8 h1 {
-  font-size: 45px;
-}
-.activ h1 {
-  font-size: 35px;
 }
 .activ .date {
   font-size: 100%;
