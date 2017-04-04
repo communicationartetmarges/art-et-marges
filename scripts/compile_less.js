@@ -2,8 +2,8 @@
 const less = require('less'),
     path = require('path'),
     fs = require('fs');
-var LessPluginAutoPrefix = require('less-plugin-autoprefix'),
-        autoprefixPlugin = new LessPluginAutoPrefix({browsers: ["> 5%"]});
+const LessPluginAutoPrefix = require('less-plugin-autoprefix'),
+    autoprefixPlugin = new LessPluginAutoPrefix({ browsers: ["> 5%"] });
 
 const SRC_PATH = path.resolve('./www/styles/less/styles.less');
 const TARGET_PATH = path.resolve('./www/styles/styles.css');
@@ -12,7 +12,7 @@ const LESS_OPTIONS = {
     plugins: [autoprefixPlugin]
 };
 
-function callback (fn) {
+function callback(fn) {
     return function (err, data) {
         if (err) {
             throw err;
@@ -21,11 +21,11 @@ function callback (fn) {
     };
 }
 
-function error (err) {
+function error(err) {
     console.error(err);
 }
 
-function writeCSS (css) {
+function writeCSS(css) {
     fs.writeFile(TARGET_PATH, css, callback(data => {
         console.log('OK');
     }));
@@ -33,13 +33,13 @@ function writeCSS (css) {
 
 
 
-function compile_less () {
+function compile_less() {
     fs.readFile(SRC_PATH, callback(data => {
         less.render(data.toString('utf8'), LESS_OPTIONS)
             .then(out => {
                 writeCSS(out.css);
             }, error);
-        })
+    })
     );
 }
 
