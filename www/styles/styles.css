@@ -929,3 +929,25 @@ article .credits {
   margin-top: 0;
   margin-bottom: 5px;
 }
+.history-item-year {
+  color: blue;
+}
+.collection-item {
+  display: -webkit-box;
+  display: flex;
+  margin-bottom: 10px;
+}
+.collection-item .image-wrapper {
+  -webkit-box-flex: 1;
+          flex: 1;
+  margin-right: 10px;
+}
+.collection-item .artist-infos {
+  -webkit-box-flex: 3;
+          flex: 3;
+  color: blue;
+}
+.collection-item .artist-infos .name {
+  font-size: 150%;
+  font-weight: bold;
+}
