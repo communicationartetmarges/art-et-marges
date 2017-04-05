@@ -448,6 +448,7 @@ body {
   height: 100%;
   width: 100%;
 }
+.bold,
 strong {
   font-weight: bold;
   color: blue;
