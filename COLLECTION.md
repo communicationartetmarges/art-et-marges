@@ -27,4 +27,5 @@ www/templates/fr-collection-10artistes-06042017.csv \
 www/templates/fiche-artiste.html\
 www/collection/fr\
 www/templates/link-artiste.html\
-/collection/fr```
+/collection/fr
+```
