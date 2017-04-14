@@ -23,9 +23,9 @@ le script Python ```www/collection/gen.py``` génère les fiches et imprime à l
 exemple:
 ```
 ./www/collection/gen.py\
-www/templates/fr-collection-10artistes-06042017.csv \
-www/templates/fiche-artiste.html\
+templates/fr-collection-10artistes-06042017.csv \
+templates/fiche-artiste.html\
 www/collection/fr\
-www/templates/link-artiste.html\
+templates/link-artiste.html\
 /collection/fr
 ```
