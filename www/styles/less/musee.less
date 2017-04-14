@@ -4,18 +4,24 @@
 
 .collection-item {
     display: flex;
+    align-items: center;
     margin-bottom: @padding;
     .image-wrapper {
         flex: 1;
         margin-right: @padding;
+        .image-container {padding-bottom: 100%;}
         }
     .artist-infos {
         flex: 3;
         color:@blue;
 
-        & .name {
-            font-size: 150%;
+        .name {
+            font-size: 120%;
+            line-height: 110%;
             font-weight: bold;
+        }
+        .dates {
+            font-size: 100%;
         }
     }
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Expositions</title>
+    <title>${NOM} - art et marges</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -97,9 +97,10 @@
         </section>
 
         <section class="navigation">
-            <span><a href="../fr/info.html">INFORMATIONS</a></span>
-            <span class="active"><a href="../fr/expo.html">EXPOSITIONS</a></span>
-            <span><a href="../fr/activ.html">ACTIVITÉS</a></span>
+            <span><a href="/fr/musee.html">LE MUSÉE</a></span>
+            <span><a href="/fr/info.html">INFORMATIONS</a></span>
+            <span><a href="/fr/expo.html">EXPOSITIONS</a></span>
+            <span><a href="/fr/activ.html">ACTIVITÉS</a></span>
         </section>
     </header>
 
@@ -109,9 +110,8 @@
         <!-- COLONNE GAUCHE / IMAGE-->
         <section class="c8">
             <!-- IMAGE -->
-            <section class="image-wrapper">
-                <div class="image-container" data-image="empty"></div>
-                <span class="caption">Bientôt une image pleine page</span>
+            <section class="image-wrapper artist-view">
+                <div class="image-container" data-image="collection/source/${IMAGE}"></div>
             </section>
         </section>
 
@@ -120,21 +120,14 @@
 
             <article class="article">
                 <section class="title">
-                    <h1>Paul Duhem</h1>
+                    <h1>${NOM}</h1>
                     <section class="date">
-                        <p>1919 - 1999, Belgique</p>
+                        <p>${DATES}</p>
                     </section>
                 </section>
 
                 <section class="body">
-                    <p>Après un chemin de vie sinueux, Paul Duhem commence à créer à l’âge de 70 ans au sein de l’atelier peinture
-                        du Centre La Pommeraie. C’est alors pour lui une deuxième naissance, une deuxième vie, qui durera
-                        10 ans.</p>
-
-                    <p>Une géométrisation des formes, une économie de moyens et une dimension sérielle marquent rapidement sa
-                        production. Sans nous lasser, Duhem reproduit le même schéma de construction de ses portraits. Ses
-                        personnages sont les faux jumeaux de l’imaginaire. La tête broyée dans les épaules, les oreilles
-                        décollées, le mental encadré. Ces soldats uniques sont les légionnaires d’un monde clos.</p>
+                    ${BIOGRAPHIE}
                 </section>
             </article>
 
@@ -143,7 +136,7 @@
     </section>
 
 
-    <script src="../js/image.js" charset="utf-8"></script>
+    <script src="/js/image.js" charset="utf-8"></script>
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
         window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;

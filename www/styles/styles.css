@@ -650,7 +650,6 @@ header .navigation {
 }
 @media only screen and (max-width: 767px) {
   header .navigation {
-    height: 21px;
     position: relative;
     display: -webkit-box;
     display: flex;
@@ -933,6 +932,8 @@ article .credits {
 .collection-item {
   display: -webkit-box;
   display: flex;
+  -webkit-box-align: center;
+          align-items: center;
   margin-bottom: 10px;
 }
 .collection-item .image-wrapper {
@@ -940,12 +941,30 @@ article .credits {
           flex: 1;
   margin-right: 10px;
 }
+.collection-item .image-wrapper .image-container {
+  padding-bottom: 100%;
+}
 .collection-item .artist-infos {
   -webkit-box-flex: 3;
           flex: 3;
   color: blue;
 }
 .collection-item .artist-infos .name {
-  font-size: 150%;
+  font-size: 120%;
+  line-height: 110%;
   font-weight: bold;
+}
+.collection-item .artist-infos .dates {
+  font-size: 100%;
+}
+.artist-view .image-container {
+  position: relative;
+  height: calc(100vh - 75px - 2 * 18px);
+  background: center no-repeat;
+  background-size: contain;
+}
+@media only screen and (max-width: 767px) {
+  .artist-view .image-container {
+    height: 100vw;
+  }
 }
