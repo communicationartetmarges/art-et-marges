@@ -929,33 +929,44 @@ article .credits {
 .history-item-year {
   color: blue;
 }
+.collection {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+          align-items: center;
+}
 .collection-item {
+  margin: 10px;
+  width: 45%;
+}
+.collection-item a {
+  border: 0px;
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
           align-items: center;
-  margin-bottom: 10px;
+}
+.collection-item a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: blue;
+          text-decoration-color: blue;
 }
 .collection-item .image-wrapper {
-  -webkit-box-flex: 1;
-          flex: 1;
   margin-right: 10px;
+  width: 100px;
 }
 .collection-item .image-wrapper .image-container {
   padding-bottom: 100%;
 }
 .collection-item .artist-infos {
-  -webkit-box-flex: 3;
-          flex: 3;
   color: blue;
 }
-.collection-item .artist-infos .name {
+.collection-item .artist-infos .first-name,
+.collection-item .artist-infos .family-name {
   font-size: 120%;
   line-height: 110%;
   font-weight: bold;
-}
-.collection-item .artist-infos .dates {
-  font-size: 100%;
 }
 .artist-view .image-container {
   position: relative;

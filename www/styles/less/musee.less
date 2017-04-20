@@ -2,26 +2,38 @@
     color: @blue;
 }
 
-.collection-item {
+.collection {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    margin-bottom: @padding;
+}
+
+.collection-item {
+    margin: @padding;
+    width: 45%;
+    a {
+        border: 0px;
+        display: flex;
+        align-items: center;
+
+        &:hover {text-decoration: underline; text-decoration-color: @blue;}
+    }
+
     .image-wrapper {
-        flex: 1;
+        // flex: 1;
         margin-right: @padding;
+        width: 100px;
+
         .image-container {padding-bottom: 100%;}
         }
     .artist-infos {
-        flex: 3;
+        // flex: 3;
         color:@blue;
 
-        .name {
+        .first-name, .family-name{
             font-size: 120%;
             line-height: 110%;
             font-weight: bold;
-        }
-        .dates {
-            font-size: 100%;
         }
     }
 }

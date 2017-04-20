@@ -34,7 +34,7 @@ def main():
         r = csv.DictReader(f)
 
         for row in r:
-            slug = slugify(row['NOM'])
+            slug = slugify(row['PRENOM'] + '-' + row['NOM'])
 
             paragraphs = '\n'.join(
             ['<p>{}</p>'.format(p) for p in row['BIOGRAPHIE'].split('\n')])
