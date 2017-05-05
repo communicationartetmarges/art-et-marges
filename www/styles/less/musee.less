@@ -6,34 +6,33 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
 }
 
 .collection-item {
-    margin: @padding;
-    width: 45%;
+    padding: @padding;
+    width: 33%;
     a {
         border: 0px;
-        display: flex;
+        // display: flex;
         align-items: center;
 
         &:hover {text-decoration: underline; text-decoration-color: @blue;}
     }
 
     .image-wrapper {
-        // flex: 1;
-        margin-right: @padding;
-        width: 100px;
+        // margin-right: @padding;
+        // width: 100px;
 
         .image-container {padding-bottom: 100%;}
         }
     .artist-infos {
-        // flex: 3;
         color:@blue;
 
         .first-name, .family-name{
-            font-size: 120%;
-            line-height: 110%;
-            font-weight: bold;
+            // font-size: 100%;
+            // line-height: 110%;
+            // font-weight: bold;
         }
     }
 }
