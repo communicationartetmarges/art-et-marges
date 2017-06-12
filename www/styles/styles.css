@@ -434,6 +434,19 @@ table {
     display: none;
   }
 }
+.info-content .newsletter-mobile {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .info-content .newsletter-mobile {
+    display: block;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .info-content .newsletter-desktop {
+    display: none;
+  }
+}
 body {
   font-family: 'antiqueolive';
   font-weight: normal;
@@ -737,6 +750,7 @@ header .navigation .active a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
 }
 .left-panel .share a {
   width: 25%;
