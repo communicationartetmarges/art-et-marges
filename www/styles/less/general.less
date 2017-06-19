@@ -177,12 +177,18 @@ header {
             // height: 21px;
             position: relative;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;;
             align-items: center;
+            height: auto;
 
             span:nth-child(n+2)::before {
                 content: "";
                 display: none !important;
+            }
+
+            span {
+                margin: 5px;
             }
         }
 

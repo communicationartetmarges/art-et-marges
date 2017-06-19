@@ -673,12 +673,17 @@ header .navigation {
   header .navigation {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    height: auto;
   }
   header .navigation span:nth-child(n+2)::before {
     content: "";
     display: none !important;
+  }
+  header .navigation span {
+    margin: 3px 5px;
   }
 }
 header .navigation span:nth-child(n+2)::before {
