@@ -141,7 +141,7 @@ table {
   align-items: center;
 }
 .share-buttons a {
-  width: 25%;
+  width: 20%;
 }
 .share-buttons img {
   width: 100%;
@@ -627,7 +627,7 @@ header .mobile-header-elements .share {
   align-items: center;
 }
 header .mobile-header-elements .share a {
-  width: 25%;
+  width: 20%;
 }
 header .mobile-header-elements .share img {
   width: 100%;
@@ -683,7 +683,7 @@ header .navigation {
     display: none !important;
   }
   header .navigation span {
-    margin: 3px 5px;
+    margin: 5px;
   }
 }
 header .navigation span:nth-child(n+2)::before {
@@ -758,7 +758,7 @@ header .navigation .active a {
   margin-bottom: 30px;
 }
 .left-panel .share a {
-  width: 25%;
+  width: 20%;
 }
 .left-panel .share img {
   width: 100%;
