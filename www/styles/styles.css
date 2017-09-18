@@ -342,6 +342,7 @@ table {
 }
 .front-content .front-line .front-cell-small .title .date,
 .front-content .front-line .front-cell-big .title .date {
+  text-shadow: 1px 0px 17px #fff, 1px 0px 17px #fff, 1px 0px 17px #fff;
   justify-content: center;
 }
 .front-content .front-line .front-cell-small .link-wrapper a,
