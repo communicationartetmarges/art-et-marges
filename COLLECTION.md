@@ -29,3 +29,15 @@ www/collection/fr\
 templates/link-artiste.html\
 /collection/fr
 ```
+
+#### extra
+
+- Ajouter ```| pbcopy``` pour copier le resultat dans le press papier
+- pour générer les vignette avec ImageMagick depuis la racine du dépot, utiliser : 
+```
+mogrify -path www/medias/images/collection/thumbnails/ \ 
+-resize 400x400^ \
+-gravity Center \
+-extent 400x400 \
+www/medias/images/collection/source/*
+``` 
