@@ -1,0 +1,23 @@
+
+.header {
+    height: @headerH;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: @margin;
+
+    .c8 {.col-8;}
+    .c4 {.col-4;}
+
+    > div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    img {
+        height: @headerInnerH ;
+    }
+
+    a {text-decoration: none;}
+    .active {text-decoration: underline;}
+}

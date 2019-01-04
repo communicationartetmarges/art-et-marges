@@ -1,0 +1,28 @@
+/**BACKGROUND IMAGE SYSTEM**/
+
+.info-content {
+    .background-img {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+    & article {
+        &.info-img {
+            margin: 0px !important;
+            height: 100%;
+            background: left no-repeat;
+            background-size: cover;
+            mix-blend-mode: multiply;
+            background-image:url("../medias/images/tour-de-brol.jpg");
+
+            @media @xs {display: none;}
+        }
+    }
+
+    .newsletter-mobile {
+        display: none;
+        @media @xs {display: block;}
+    }
+    .newsletter-desktop {
+        @media @xs {display: none;}
+    }
+}

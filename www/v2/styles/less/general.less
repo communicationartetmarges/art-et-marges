@@ -1,0 +1,69 @@
+
+body {
+    .font(@line-height: 130%;);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: @baseFontFamilly;
+    font-size: @baseFontSize * 3;
+    font-weight: normal;
+    margin-top: @margin * 2;
+    margin-bottom: 0;
+    line-height: 100%;
+    word-wrap: break-word;
+}
+
+a {
+    color: #000;
+    cursor: pointer !important;
+}
+
+ul li {
+    padding-top: 3px;
+
+    &:before {
+        content: '•';
+        margin-right: 5px;
+        // color: blue;
+    }
+}
+
+
+
+.bold, strong {
+    color: @blue;
+}
+
+
+// SCROLLBAR
+
+// will apply for browsers supporting scrollbar css specs (Firefox >= 64 as of now)
+* {
+    scrollbar-width: thin;
+    scrollbar-color: blue white; 
+}
+
+// will apply for webkit based browsers 
+ /* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: blue;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: blue;
+} 
