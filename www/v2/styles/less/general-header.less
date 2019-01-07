@@ -2,9 +2,11 @@
 .header {
     height: @headerH;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: @margin;
+    background: #fff;
 
     .c8 {.col-8;}
     .c4 {.col-4;}
@@ -20,4 +22,19 @@
 
     a {text-decoration: none;}
     .active {text-decoration: underline;}
+}
+
+.sub-header-expo {
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .c8 {.col-8;}
+    .c4 {.col-4;}
+
+    .c4 {padding-left: @margin}
+
+    @media @xs {
+        display: none;
+    }
 }

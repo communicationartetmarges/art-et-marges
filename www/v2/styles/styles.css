@@ -428,11 +428,13 @@ strong {
   background: blue;
 }
 .header {
-  height: calc(@{@headerInnerH} + 10px * 2);
+  height: calc(1.5rem + 10px * 2);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  background: #fff;
 }
 .header .c8 {
   width: calc(((100% - 11 * 0px) / 12) * 8 + (7 * 0px));
@@ -453,10 +455,29 @@ strong {
 .header .active {
   text-decoration: underline;
 }
+.sub-header-expo {
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.sub-header-expo .c8 {
+  width: calc(((100% - 11 * 0px) / 12) * 8 + (7 * 0px));
+}
+.sub-header-expo .c4 {
+  width: calc(((100% - 11 * 0px) / 12) * 4 + (3 * 0px));
+}
+.sub-header-expo .c4 {
+  padding-left: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .sub-header-expo {
+    display: none;
+  }
+}
 .content {
   height: calc(100vh - (1.5rem + 10px * 2));
   position: fixed;
-  top: calc(@{@headerInnerH} + 10px * 2);
+  top: calc(1.5rem + 10px * 2);
   display: flex;
 }
 @media only screen and (max-width: 767px) {
@@ -467,18 +488,6 @@ strong {
     left: 0px;
     top: auto;
   }
-}
-.content section .label {
-  display: inline-block;
-  text-align: center;
-  text-transform: uppercase;
-  border: 1px solid #000;
-  margin-left: -11px;
-  margin-top: 20px;
-  padding: 0 10px;
-}
-.content section .label:first-child {
-  margin-top: 0;
 }
 .content section.c8 {
   width: calc(((100% - 11 * 0px) / 12) * 8 + (7 * 0px));
@@ -526,8 +535,24 @@ strong {
     padding: 0px;
   }
 }
+.body-doubleHeader .content {
+  height: calc(100vh - (1.5rem + 10px * 2) - 1.5rem);
+  top: calc((1.5rem + 10px * 2) + 1.5rem);
+}
+.body-doubleHeader .content section.c4,
+.body-doubleHeader .content section.c8 {
+  padding-top: 0;
+}
+.body-doubleHeader .content .mobile-label {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .body-doubleHeader .content .mobile-label {
+    display: block;
+  }
+}
 article {
-  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 article .image-wrapper .image-container {
   padding-bottom: 66%;
@@ -602,7 +627,7 @@ article .caption {
 }
 .artist-view .image-container {
   position: relative;
-  height: calc(100vh - calc(@{@headerInnerH} + 10px * 2) - 2 * 10px);
+  height: calc(100vh - calc(1.5rem + 10px * 2) - 2 * 10px);
   background: center no-repeat;
   background-size: contain;
 }

@@ -15,23 +15,6 @@
 
     section{
 
-        .label {
-            display: inline-block;
-            // background-color: red;
-            text-align: center;
-            text-transform: uppercase;
-            // color: #ffffff;
-            border: @border;
-            margin-left: -@margin - 1px;
-            margin-top: @margin * 2;
-            padding: 0 @margin;
-
-            &:first-child {
-                margin-top: 0;
-            }
-        }
-
-
         &.c8 {
             .col-8;
             .article {
@@ -81,6 +64,23 @@
             }
         }
     }
+}
 
+.body-doubleHeader .content {
+    height: calc(~"100vh - (@{headerInnerH} + @{margin} * 2) - 1.5rem");
+    top: calc(~"(@{headerInnerH} + @{margin} * 2) + 1.5rem") ;
 
+    section {
+        &.c4, &.c8 {
+            padding-top: 0;
+        }
+    }
+
+    .mobile-label {
+        display: none;
+
+        @media @xs {
+            display: block;
+        }
+    }
 }
