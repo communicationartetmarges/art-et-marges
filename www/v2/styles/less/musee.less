@@ -7,16 +7,20 @@
 }
 
 .collection-item {
-    padding: @margin;
-    width: 33%;
+    padding-bottom: @margin;
+    width: calc(~"(100% - 2 * @{margin}) / 3");
     a {
         border: 0px;
         align-items: center;
+        text-decoration: none;
 
         &:hover {text-decoration: underline;}
     }
 
     .image-wrapper {
         .image-container {padding-bottom: 100%;}
-        }
+    }
+    .family-name {
+        margin: 0;
+    }
 }

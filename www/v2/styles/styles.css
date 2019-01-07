@@ -399,10 +399,6 @@ a {
 ul li {
   padding-top: 3px;
 }
-ul li:before {
-  content: '•';
-  margin-right: 5px;
-}
 .bold,
 strong {
   color: blue;
@@ -605,6 +601,15 @@ article .caption {
     display: none;
   }
 }
+.col-infos {
+  background: #00ba86;
+}
+.col-contact {
+  background: #ffcab3;
+}
+.col-soutien {
+  background: #b0baff;
+}
 .collection {
   display: flex;
   flex-wrap: wrap;
@@ -612,12 +617,13 @@ article .caption {
   justify-content: space-between;
 }
 .collection-item {
-  padding: 10px;
-  width: 33%;
+  padding-bottom: 10px;
+  width: calc((100% - 2 * 10px) / 3);
 }
 .collection-item a {
   border: 0px;
   align-items: center;
+  text-decoration: none;
 }
 .collection-item a:hover {
   text-decoration: underline;
@@ -625,11 +631,15 @@ article .caption {
 .collection-item .image-wrapper .image-container {
   padding-bottom: 100%;
 }
+.collection-item .family-name {
+  margin: 0;
+}
 .artist-view .image-container {
   position: relative;
   height: calc(100vh - calc(1.5rem + 10px * 2) - 2 * 10px);
   background: center no-repeat;
   background-size: contain;
+  background-color: pink;
 }
 @media only screen and (max-width: 767px) {
   .artist-view .image-container {
