@@ -4,6 +4,7 @@
     position: fixed;
     top: @headerH;
     display: flex;
+    flex-wrap: wrap;
 
     @media @xs {
         position: relative;
@@ -30,21 +31,13 @@
         }
         img {width: 100%;}
     }
-}
 
-.body-doubleHeader .content {
-    height: calc(~"100vh - (@{headerInnerH} + @{margin} * 2) - 1.5rem");
-    top: calc(~"(@{headerInnerH} + @{margin} * 2) + 1.5rem") ;
-
-    .c4, .c8 {
-        padding-top: 0;
-    }
-
-    .mobile-label {
-        display: none;
-
-        @media @xs {
-            display: block;
-        }
+    .label {
+        position: sticky;
+        top: 0px;
+        height: 1.5rem;
+        background:#fff;;
     }
 }
+
+

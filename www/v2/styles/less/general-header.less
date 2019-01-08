@@ -24,7 +24,30 @@
     .active {text-decoration: underline;}
 }
 
-.sub-header-expo {
+@media @xs {
+    .header {
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        justify-content: baseline;
+
+        > div {
+            flex-direction: column;
+
+            .lang-switch {
+                .absolute(@margin, @margin, auto, auto);
+            }
+        }
+    }
+
+    .sub-header {
+        display: none !important;
+    }
+}
+
+
+
+.sub-header {
     width: 100%;
     align-items: center;
     flex-wrap: wrap;
@@ -33,8 +56,4 @@
     .c4 {.col-4;}
 
     .c4 {padding-left: @margin}
-
-    @media @xs {
-        display: none;
-    }
 }
