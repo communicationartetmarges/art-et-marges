@@ -590,18 +590,8 @@ strong {
     display: none;
   }
 }
-.info-content .newsletter-mobile {
-  display: none;
-}
-@media only screen and (max-width: 767px) {
-  .info-content .newsletter-mobile {
-    display: block;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .info-content .newsletter-desktop {
-    display: none;
-  }
+.info-content .newsletter {
+  background-color: transparent;
 }
 .col-infos {
   background: #00ba86;
