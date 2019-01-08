@@ -13,56 +13,22 @@
         top: auto;
     }
 
-    section{
+    .c8 {.col-8;}
+    .c4 {.col-4;}
 
-        &.c8 {
-            .col-8;
-            .article {
-                .title {
-                    .date {
-                        text-indent: 0;
-                        section {
-                            display: inline;
-                        }
-                    }
-                    .image-wrapper {
-                        img {
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-            @media @xs {.col-12;}
+    .c4, .c8 {
+        overflow-y: auto;
+        height: 100%;
+        padding: @margin;
+        padding-right: @margin / 2;
+        padding-bottom: 2 * @margin;
+
+        @media @xs {
+            .col-12;
+            height: auto;
+            .article {padding: 0px;}
         }
-
-        &.c4 {
-            .col-4;
-            article {
-                .title {
-                    .pict {
-                        img {
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-            @media @xs {
-                .col-12;
-            }
-        }
-
-        &.c4, &.c8 {
-            overflow-y: auto;
-            height: 100%;
-            padding: @margin;
-            padding-right: @margin / 2;
-            padding-bottom: 2 * @margin;
-
-            @media @xs {
-                height: auto;
-                article {padding: 0px;}
-            }
-        }
+        img {width: 100%;}
     }
 }
 
@@ -70,10 +36,8 @@
     height: calc(~"100vh - (@{headerInnerH} + @{margin} * 2) - 1.5rem");
     top: calc(~"(@{headerInnerH} + @{margin} * 2) + 1.5rem") ;
 
-    section {
-        &.c4, &.c8 {
-            padding-top: 0;
-        }
+    .c4, .c8 {
+        padding-top: 0;
     }
 
     .mobile-label {

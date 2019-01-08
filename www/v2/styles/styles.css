@@ -485,36 +485,30 @@ strong {
     top: auto;
   }
 }
-.content section.c8 {
+.content .c8 {
   width: calc(((100% - 11 * 0px) / 12) * 8 + (7 * 0px));
 }
-.content section.c8 .article .title .date {
-  text-indent: 0;
-}
-.content section.c8 .article .title .date section {
-  display: inline;
-}
-.content section.c8 .article .title .image-wrapper img {
+.content .c8 img {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  .content section.c8 {
+  .content .c8 {
     width: calc(((100% - 11 * 0px) / 12) * 12 + (11 * 0px));
   }
 }
-.content section.c4 {
+.content .c4 {
   width: calc(((100% - 11 * 0px) / 12) * 4 + (3 * 0px));
 }
-.content section.c4 article .title .pict img {
+.content .c4 img {
   width: 100%;
 }
 @media only screen and (max-width: 767px) {
-  .content section.c4 {
+  .content .c4 {
     width: calc(((100% - 11 * 0px) / 12) * 12 + (11 * 0px));
   }
 }
-.content section.c4,
-.content section.c8 {
+.content .c4,
+.content .c8 {
   overflow-y: auto;
   height: 100%;
   padding: 10px;
@@ -522,12 +516,12 @@ strong {
   padding-bottom: 20px;
 }
 @media only screen and (max-width: 767px) {
-  .content section.c4,
-  .content section.c8 {
+  .content .c4,
+  .content .c8 {
     height: auto;
   }
-  .content section.c4 article,
-  .content section.c8 article {
+  .content .c4 .article,
+  .content .c8 .article {
     padding: 0px;
   }
 }
@@ -535,8 +529,8 @@ strong {
   height: calc(100vh - (1.5rem + 10px * 2) - 1.5rem);
   top: calc((1.5rem + 10px * 2) + 1.5rem);
 }
-.body-doubleHeader .content section.c4,
-.body-doubleHeader .content section.c8 {
+.body-doubleHeader .content .c4,
+.body-doubleHeader .content .c8 {
   padding-top: 0;
 }
 .body-doubleHeader .content .mobile-label {
@@ -547,26 +541,26 @@ strong {
     display: block;
   }
 }
-article {
+.article {
   margin-bottom: 1rem;
 }
-article .image-wrapper .image-container {
+.article .image-wrapper .image-container {
   padding-bottom: 66%;
   background-size: cover;
   background-color: pink;
 }
-article .image-wrapper img {
+.article .image-wrapper img {
   width: 100%;
 }
-article .date {
+.article .date {
   display: flex;
   justify-content: flex-start;
   line-height: 100%;
 }
-article .date .end:before {
+.article .date .end:before {
   content: "\00a0" '—';
 }
-article .caption {
+.article .caption {
   font-size: 8px;
   display: block;
 }
@@ -575,7 +569,7 @@ article .caption {
   padding: 0px !important;
   margin: 0px !important;
 }
-.info-content article.info-img {
+.info-content .article.info-img {
   margin: 0px !important;
   height: 100%;
   background: left no-repeat;
@@ -584,7 +578,7 @@ article .caption {
   background-image: url("../medias/images/tour-de-brol.jpg");
 }
 @media only screen and (max-width: 767px) {
-  .info-content article.info-img {
+  .info-content .article.info-img {
     display: none;
   }
 }
