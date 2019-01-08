@@ -513,7 +513,7 @@ strong {
 .content .c8 {
   overflow-y: auto;
   height: 100%;
-  padding: 10px;
+  padding-left: 10px;
   padding-right: 5px;
   padding-bottom: 20px;
 }
@@ -522,6 +522,7 @@ strong {
   .content .c8 {
     width: calc(((100% - 11 * 0px) / 12) * 12 + (11 * 0px));
     height: auto;
+    overflow: initial;
   }
   .content .c4 .article,
   .content .c8 .article {

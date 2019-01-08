@@ -20,13 +20,14 @@
     .c4, .c8 {
         overflow-y: auto;
         height: 100%;
-        padding: @margin;
+        padding-left: @margin;
         padding-right: @margin / 2;
         padding-bottom: 2 * @margin;
 
         @media @xs {
             .col-12;
             height: auto;
+            overflow: initial; //important for the sticky behavior in .label
             .article {padding: 0px;}
         }
         img {width: 100%;}
