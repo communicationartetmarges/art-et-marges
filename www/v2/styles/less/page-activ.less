@@ -1,4 +1,30 @@
 .article.activity {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: initial;
 
+    > div {
+        width: calc(~"50% - @{margin} / 2");
+    }
+    .image-wrapper {
+        position: sticky;
+        top: 1.5rem;
+        height: calc(~"100vw /3 * 0.66 + 1rem"); //more or less a 66% ratio + caption
+    }
+}
 
+@media @xs {
+    .article.activity {
+        display: block;
+
+        > div {
+            width: 100%;
+        }
+        .image-wrapper {
+            position: relative;
+            top: intial;
+            height: auto;
+        }
+    }
 }

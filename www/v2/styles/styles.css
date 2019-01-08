@@ -542,6 +542,7 @@ strong {
   top: 0px;
   height: 1.5rem;
   background: #fff;
+  z-index: 9;
 }
 @media only screen and (max-width: 767px) {
   .content .label {
@@ -625,6 +626,33 @@ strong {
 .col-contact .label,
 .col-soutien .label {
   padding-left: 10px;
+}
+.article.activity {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: initial;
+}
+.article.activity > div {
+  width: calc(50% - 10px / 2);
+}
+.article.activity .image-wrapper {
+  position: sticky;
+  top: 1.5rem;
+  height: calc(100vw /3 * 0.66 + 1rem);
+}
+@media only screen and (max-width: 767px) {
+  .article.activity {
+    display: block;
+  }
+  .article.activity > div {
+    width: 100%;
+  }
+  .article.activity .image-wrapper {
+    position: relative;
+    top: intial;
+    height: auto;
+  }
 }
 .collection {
   display: flex;
