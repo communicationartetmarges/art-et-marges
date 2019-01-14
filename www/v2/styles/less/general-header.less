@@ -20,8 +20,17 @@
         height: @headerInnerH ;
     }
 
-    a {text-decoration: none;}
-    .active {text-decoration: underline;}
+    a {
+        .link-border-style;
+        border-color: transparent;
+        text-decoration: none;
+        &:hover {
+            border-color: @green;
+        }
+    }
+    .active a{
+        border-color: @green;
+    }
 }
 
 @media @xs {

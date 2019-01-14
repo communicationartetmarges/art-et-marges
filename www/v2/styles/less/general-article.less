@@ -18,7 +18,8 @@
         line-height: 100%;
 
         .end:before {
-            content: "\00a0"'—'; // space + dash
+            // content: "\00a0"'—'; // space + dash
+            content: "\202F"'—'"\202F"; // thin-space + dash
         }
     }
 
