@@ -396,6 +396,10 @@ h1 {
   margin-bottom: 0;
   line-height: 95%;
   word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 a {
   display: inline-block;
