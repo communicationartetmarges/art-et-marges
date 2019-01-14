@@ -624,6 +624,9 @@ strong {
 .col-soutien .label {
   padding-left: 10px;
 }
+.team-item-function {
+  margin-left: 2rem;
+}
 .article.activity {
   display: flex;
   justify-content: space-between;
