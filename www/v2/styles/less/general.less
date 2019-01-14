@@ -1,6 +1,6 @@
 
 body {
-    .font(@line-height: 130%;);
+    .font(@line-height: 110%;);
 }
 
 * {
@@ -11,9 +11,9 @@ h1 {
     font-family: @baseFontFamilly;
     font-size: @baseFontSize * 3.5;
     font-weight: normal;
-    margin-top: @margin * 2;
+    margin-top: @margin;
     margin-bottom: 0;
-    line-height: 95%;
+    line-height: 85%;
     word-wrap: break-word;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
@@ -23,19 +23,12 @@ h1 {
 
 a {
     .link-border-style;
-    color: #000;
     cursor: pointer !important;
     text-decoration: none;
 }
 
 ul li {
     padding-top: 3px;
-
-    // &:before {
-    //     content: '•';
-    //     margin-right: 5px;
-    //     // color: blue;
-    // }
 }
 
 
@@ -47,10 +40,12 @@ ul li {
 
 // SCROLLBAR
 
+@scroll-color : @green;
+
 // will apply for browsers supporting scrollbar css specs (Firefox >= 64 as of now)
 * {
     scrollbar-width: thin;
-    scrollbar-color: blue white; 
+    scrollbar-color: @scroll-color white; 
 }
 
 // will apply for webkit based browsers 
@@ -66,10 +61,10 @@ ul li {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: blue;
+  background: @scroll-color;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: blue;
+  background: @scroll-color;
 } 

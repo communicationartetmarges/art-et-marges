@@ -21,15 +21,15 @@
     }
 
     a {
-        .link-border-style;
-        border-color: transparent;
+        color: initial;
+        border-bottom: 2px solid transparent;
         text-decoration: none;
         &:hover {
-            border-color: @green;
+            border-bottom: 2px solid black;
         }
     }
     .active a{
-        border-color: @green;
+        border-bottom: 2px solid black;
     }
 }
 
@@ -41,20 +41,25 @@
         justify-content: baseline;
         margin-top: 50px;
 
-        > div {
-            // flex-direction: column;
+        div {
+            flex-direction: column;
             width: 100% !important;
-            flex-wrap: wrap;
 
-            > div {
-                min-width: calc(~"50vw - @{margin} * 2");
+            div {
+                width: 100%;
+                font-size: 2rem;
+                text-align: center;
+                margin-bottom: @margin;
 
-                &.link-musee,
-                &.link-info { text-align: right}
+
+                &.logo {
+                    text-align: left;
+                }
             }
 
             .lang-switch {
                 // .absolute(@margin, @margin, auto, auto);
+                font-size: 1rem;
                 position: fixed;
                 z-index: 11;
                 top: @margin;
