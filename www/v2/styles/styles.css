@@ -482,8 +482,8 @@ strong {
   .header > div > div {
     min-width: calc(50vw - 10px * 2);
   }
-  .header > div > div.link-info,
-  .header > div > div.link-activity {
+  .header > div > div.link-musee,
+  .header > div > div.link-info {
     text-align: right;
   }
   .header > div .lang-switch {
