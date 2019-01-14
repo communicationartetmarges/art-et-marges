@@ -609,15 +609,6 @@ strong {
 .info-content .newsletter {
   background-color: transparent;
 }
-.col-infos {
-  background: #00ba86;
-}
-.col-contact {
-  background: #ffcab3;
-}
-.col-soutien {
-  background: #b0baff;
-}
 .col-infos,
 .col-contact,
 .col-soutien {
