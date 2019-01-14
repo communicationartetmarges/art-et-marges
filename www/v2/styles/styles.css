@@ -474,13 +474,17 @@ strong {
 .header .active a {
   border-bottom: 2px solid black;
 }
+.mobile-header {
+  display: none;
+}
 @media only screen and (max-width: 767px) {
   .header {
     flex-direction: column;
     height: auto;
     align-items: flex-start;
     justify-content: baseline;
-    margin-top: 50px;
+    position: relative;
+    z-index: 90000;
   }
   .header div {
     flex-direction: column;
@@ -492,10 +496,45 @@ strong {
     text-align: center;
     margin-bottom: 10px;
   }
-  .header div div.logo {
-    text-align: left;
+  .header div .logo {
+    padding: 10px;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
   }
-  .header div .lang-switch {
+  .header div .logo img {
+    height: auto;
+    width: 60vw;
+  }
+  .header div .empty-in-purpose {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+    position: fixed;
+    top: 0px;
+    background: #fff;
+    width: 100%;
+    height: 50px;
+    z-index: 10000;
+  }
+  .mobile-header .logo {
+    position: absolute;
+    top: 10px;
+    right: auto;
+    bottom: auto;
+    left: 10px;
+    z-index: 1;
+  }
+  .mobile-header .logo img {
+    height: 1.5rem;
+  }
+  .mobile-header .lang-switch {
+    position: absolute;
+    bottom: auto;
+    left: auto;
+    z-index: 1;
     font-size: 1rem;
     position: fixed;
     z-index: 11;
@@ -503,18 +542,16 @@ strong {
     right: 10px;
     text-align: right;
   }
-  .header div .logo {
-    position: fixed;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    padding: 10px;
-    width: 100vw;
-    height: 50px;
-    background-color: #fff;
+  .mobile-header a {
+    color: initial;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
   }
-  .header div .empty-in-purpose {
-    display: none;
+  .mobile-header a:hover {
+    border-bottom: 2px solid black;
+  }
+  .mobile-header .active a {
+    border-bottom: 2px solid black;
   }
 }
 .content {
