@@ -484,6 +484,7 @@ strong {
     align-items: flex-start;
     justify-content: baseline;
     position: relative;
+    margin-bottom: 50px;
     z-index: 90000;
   }
   .header div {
