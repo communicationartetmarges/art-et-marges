@@ -477,6 +477,10 @@ strong {
 .mobile-header {
   display: none;
 }
+.header .logo a:hover,
+.mobile-header .logo a:hover {
+  border: 0px;
+}
 @media only screen and (max-width: 767px) {
   .header {
     flex-direction: column;
