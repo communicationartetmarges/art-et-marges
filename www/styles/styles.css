@@ -339,6 +339,7 @@ table {
 .front-content .front-line .front-cell-small .title h1,
 .front-content .front-line .front-cell-big .title h1 {
   font-size: 50px;
+  hyphens: auto;
 }
 .front-content .front-line .front-cell-small .title .date,
 .front-content .front-line .front-cell-big .title .date {
@@ -698,9 +699,7 @@ header .navigation a {
   border-bottom: 5px solid transparent;
   color: blue;
   font-weight: 200;
-  text-shadow: 0px 0px 2px #fff,
-                         0px 0px 2px #fff,
-                         0px 0px 2px #fff;
+  text-shadow: 0px 0px 2px #fff, 0px 0px 2px #fff, 0px 0px 2px #fff;
 }
 header .navigation a:hover {
   border-bottom: 5px solid blue;
