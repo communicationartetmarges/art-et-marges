@@ -339,6 +339,7 @@ table {
 .front-content .front-line .front-cell-small .title h1,
 .front-content .front-line .front-cell-big .title h1 {
   font-size: 50px;
+  word-wrap: break-word;
   hyphens: auto;
 }
 .front-content .front-line .front-cell-small .title .date,
