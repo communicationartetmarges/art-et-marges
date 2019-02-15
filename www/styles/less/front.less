@@ -76,8 +76,20 @@
                     // font-family: 'ammshrift';
                     // font-size: 70px;
                     font-size: 50px;
-                    word-wrap: break-word;
-                    hyphens: auto;
+                    // word-wrap: break-word;
+                    // hyphens: auto;
+
+                    // * Warning: Needed for oldIE support, but words are broken up letter-by-letter */
+                    -ms-word-break: break-all;
+                        word-break: break-all;
+
+                        /* Non standard for webkit */
+                        word-break: break-word;
+
+                    -webkit-hyphens: auto;
+                    -moz-hyphens: auto;
+                        -ms-hyphens: auto;
+                            hyphens: auto;
                 }
                 .date {
                     .text-shadow;
