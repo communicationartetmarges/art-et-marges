@@ -17,12 +17,14 @@
     .c8 {.col-8;}
     .c4 {.col-4;}
 
+    .c8 {
+        padding-left: @margin;
+        padding-right: @margin / 2;
+    }
+
     .c4, .c8 {
         overflow-y: auto;
         height: 100%;
-        padding-left: @margin;
-        padding-right: @margin / 2;
-        padding-bottom: 2 * @margin;
 
         @media @xs {
             .col-12;
@@ -36,8 +38,11 @@
     .label {
         position: sticky;
         top: 0px;
-        height: 1.5rem;
-        background:#fff;
+        height: @headerH;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        background-color: @lightgrey;
         z-index: 9;
         @media @xs {top: 50px;} // height of mobile logo
     }

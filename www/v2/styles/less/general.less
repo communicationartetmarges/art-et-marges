@@ -5,27 +5,21 @@ body {
 }
 
 * {
-    box-sizing: border-box;
+  .scroll-mixin();
+  box-sizing: border-box;
 }
 
 h1 {
-    font-family: @baseFontFamilly;
-    font-size: @baseFontSize * 3.5;
-    font-weight: normal;
-    margin-top: @margin;
-    margin-bottom: 0;
-    line-height: 85%;
-    word-wrap: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
+  .big-title();
+  .hyphens();
 }
 
 a {
-    .link-border-style;
+    // .link-border-style;
+    // text-decoration: none;
+    color: #000;
+    text-decoration: underline;
     cursor: pointer !important;
-    text-decoration: none;
 }
 
 ul li {
@@ -34,38 +28,7 @@ ul li {
 
 
 
-.bold, strong {
-    color: @blue;
-}
+// .bold, strong {
+//     color: @blue;
+// }
 
-
-// SCROLLBAR
-
-@scroll-color : @green;
-
-// will apply for browsers supporting scrollbar css specs (Firefox >= 64 as of now)
-* {
-    scrollbar-width: thin;
-    scrollbar-color: @scroll-color white; 
-}
-
-// will apply for webkit based browsers 
- /* width */
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #ffffff;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: @scroll-color;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: @scroll-color;
-} 

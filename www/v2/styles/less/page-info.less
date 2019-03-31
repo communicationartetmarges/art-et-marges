@@ -1,3 +1,26 @@
+.page-info {
+
+    .content .c4{
+        &.col-infos{
+            .scroll-mixin(@green);
+            background-color:@lightgrey;
+        }
+        &.col-contact{
+            .scroll-mixin(@blue);
+            background-color:@pink;
+        }
+        &.col-soutien{
+            .scroll-mixin(@pink);
+            background-color: @green;
+        }
+
+        > div {
+            padding: 0 @margin;
+        }
+    }
+}
+
+
 /**BACKGROUND IMAGE SYSTEM**/
 
 .info-content {

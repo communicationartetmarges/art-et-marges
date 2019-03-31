@@ -1,17 +1,32 @@
-.article.activity {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    overflow: initial;
+.page-activity {
+    .content .c8 {
+        .scroll-mixin(@pink);
+        padding-right: 0;
+    }
 
-    > div {
-        width: calc(~"50% - @{margin} / 2");
+    .content .c4{
+        .scroll-mixin(@green);
+        background-color: @blue;
+        > div {
+            padding: 0 @margin;
+        }
     }
-    .image-wrapper {
-        position: sticky;
-        top: 1.5rem;
-        height: calc(~"100vw /3 * 0.66 + 1rem"); //more or less a 66% ratio + caption
-    }
+}
+
+.article.activity {
+    // display: flex;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+    // overflow: initial;
+
+    // > div {
+    //     width: calc(~"50% - @{margin} / 2");
+    // }
+    // .image-wrapper {
+    //     position: sticky;
+    //     top: 1.5rem;
+    //     height: calc(~"100vw /3 * 0.66 + 1rem"); //more or less a 66% ratio + caption
+    // }
 }
 
 @media @xs {

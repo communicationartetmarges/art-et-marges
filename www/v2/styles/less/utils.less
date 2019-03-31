@@ -42,9 +42,11 @@
 @headerH : calc(~"@{headerInnerH} + @{margin} * 2");
 @navH : 25px;
 
-@blue : blue;
-@grey: #c8c8c8;
-@green: #14ff97;
+@lightgrey :rgb(226, 226, 226);
+@grey :     rgb(185, 185, 185);
+@pink :     rgb(255, 202, 179);
+@green :    rgb(000, 214, 148);
+@blue :     rgb(000, 109, 255);
 
 
 .link-border-style {
@@ -56,44 +58,6 @@
   }
 }
 
-
-
-// .share-buttons {
-//     width: 75%;
-//     margin: auto;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-
-//     a{width: 20%;}
-
-//     img {width: 100%;}
-// }
-
-// .tmp-site{
-//     margin-top: 26px;
-
-//     p{ padding-bottom: @margin;}
-// }
-
-/****BOX-SHADOW****/
-
-// .inner-shadow{
-//     -webkit-box-shadow: 0 0 15px 0px @grey -20% inset;
-//     -moz-box-shadow: 0 0 15px 0px @grey - 20% inset;
-//     box-shadow: 0 0 15px 0px @grey - 20% inset;
-// }
-
-// .no-shadow{
-//     -webkit-box-shadow: none;
-//     -moz-box-shadow: none;
-//     box-shadow: none;
-// }
-
-// /****TEXT-SHADOW****/
-// .text-shadow {
-//     text-shadow: 1px 0px 17px #fff, 1px 0px 17px #fff, 1px 0px 17px #fff;
-// }
 
 /******** MIXINS ********/
 
@@ -116,14 +80,58 @@
 	color:@color;
 }
 
+.hyphens() {
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
 
-// .vertical-gradient(@colorA:#ffffff; @colorA-pos:0%; @colorB:#000000; @colorB-pos:100%){
-//     background: @colorA; /* Old browsers */
-//     background: -moz-linear-gradient(top, @colorA @colorA-pos, @colorB @colorB-pos); /* FF3.6-15 */
-//     background: -webkit-linear-gradient(top, @colorA @colorA-pos, @colorB @colorB-pos); /* Chrome10-25,Safari5.1-6 */
-//     background: linear-gradient(to bottom, @colorA @colorA-pos, @colorB @colorB-pos); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-//     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@colorA', endColorstr='@colorB',GradientType=0 ); /* IE6-9 */
-// }
+.big-title() {
+  font-family: @baseFontFamilly;
+  font-size: @baseFontSize * 2;
+  font-weight: bold;
+  margin-top: @margin;
+  margin-bottom: 0;
+  line-height: 85%;
+}
+
+
+
+// SCROLLBAR
+
+// will apply for browsers supporting scrollbar css specs
+
+.scroll-mixin(@scroll-color:@blue){
+
+  // scrollbar-width: thin;
+  scrollbar-width: initial;
+  scrollbar-color: @scroll-color white; 
+
+  // will apply for webkit based browsers 
+
+  /* width */
+  &::-webkit-scrollbar {
+    width: @margin;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: @scroll-color;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: @scroll-color;
+  } 
+}
+
 
 /**PROPORTIONAL FONTSIZE & LINE-HEIGHT**/
 
