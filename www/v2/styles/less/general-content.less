@@ -12,6 +12,11 @@
         width: 100%;
         left: 0px;
         top: auto;
+
+        .label {
+            padding-left: calc(~"@{logoWmob} + @{margin}") !important; 
+        }
+    
     }
 
     .c8 {.col-8;}
@@ -28,9 +33,15 @@
 
         @media @xs {
             .col-12;
+            padding: 0;
             height: auto;
             overflow: initial; //important for the sticky behavior in .label
-            .article {padding: 0px;}
+            .article {
+                padding: 0 ;
+                .title,
+                .body,
+                .article-main {padding: 0 @margin;}
+            }
         }
         img {width: 100%;}
     }
@@ -44,7 +55,10 @@
         text-transform: uppercase;
         background-color: @lightgrey;
         z-index: 9;
-        @media @xs {top: 50px;} // height of mobile logo
+        @media @xs {
+            top: 50px; // height of mobile header
+            padding-left: calc(~"@{logoWmob} + @{margin}") !important; 
+        } 
     }
 }
 

@@ -68,7 +68,7 @@
         position: relative;
         margin-bottom: 50px;
         z-index: 90000;
-        padding-top: 60vw;
+        padding-top: 25vw;
 
         .c8 {
             padding: 0;
@@ -87,7 +87,8 @@
             }
 
             .logo {
-                width: 33vw !important;
+                width: @logoWmob !important;
+                position: fixed;
             }
 
             // .logo {
@@ -117,6 +118,7 @@
         z-index: 10000;
 
         .logo {
+            display: none;
             .absolute(@margin, auto, auto, @margin);
              img {
                 height: @headerInnerH ;
@@ -144,5 +146,6 @@
             border-bottom: 2px solid black;
         }
     }
+
 }
 
