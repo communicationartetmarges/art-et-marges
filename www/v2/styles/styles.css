@@ -440,6 +440,7 @@ ul li {
 }
 .header .c8 {
   width: calc(((100% - 11 * 0px) / 12) * 8 + (7 * 0px));
+  padding-left: calc(55px + 10px);
 }
 .header .c4 {
   width: calc(((100% - 11 * 0px) / 12) * 4 + (3 * 0px));
@@ -462,6 +463,17 @@ ul li {
 .header .active a {
   border-bottom: 2px solid black;
 }
+.header .logo {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  z-index: 10;
+  width: 55px;
+}
+.header .logo img {
+  height: auto;
+  width: 100%;
+}
 .mobile-header {
   display: none;
 }
@@ -478,29 +490,25 @@ ul li {
     position: relative;
     margin-bottom: 50px;
     z-index: 90000;
+    padding-top: 60vw;
   }
-  .header div {
+  .header .c8 {
+    padding: 0;
+  }
+  .header > div {
     flex-direction: column;
     width: 100% !important;
   }
-  .header div div {
+  .header > div div {
     width: 100%;
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
-  .header div .logo {
-    padding: 10px;
-    width: 100vw;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
+  .header > div .logo {
+    width: 33vw !important;
   }
-  .header div .logo img {
-    height: auto;
-    width: 60vw;
-  }
-  .header div .empty-in-purpose {
+  .header > div .empty-in-purpose {
     display: none;
   }
   .mobile-header {
@@ -659,6 +667,9 @@ ul li {
 .page-expo .c8::-webkit-scrollbar-thumb:hover {
   background: #006dff;
 }
+.page-expo .c8 .label {
+  padding-left: calc(55px + 10px);
+}
 .page-expo .content .c4 {
   scrollbar-width: initial;
   scrollbar-color: #00d694 white;
@@ -713,6 +724,9 @@ ul li {
 }
 .page-info .content .c4.col-infos::-webkit-scrollbar-thumb:hover {
   background: #00d694;
+}
+.page-info .content .c4.col-infos .label {
+  padding-left: calc(55px + 10px * 2);
 }
 .page-info .content .c4.col-contact {
   scrollbar-width: initial;
@@ -819,6 +833,9 @@ ul li {
 .page-activity .content .c8::-webkit-scrollbar-thumb:hover {
   background: #ffcab3;
 }
+.page-activity .content .c8 .label {
+  padding-left: calc(55px + 10px);
+}
 .page-activity .content .c4 {
   scrollbar-width: initial;
   scrollbar-color: #00d694 white;
@@ -880,6 +897,9 @@ ul li {
 .page-museum .content .c4 .label,
 .page-museum .content .c4 .article {
   padding: 0 10px;
+}
+.page-museum .content .c4 .label {
+  padding-left: calc(55px + 10px *2);
 }
 .page-museum .content .c8 {
   padding: 0;

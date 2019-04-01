@@ -4,6 +4,9 @@
         &.col-infos{
             .scroll-mixin(@green);
             background-color:@lightgrey;
+            .label {
+                padding-left: calc(~"@{logoW} + @{margin} * 2");
+            }
         }
         &.col-contact{
             .scroll-mixin(@blue);
