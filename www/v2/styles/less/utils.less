@@ -29,6 +29,8 @@
 /******** VARIABLES ********/
 
 @baseFontFamilly : 'antiqueolive';
+@titleFontFamilly : 'antiqueolive-title';
+@dateFontFamilly : 'antiqueolive-date';
 @baseFontSize : 18px;
 
 @baseFontColor: #000;
@@ -92,12 +94,24 @@
 }
 
 .big-title() {
-  font-family: @baseFontFamilly;
+  font-family: @titleFontFamilly;
   font-size: @baseFontSize * 2;
   font-weight: bold;
   margin-top: @margin;
   margin-bottom: 0;
   line-height: 85%;
+}
+
+
+.columnGradient(@color) {
+  content: ' ';
+  width: 100%;
+  height: 5rem;
+  position: absolute;
+  bottom: 0;
+  background: transparent;
+  background: linear-gradient(0deg, @color 10%, rgba(0,0,0,0) 100%);
+  @media @xs { display: none;}
 }
 
 

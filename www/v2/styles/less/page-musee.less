@@ -2,6 +2,9 @@
     .content .c4 {
         .scroll-mixin(@pink);
         background-color: @green;
+        &:after {
+            .columnGradient(@green);
+        }
         .label,
         .article {
             padding: 0 @margin;
