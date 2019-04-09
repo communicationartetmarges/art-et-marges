@@ -678,6 +678,7 @@ ul li {
   margin-top: 10px;
   margin-bottom: 0;
   line-height: 85%;
+  font-family: 'antiqueolive-date';
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
