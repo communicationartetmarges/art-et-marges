@@ -636,7 +636,7 @@ ul li {
   position: absolute;
   bottom: 0;
   background: transparent;
-  background: linear-gradient(0deg, #fff 10%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(0deg, #fff 10%, transparent 100%);
 }
 @media only screen and (max-width: 767px) {
   .content .c4:after,
@@ -744,7 +744,7 @@ ul li {
   position: absolute;
   bottom: 0;
   background: transparent;
-  background: linear-gradient(0deg, #b9b9b9 10%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(0deg, #b9b9b9 10%, transparent 100%);
 }
 @media only screen and (max-width: 767px) {
   .page-expo .content .c4:after {
@@ -792,7 +792,7 @@ ul li {
   position: absolute;
   bottom: 0;
   background: transparent;
-  background: linear-gradient(0deg, #e2e2e2 10%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(0deg, #e2e2e2 10%, transparent 100%);
 }
 @media only screen and (max-width: 767px) {
   .page-info .content .c4.col-infos:after {
@@ -830,7 +830,7 @@ ul li {
   position: absolute;
   bottom: 0;
   background: transparent;
-  background: linear-gradient(0deg, #ffcab3 10%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(0deg, #ffcab3 10%, transparent 100%);
 }
 @media only screen and (max-width: 767px) {
   .page-info .content .c4.col-contact:after {
@@ -865,7 +865,7 @@ ul li {
   position: absolute;
   bottom: 0;
   background: transparent;
-  background: linear-gradient(0deg, #00d694 10%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(0deg, #00d694 10%, transparent 100%);
 }
 @media only screen and (max-width: 767px) {
   .page-info .content .c4.col-soutien:after {
@@ -966,7 +966,7 @@ ul li {
   position: absolute;
   bottom: 0;
   background: transparent;
-  background: linear-gradient(0deg, #006dff 10%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(0deg, #006dff 10%, transparent 100%);
 }
 @media only screen and (max-width: 767px) {
   .page-activity .content .c4:after {
@@ -1017,7 +1017,7 @@ ul li {
   position: absolute;
   bottom: 0;
   background: transparent;
-  background: linear-gradient(0deg, #00d694 10%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(0deg, #00d694 10%, transparent 100%);
 }
 @media only screen and (max-width: 767px) {
   .page-museum .content .c4:after {
