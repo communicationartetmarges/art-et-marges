@@ -602,18 +602,20 @@ ul li {
 .content .c8 {
   overflow-y: auto;
   height: 100%;
+  padding-bottom: 20px;
 }
 @media only screen and (max-width: 767px) {
   .content .c4,
   .content .c8 {
     width: calc(((100% - 11 * 0px) / 12) * 12 + (11 * 0px));
     padding: 0;
+    padding-bottom: 20px;
     height: auto;
     overflow: initial;
   }
   .content .c4 .article,
   .content .c8 .article {
-    padding: 0 ;
+    padding: 0;
   }
   .content .c4 .article .title,
   .content .c8 .article .title,
