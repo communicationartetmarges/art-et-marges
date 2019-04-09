@@ -10,6 +10,9 @@
     .content .c4 {
         .scroll-mixin(@green);
         background-color: @lightgrey;
+        &:after {
+            .columnGradient(@grey);
+        }
         .label,
         .title,
         .body {
