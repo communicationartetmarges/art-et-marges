@@ -499,10 +499,9 @@ ul li {
     height: auto;
     align-items: flex-start;
     justify-content: baseline;
+    margin-top: 10px;
     position: relative;
-    margin-bottom: 50px;
     z-index: 90000;
-    padding-top: 25vw;
   }
   .header .c8 {
     padding: 0;
@@ -513,9 +512,10 @@ ul li {
   }
   .header > div div {
     width: 100%;
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    text-align: right;
+    height: 1.3em;
+    padding-right: 10px;
   }
   .header > div .logo {
     width: 16vw !important;
