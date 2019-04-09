@@ -301,25 +301,19 @@ template {
   font-family: 'antiqueolive';
   font-weight: normal;
   font-style: normal;
-  src: url('fonts/antiqueolitot-reg.woff') format('woff');
-}
-@font-face {
-  font-family: 'antiqueolive';
-  font-weight: normal;
-  font-style: italic;
-  src: url('fonts/antiqueolitot-regita.woff') format('woff');
+  src: url('fonts/antiqueolisctot-lig-webfont.woff') format('woff');
 }
 @font-face {
   font-family: 'antiqueolive-title';
   font-weight: normal;
   font-style: normal;
-  src: url('fonts/antiqueolitot-med.woff') format('woff');
+  src: url('fonts/antiqueolitot-reg-webfont.woff') format('woff');
 }
 @font-face {
   font-family: 'antiqueolive-date';
   font-weight: normal;
   font-style: normal;
-  src: url('fonts/antiqueolisctot-med.woff') format('woff');
+  src: url('fonts/antiqueolisctot-reg-webfont.woff') format('woff');
 }
 /******** MEDIA QUERIES ********/
 /******** VARIABLES ********/
