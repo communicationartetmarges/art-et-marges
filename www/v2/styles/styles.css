@@ -423,6 +423,7 @@ body {
 h1 {
   font-family: 'antiqueolive-title';
   font-size: 36px;
+  font-weight: normal;
   margin-top: 10px;
   margin-bottom: 0;
   line-height: 85%;
@@ -673,6 +674,7 @@ ul li {
 .article .date {
   font-family: 'antiqueolive-title';
   font-size: 36px;
+  font-weight: normal;
   margin-top: 10px;
   margin-bottom: 0;
   line-height: 85%;
