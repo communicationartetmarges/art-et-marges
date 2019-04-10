@@ -301,19 +301,13 @@ template {
   font-family: 'antiqueolive';
   font-weight: normal;
   font-style: normal;
-  src: url('fonts/antiqueolitot-lig-webfont.woff') format('woff');
+  src: url('fonts/antiqueolive-light.woff') format('woff');
 }
 @font-face {
   font-family: 'antiqueolive-title';
   font-weight: normal;
   font-style: normal;
-  src: url('fonts/antiqueolitot-reg-webfont.woff') format('woff');
-}
-@font-face {
-  font-family: 'antiqueolive-date';
-  font-weight: normal;
-  font-style: normal;
-  src: url('fonts/antiqueolisctot-reg-webfont.woff') format('woff');
+  src: url('fonts/antiqueolive-regular.woff') format('woff');
 }
 /******** MEDIA QUERIES ********/
 /******** VARIABLES ********/
@@ -680,7 +674,6 @@ ul li {
   margin-top: 10px;
   margin-bottom: 0;
   line-height: 85%;
-  font-family: 'antiqueolive-date';
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
