@@ -1,0 +1,35 @@
+.article {
+    margin-bottom: 1rem;
+
+    .image-wrapper {
+        .image-container {
+            padding-bottom: 66%; // intrinsic ratio
+            background-size: cover;
+            background-color: @green;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .date {
+        .big-title();
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        line-height: 100%;
+        margin: 0;
+
+        .end:before {
+            // content: "\00a0"'—'; // space + dash
+            content: "\202F"'—'"\202F"; // thin-space + dash
+        }
+    }
+
+    .caption {
+        font-size: 8px;
+        display: block;
+    }
+
+}

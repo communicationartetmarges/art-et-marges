@@ -1,0 +1,82 @@
+.content {
+    height: calc(~"100vh - (@{headerInnerH} + @{margin} * 2)");
+    position: fixed;
+    top: @headerH;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media @xs {
+        position: relative;
+        display: block;
+        width: 100%;
+        left: 0px;
+        top: auto;
+
+        .label {
+            padding-left: calc(~"@{logoWmob} + @{margin}") !important;
+        }
+
+    }
+
+    .c8 {
+        .col-8;
+    }
+
+    .c4 {
+        .col-4;
+    }
+
+    .c8 {
+        padding-left: @margin;
+        padding-right: @margin / 2;
+    }
+
+    .c4,
+    .c8 {
+        overflow-y: auto;
+        height: 100%;
+        padding-bottom: @margin * 2;
+
+        @media @xs {
+            .col-12;
+            padding: 0;
+            padding-bottom: @margin * 2;
+            height: auto;
+            overflow: initial; //important for the sticky behavior in .label
+
+            .article {
+                padding: 0;
+
+                .title,
+                .body,
+                .article-main {
+                    padding: 0 @margin;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+
+        &:after {
+            .columnGradient(#fff);
+        }
+    }
+
+    .label {
+        position: sticky;
+        top: 0px;
+        height: @headerH;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        background-color: @lightgrey;
+        z-index: 9;
+
+        @media @xs {
+            top: 50px; // height of mobile header
+            padding-left: calc(~"@{logoWmob} + @{margin}") !important;
+        }
+    }
+}

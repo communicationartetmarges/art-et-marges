@@ -1,0 +1,32 @@
+.page-expo { 
+    .c8 {
+        .scroll-mixin(@blue);
+        padding-right: 0;
+        .label {
+            padding-left: calc(~"@{logoW} + @{margin}");
+        }
+    }
+
+    .content .c4 {
+        .scroll-mixin(@green);
+        background-color: @lightgrey;
+        &:after {
+            .columnGradient(@grey);
+        }
+        .label,
+        .title,
+        .body {
+            padding: 0 @margin;
+        }
+    }
+    
+    .archive {
+        background-color: @grey;
+        min-height: 100vh;
+        padding-bottom: @margin * 2;
+        .label {background-color: @grey !important; }
+    }
+
+}
+
+

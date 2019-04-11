@@ -1,0 +1,198 @@
+/******** MEDIA QUERIES ********/
+
+
+// we set up width min and max for a tablet, below we load mobile query, above we use normal style
+// we use min-device-width instead of min-width to make it works on android browsers (at least GS2 on Kitkat)
+
+//VIEWPORT SIZES
+@large:  1920px;
+@medium: 1344px;
+@small:  1280px;
+@xsmall:  767px;
+
+
+//VIEWPORT SIZES VALUES (used in proportionnal fontsize)
+
+@large-V:  1920;
+@medium-V: 1344;
+@small-V:  1280;
+@xsmall-V:  767;
+
+//VIEWPORT SIZES + ORIENTATION
+
+@l: ~"only screen and (min-width: @{large})";
+@mm: ~"only screen and (max-width: @{medium})";
+@s: ~"only screen and (max-width: @{small})";
+@xs: ~"only screen and (max-width: @{xsmall})";
+// @portrait-s:  ~"only screen and (max-width: @{xsmall}) and (orientation: portrait)";
+
+/******** VARIABLES ********/
+
+@baseFontFamilly : 'antiqueolive';
+@baseFontSize : 12px;
+// @baseLineHeight: 50%;
+@baseFontColor: #000;
+
+@margin: 18px;
+@padding: 10px;
+@margin-mob: 12px;
+
+@border: 1px solid #000;
+
+@HeaderH : 75px;
+@leftpanelW : 150px;
+@navH : 25px;
+
+@blue : blue;
+@grey: #c8c8c8;
+@green: #14ff97;
+
+@small-title : 35px;
+
+
+
+
+.share-buttons {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a{width: 20%;}
+
+    img {width: 100%;}
+}
+
+.tmp-site{
+    margin-top: 26px;
+
+    p{ padding-bottom: @margin;}
+}
+
+/****BOX-SHADOW****/
+
+.inner-shadow{
+    -webkit-box-shadow: 0 0 15px 0px @grey -20% inset;
+    -moz-box-shadow: 0 0 15px 0px @grey - 20% inset;
+    box-shadow: 0 0 15px 0px @grey - 20% inset;
+}
+
+.no-shadow{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+/****TEXT-SHADOW****/
+.text-shadow {
+    text-shadow: 1px 0px 17px #fff, 1px 0px 17px #fff, 1px 0px 17px #fff;
+}
+
+/******** MIXINS ********/
+
+.absolute(@top:initial; @right:initial; @bottom:initial; @left:initial; @z-index:1){
+	position: absolute;
+	top:@top;
+	right:@right;
+	bottom:@bottom;
+	left:@left;
+	z-index: @z-index;
+}
+
+.font(
+	@family:@baseFontFamilly; @weight:normal; @style:initial; @size:18px; @line-height:@baseLineHeight; @color:@baseFontColor){
+	font-family: @family;
+	font-weight: @weight;
+	font-style: @style;
+	font-size: @size;
+	line-height: @line-height;
+	color:@color;
+}
+
+
+.vertical-gradient(@colorA:#ffffff; @colorA-pos:0%; @colorB:#000000; @colorB-pos:100%){
+    background: @colorA; /* Old browsers */
+    background: -moz-linear-gradient(top, @colorA @colorA-pos, @colorB @colorB-pos); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, @colorA @colorA-pos, @colorB @colorB-pos); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, @colorA @colorA-pos, @colorB @colorB-pos); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@colorA', endColorstr='@colorB',GradientType=0 ); /* IE6-9 */
+}
+
+/**PROPORTIONAL FONTSIZE & LINE-HEIGHT**/
+
+@operator : 5;
+@maxFontSize: @baseFontSize + @operator ;
+
+/*@media (min-width: 200px) and (max-width: 800px) {
+  body {
+    font-size: calc( 4pt + 2 * ( ( 100vw - 200px) / 600 )) !important;
+    line-height: calc( 5.5pt + 2.75 * ( ( 100vw - 200px) / 600 )) !important;
+  }
+}*/
+
+@media (max-width: @xsmall) {
+  body {
+    font-size: @baseFontSize  !important;
+    // line-height: @baseLineHeight ;
+  }
+}
+
+@media (min-width: @xsmall) and (max-width: @large) {
+  body {
+    font-size: calc(~"@{baseFontSize} + @{operator} * ( (100vw - @{xsmall}) / (@{large-V} - @{xsmall-V}) )")  !important;
+    // line-height: calc(~"@{baseLineHeight} + 2.75 * ( (100vw - @{xsmall}) / (@{large-V} - @{xsmall-V}) )") ;
+  }
+}
+
+@media (min-width: @large) {
+  body {
+    font-size: @maxFontSize !important;
+    // line-height: @baseLineHeight + 2.75 ;
+  }
+}
+
+
+/******** COLUMN SYSTEM ********/
+
+
+@col-nbr: 12;
+@col-gut-nbr: 11;
+@col-gut-width: 0px;
+
+@col-base-calc: "((100% - @{col-gut-nbr} * @{col-gut-width}) / @{col-nbr})" ;
+
+@col-1:  calc(~"@{col-base-calc}");
+@col-2:  calc(~"@{col-base-calc} * 2 + (1 * @{col-gut-width})");
+@col-3:  calc(~"@{col-base-calc} * 3 + (2 * @{col-gut-width})");
+@col-4:  calc(~"@{col-base-calc} * 4 + (3 * @{col-gut-width})");
+@col-5:  calc(~"@{col-base-calc} * 5 + (4 * @{col-gut-width})");
+@col-6:  calc(~"@{col-base-calc} * 6 + (5 * @{col-gut-width})");
+@col-7:  calc(~"@{col-base-calc} * 7 + (6 * @{col-gut-width})");
+@col-8:  calc(~"@{col-base-calc} * 8 + (7 * @{col-gut-width})");
+@col-9:  calc(~"@{col-base-calc} * 9 + (8 * @{col-gut-width})");
+@col-10: calc(~"@{col-base-calc} * 10 + (9 * @{col-gut-width})");
+@col-11: calc(~"@{col-base-calc} * 11 + (10 * @{col-gut-width})");
+@col-12: calc(~"@{col-base-calc} * 12 + (11 * @{col-gut-width})");
+
+.col-1{width: @col-1;}
+.col-2{width: @col-2;}
+.col-3{width: @col-3;}
+.col-4{width: @col-4;}
+.col-5{width: @col-5;}
+.col-6{width: @col-6;}
+.col-7{width: @col-7;}
+.col-8{width: @col-8;}
+.col-9{width: @col-9;}
+.col-10{width: @col-10;}
+.col-11{width: @col-11;}
+.col-12{width: @col-12;}
+
+// some other things
+*[class^="col-"]{
+    float:left;
+
+    &:nth-child(n+2){
+        margin-left: @col-gut-width; // will add right margin after 1st column element
+    }
+}
