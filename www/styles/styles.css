@@ -620,7 +620,7 @@ ul li {
 }
 .content .c4 > div:last-child,
 .content .c8 > div:last-child {
-  padding-bottom: 5rem;
+  padding-bottom: 5rem !important;
 }
 @media only screen and (max-width: 767px) {
   .content .c4,
@@ -645,7 +645,7 @@ ul li {
   }
   .content .c4 > div:last-child,
   .content .c8 > div:last-child {
-    padding-bottom: inherit;
+    padding-bottom: inherit !important;
   }
 }
 .content .label {
