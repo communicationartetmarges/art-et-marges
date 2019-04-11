@@ -37,6 +37,19 @@
         height: 100%;
         padding-bottom: @margin * 2;
 
+        img {
+            width: 100%;
+        }
+
+        &:after {
+            .columnGradient(#fff);
+        }
+
+
+        >div:last-child {
+            padding-bottom: @columnGradientH;
+        }
+
         @media @xs {
             .col-12;
             padding: 0;
@@ -53,14 +66,10 @@
                     padding: 0 @margin;
                 }
             }
-        }
 
-        img {
-            width: 100%;
-        }
-
-        &:after {
-            .columnGradient(#fff);
+            >div:last-child {
+                padding-bottom: inherit;
+            }
         }
     }
 

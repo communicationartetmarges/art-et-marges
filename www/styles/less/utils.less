@@ -42,6 +42,7 @@
 @headerInnerH : 1.5rem;
 @headerH : calc(~"@{headerInnerH} + @{margin} * 2");
 @navH : 25px;
+@columnGradientH : 5rem;
 
 @logoW : 55px;
 @logoWmob : 16vw;
@@ -116,7 +117,7 @@
 .columnGradient(@color) {
     content: ' ';
     width: 100%;
-    height: 5rem;
+    height: @columnGradientH;
     position: absolute;
     bottom: 0;
     background: transparent;
