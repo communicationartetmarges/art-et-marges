@@ -594,6 +594,7 @@ ul li {
 }
 .content .c4,
 .content .c8 {
+  position: relative;
   overflow-y: auto;
   height: 100%;
   padding-bottom: 20px;
@@ -607,7 +608,7 @@ ul li {
   content: ' ';
   width: 100%;
   height: 5rem;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   background: transparent;
   background: linear-gradient(0deg, #fff 10%, transparent 100%);
@@ -744,7 +745,7 @@ ul li {
   content: ' ';
   width: 100%;
   height: 5rem;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   background: transparent;
   background: linear-gradient(0deg, #b9b9b9 10%, transparent 100%);
@@ -792,7 +793,7 @@ ul li {
   content: ' ';
   width: 100%;
   height: 5rem;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   background: transparent;
   background: linear-gradient(0deg, #e2e2e2 10%, transparent 100%);
@@ -830,7 +831,7 @@ ul li {
   content: ' ';
   width: 100%;
   height: 5rem;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   background: transparent;
   background: linear-gradient(0deg, #ffcab3 10%, transparent 100%);
@@ -865,7 +866,7 @@ ul li {
   content: ' ';
   width: 100%;
   height: 5rem;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   background: transparent;
   background: linear-gradient(0deg, #00d694 10%, transparent 100%);
@@ -966,7 +967,7 @@ ul li {
   content: ' ';
   width: 100%;
   height: 5rem;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   background: transparent;
   background: linear-gradient(0deg, #006dff 10%, transparent 100%);
@@ -1017,7 +1018,7 @@ ul li {
   content: ' ';
   width: 100%;
   height: 5rem;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   background: transparent;
   background: linear-gradient(0deg, #00d694 10%, transparent 100%);
