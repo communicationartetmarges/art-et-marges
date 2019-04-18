@@ -42,6 +42,7 @@
 @headerInnerH : 1.5rem;
 @headerH : calc(~"@{headerInnerH} + @{margin} * 2");
 @navH : 25px;
+@columnGradientH : 5rem;
 
 @logoW : 55px;
 @logoWmob : 16vw;
@@ -115,9 +116,9 @@
 
 .columnGradient(@color) {
     content: ' ';
-    width: 100%;
-    height: 5rem;
-    position: absolute;
+    width: inherit;
+    height: @columnGradientH;
+    position: fixed;
     bottom: 0;
     background: transparent;
     background: linear-gradient(0deg, @color 10%, transparent 100%);

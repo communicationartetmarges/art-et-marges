@@ -33,9 +33,23 @@
 
     .c4,
     .c8 {
+        position: relative;
         overflow-y: auto;
         height: 100%;
         padding-bottom: @margin * 2;
+
+        img {
+            width: 100%;
+        }
+
+        &:after {
+            .columnGradient(#fff);
+        }
+
+
+        >div:last-child {
+            padding-bottom: @columnGradientH  !important;
+        }
 
         @media @xs {
             .col-12;
@@ -53,14 +67,10 @@
                     padding: 0 @margin;
                 }
             }
-        }
 
-        img {
-            width: 100%;
-        }
-
-        &:after {
-            .columnGradient(#fff);
+            >div:last-child {
+                padding-bottom: inherit !important;
+            }
         }
     }
 
