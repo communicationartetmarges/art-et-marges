@@ -607,7 +607,7 @@ ul li {
 .content .c8:after {
   content: ' ';
   width: inherit;
-  height: 3.5rem;
+  height: 5rem;
   position: fixed;
   bottom: 0;
   background: transparent;
@@ -621,7 +621,7 @@ ul li {
 }
 .content .c4 > div:last-child,
 .content .c8 > div:last-child {
-  padding-bottom: 3.5rem !important;
+  padding-bottom: 5rem !important;
 }
 @media only screen and (max-width: 767px) {
   .content .c4,
@@ -744,7 +744,7 @@ ul li {
 .page-expo .content .c4:after {
   content: ' ';
   width: inherit;
-  height: 3.5rem;
+  height: 5rem;
   position: fixed;
   bottom: 0;
   background: transparent;
@@ -792,7 +792,7 @@ ul li {
 .page-info .content .c4.col-infos:after {
   content: ' ';
   width: inherit;
-  height: 3.5rem;
+  height: 5rem;
   position: fixed;
   bottom: 0;
   background: transparent;
@@ -830,7 +830,7 @@ ul li {
 .page-info .content .c4.col-contact:after {
   content: ' ';
   width: inherit;
-  height: 3.5rem;
+  height: 5rem;
   position: fixed;
   bottom: 0;
   background: transparent;
@@ -865,7 +865,7 @@ ul li {
 .page-info .content .c4.col-soutien:after {
   content: ' ';
   width: inherit;
-  height: 3.5rem;
+  height: 5rem;
   position: fixed;
   bottom: 0;
   background: transparent;
@@ -966,7 +966,7 @@ ul li {
 .page-activity .content .c4:after {
   content: ' ';
   width: inherit;
-  height: 3.5rem;
+  height: 5rem;
   position: fixed;
   bottom: 0;
   background: transparent;
@@ -1017,7 +1017,7 @@ ul li {
 .page-museum .content .c4:after {
   content: ' ';
   width: inherit;
-  height: 3.5rem;
+  height: 5rem;
   position: fixed;
   bottom: 0;
   background: transparent;
