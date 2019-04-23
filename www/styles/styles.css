@@ -391,11 +391,11 @@ body {
   font-style: initial;
   font-size: 18px;
   line-height: 110%;
-  color: #000;
+  color: #000000;
 }
 * {
   scrollbar-width: initial;
-  scrollbar-color: #006dff white;
+  scrollbar-color: #006dff #ffffff;
   /* width */
   /* Track */
   /* Handle */
@@ -607,11 +607,11 @@ ul li {
 .content .c8:after {
   content: ' ';
   width: inherit;
-  height: 5rem;
+  height: 3.5rem;
   position: fixed;
   bottom: 0;
   background: transparent;
-  background: linear-gradient(0deg, #fff 10%, transparent 100%);
+  background: linear-gradient(0deg, #ffffff 10%, transparent 100%);
 }
 @media only screen and (max-width: 767px) {
   .content .c4:after,
@@ -621,7 +621,7 @@ ul li {
 }
 .content .c4 > div:last-child,
 .content .c8 > div:last-child {
-  padding-bottom: 5rem !important;
+  padding-bottom: 3.5rem !important;
 }
 @media only screen and (max-width: 767px) {
   .content .c4,
@@ -698,7 +698,7 @@ ul li {
 }
 .page-expo .c8 {
   scrollbar-width: initial;
-  scrollbar-color: #006dff white;
+  scrollbar-color: #006dff #ffffff;
   /* width */
   /* Track */
   /* Handle */
@@ -722,7 +722,7 @@ ul li {
 }
 .page-expo .content .c4 {
   scrollbar-width: initial;
-  scrollbar-color: #00d694 white;
+  scrollbar-color: #00d694 #ffffff;
   /* width */
   /* Track */
   /* Handle */
@@ -744,7 +744,7 @@ ul li {
 .page-expo .content .c4:after {
   content: ' ';
   width: inherit;
-  height: 5rem;
+  height: 3.5rem;
   position: fixed;
   bottom: 0;
   background: transparent;
@@ -770,7 +770,7 @@ ul li {
 }
 .page-info .content .c4.col-infos {
   scrollbar-width: initial;
-  scrollbar-color: #00d694 white;
+  scrollbar-color: #00d694 #ffffff;
   /* width */
   /* Track */
   /* Handle */
@@ -792,7 +792,7 @@ ul li {
 .page-info .content .c4.col-infos:after {
   content: ' ';
   width: inherit;
-  height: 5rem;
+  height: 3.5rem;
   position: fixed;
   bottom: 0;
   background: transparent;
@@ -808,7 +808,7 @@ ul li {
 }
 .page-info .content .c4.col-contact {
   scrollbar-width: initial;
-  scrollbar-color: #006dff white;
+  scrollbar-color: #006dff #ffffff;
   /* width */
   /* Track */
   /* Handle */
@@ -830,7 +830,7 @@ ul li {
 .page-info .content .c4.col-contact:after {
   content: ' ';
   width: inherit;
-  height: 5rem;
+  height: 3.5rem;
   position: fixed;
   bottom: 0;
   background: transparent;
@@ -843,7 +843,7 @@ ul li {
 }
 .page-info .content .c4.col-soutien {
   scrollbar-width: initial;
-  scrollbar-color: #ffcab3 white;
+  scrollbar-color: #ffcab3 #ffffff;
   /* width */
   /* Track */
   /* Handle */
@@ -865,7 +865,7 @@ ul li {
 .page-info .content .c4.col-soutien:after {
   content: ' ';
   width: inherit;
-  height: 5rem;
+  height: 3.5rem;
   position: fixed;
   bottom: 0;
   background: transparent;
@@ -920,7 +920,7 @@ ul li {
 }
 .page-activity .content .c8 {
   scrollbar-width: initial;
-  scrollbar-color: #ffcab3 white;
+  scrollbar-color: #ffcab3 #ffffff;
   /* width */
   /* Track */
   /* Handle */
@@ -944,7 +944,7 @@ ul li {
 }
 .page-activity .content .c4 {
   scrollbar-width: initial;
-  scrollbar-color: #00d694 white;
+  scrollbar-color: #00d694 #ffffff;
   /* width */
   /* Track */
   /* Handle */
@@ -966,7 +966,7 @@ ul li {
 .page-activity .content .c4:after {
   content: ' ';
   width: inherit;
-  height: 5rem;
+  height: 3.5rem;
   position: fixed;
   bottom: 0;
   background: transparent;
@@ -995,7 +995,7 @@ ul li {
 }
 .page-museum .content .c4 {
   scrollbar-width: initial;
-  scrollbar-color: #ffcab3 white;
+  scrollbar-color: #ffcab3 #ffffff;
   /* width */
   /* Track */
   /* Handle */
@@ -1017,7 +1017,7 @@ ul li {
 .page-museum .content .c4:after {
   content: ' ';
   width: inherit;
-  height: 5rem;
+  height: 3.5rem;
   position: fixed;
   bottom: 0;
   background: transparent;
