@@ -391,11 +391,11 @@ body {
   font-style: initial;
   font-size: 18px;
   line-height: 110%;
-  color: #000000;
+  color: #000;
 }
 * {
   scrollbar-width: initial;
-  scrollbar-color: #006dff #ffffff;
+  scrollbar-color: #006dff white;
   /* width */
   /* Track */
   /* Handle */
@@ -611,7 +611,7 @@ ul li {
   position: fixed;
   bottom: 0;
   background: transparent;
-  background: linear-gradient(0deg, #ffffff 10%, transparent 100%);
+  background: linear-gradient(0deg, #fff 10%, transparent 100%);
 }
 @media only screen and (max-width: 767px) {
   .content .c4:after,
@@ -698,7 +698,7 @@ ul li {
 }
 .page-expo .c8 {
   scrollbar-width: initial;
-  scrollbar-color: #006dff #ffffff;
+  scrollbar-color: #006dff white;
   /* width */
   /* Track */
   /* Handle */
@@ -722,7 +722,7 @@ ul li {
 }
 .page-expo .content .c4 {
   scrollbar-width: initial;
-  scrollbar-color: #00d694 #ffffff;
+  scrollbar-color: #00d694 white;
   /* width */
   /* Track */
   /* Handle */
@@ -770,7 +770,7 @@ ul li {
 }
 .page-info .content .c4.col-infos {
   scrollbar-width: initial;
-  scrollbar-color: #00d694 #ffffff;
+  scrollbar-color: #00d694 white;
   /* width */
   /* Track */
   /* Handle */
@@ -808,7 +808,7 @@ ul li {
 }
 .page-info .content .c4.col-contact {
   scrollbar-width: initial;
-  scrollbar-color: #006dff #ffffff;
+  scrollbar-color: #006dff white;
   /* width */
   /* Track */
   /* Handle */
@@ -843,7 +843,7 @@ ul li {
 }
 .page-info .content .c4.col-soutien {
   scrollbar-width: initial;
-  scrollbar-color: #ffcab3 #ffffff;
+  scrollbar-color: #ffcab3 white;
   /* width */
   /* Track */
   /* Handle */
@@ -920,7 +920,7 @@ ul li {
 }
 .page-activity .content .c8 {
   scrollbar-width: initial;
-  scrollbar-color: #ffcab3 #ffffff;
+  scrollbar-color: #ffcab3 white;
   /* width */
   /* Track */
   /* Handle */
@@ -944,7 +944,7 @@ ul li {
 }
 .page-activity .content .c4 {
   scrollbar-width: initial;
-  scrollbar-color: #00d694 #ffffff;
+  scrollbar-color: #00d694 white;
   /* width */
   /* Track */
   /* Handle */
@@ -995,7 +995,7 @@ ul li {
 }
 .page-museum .content .c4 {
   scrollbar-width: initial;
-  scrollbar-color: #ffcab3 #ffffff;
+  scrollbar-color: #ffcab3 white;
   /* width */
   /* Track */
   /* Handle */
@@ -1073,6 +1073,7 @@ ul li {
 }
 .collection-item .image-wrapper .image-container {
   padding-bottom: 100%;
+  background-size: cover;
 }
 .collection-item .family-name {
   margin: 0;
