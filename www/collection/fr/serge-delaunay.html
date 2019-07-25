@@ -25,14 +25,16 @@
             <a href="../../fr/index.html"><img src="../styles/svg/logo-am.svg" alt="Art et marges musée" /></a>
         </div>
         <div class="lang-switch">
-            <span class="active"><a href="../fr/serge-delaunay.html">FR</a></span>&nbsp;<span><a href="../nl/serge-delaunay.html">NL</a></span>&nbsp;<span><a href="../en/serge-delaunay.html">EN</a></span>
+            <span class="active"><a href="../fr/serge-delaunay.html">FR</a></span>&nbsp;<span><a
+                    href="../nl/serge-delaunay.html">NL</a></span>&nbsp;<span><a href="../en/serge-delaunay.html">EN</a></span>
         </div>
     </div>
 
     <div class="header">
 
         <div class="c8">
-            <div class="logo"><a href="../../fr/index.html"><img src="../../styles/svg/logo-am.svg" alt="Art et marges musée" /></a></div>
+            <div class="logo"><a href="../../fr/index.html"><img src="../../styles/svg/logo-am.svg"
+                        alt="Art et marges musée" /></a></div>
             <div class="link-expo"><a href="../../fr/index.html">EXPOSITIONS</a></div>
             <div class="link-musee active"><a href="../../fr/musee.html">LE MUSÉE</a></div>
             <div class="link-activity"><a href="../../fr/activ.html">ACTIVITÉS</a></div>
@@ -43,14 +45,19 @@
             <div class="empty-in-purpose"></div>
 
             <div class="share">
-                <a target="_blank" href="https://www.facebook.com/artetmarges"><img src="../../styles/svg/facebook.svg" alt="Facebook Art et Marges" /></a>
-                <a target="_blank" href="https://www.youtube.com/channel/UCQtE1cPa2yrLmVSSrigQ0oA"><img src="../../styles/svg/youtube.svg" alt="Youtube Art et Marges" /></a>
-                <a href="mailto:info@artetmarges.be"><img src="../../styles/svg/mail.svg" alt="Mail Art et Marges" /></a>
-                <a href="https://www.instagram.com/artetmargesmuseum/"><img src="../../styles/svg/instagram.svg" alt="instagram Art et Marges" /></a>
+                <a target="_blank" href="https://www.facebook.com/artetmarges"><img src="../../styles/svg/facebook.svg"
+                        alt="Facebook Art et Marges" /></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCQtE1cPa2yrLmVSSrigQ0oA"><img
+                        src="../../styles/svg/youtube.svg" alt="Youtube Art et Marges" /></a>
+                <a href="mailto:info@artetmarges.be"><img src="../../styles/svg/mail.svg"
+                        alt="Mail Art et Marges" /></a>
+                <a href="https://www.instagram.com/artetmargesmuseum/"><img src="../../styles/svg/instagram.svg"
+                        alt="instagram Art et Marges" /></a>
             </div>
 
             <div class="lang-switch">
-                <span class="active"><a href="../fr/serge-delaunay.html">FR</a></span>&nbsp;<span><a href="../nl/serge-delaunay.html">NL</a></span>&nbsp;<span><a href="../en/serge-delaunay.html">EN</a></span>
+                <span class="active"><a href="../fr/serge-delaunay.html">FR</a></span>&nbsp;<span><a
+                        href="../nl/serge-delaunay.html">NL</a></span>&nbsp;<span><a href="../en/serge-delaunay.html">EN</a></span>
             </div>
         </div>
     </div>
@@ -61,10 +68,25 @@
         <!-- COLONNE GAUCHE / IMAGE-->
         <div class="c8">
 
-            <!-- IMAGE -->
-            <div class="image-wrapper artist-view">
-                <div class="image-container" data-image="collection/source/Serge-Delaunay-294"></div>
+            <!-- DIAPORAMA START-->
+
+            <div class="carousel carousel--collection"
+                data-flickity='{ "cellSelector": ".carousel-cell", "wrapAround": "true", "imagesLoaded": "true", "lazyLoad": "true", "lazyLoad" : 1}'>
+                <!-- <div class="static-banner">
+                    <div class="banner-title">Blabla</div>
+                </div> -->
+                <div class="carousel-cell">
+                    <div class="image-container" data-image="collection/source/Serge-Delaunay-294"></div>
+                    <!-- <div class="carousel-cell-caption"></div> -->
+                </div>
             </div>
+
+            <!-- DIAPORAMA END-->
+
+            <!-- IMAGE -->
+            <!-- <div class="image-wrapper artist-view">
+                <div class="image-container" data-image="collection/source/Serge-Delaunay-294"></div>
+            </div> -->
         </div>
 
         <!-- COLONNE DROITE / BIO-->
@@ -90,6 +112,7 @@
 
 
     <script src="../../js/image.js" charset="utf-8"></script>
+    <script src="../../js/flickity.pkgd.js" charset="utf-8"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
