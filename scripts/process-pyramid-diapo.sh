@@ -2,7 +2,7 @@
 # This script should be used in the folder containing the diapo images
 
 
-sourceDir="/medias/diapo/home/lisiere"
+sourceDir="/medias/diapo/home/america"
 destDir="pyramid"
 
 # WE FIRST MOVE EVERYTHING IN A DESTINATION FOLDER
