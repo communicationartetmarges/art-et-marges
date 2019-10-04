@@ -1287,6 +1287,9 @@ ul li {
 }
 .flickity-page-dots .dot.is-selected {
   background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .static-banner {
   position: absolute;
