@@ -1250,7 +1250,7 @@ ul li {
 }
 @media only screen and (max-width: 767px) {
   .carousel {
-    height: 33vh !important;
+    height: 66vw !important;
   }
   .carousel .static-banner,
   .carousel .flickity-button,
