@@ -1252,6 +1252,7 @@ ul li {
   .carousel {
     height: 33vh !important;
   }
+  .carousel .static-banner,
   .carousel .flickity-button {
     display: none;
   }
