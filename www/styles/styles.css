@@ -1250,6 +1250,11 @@ ul li {
 }
 @media only screen and (max-width: 767px) {
   .carousel {
+    height: 66vw !important;
+  }
+  .carousel .static-banner,
+  .carousel .flickity-button,
+  .carousel .flickity-page-dots {
     display: none;
   }
 }
@@ -1287,9 +1292,6 @@ ul li {
 }
 .flickity-page-dots .dot.is-selected {
   background: #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 .static-banner {
   position: absolute;
