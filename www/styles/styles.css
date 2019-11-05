@@ -435,10 +435,9 @@ https://flickity.metafizzy.co
 .link-border-style {
   display: inline-block;
   line-height: 0.8;
-  color: #00d694;
 }
 .link-border-style:hover {
-  border-bottom: 2px solid #00d694;
+  border-bottom: 2px solid #000;
 }
 /******** MIXINS ********/
 /**PROPORTIONAL FONTSIZE & LINE-HEIGHT**/
@@ -1206,17 +1205,12 @@ ul li {
   line-height: inherit;
   color: #000;
 }
-.collection-item a:hover {
-  text-decoration: none;
-  color: #00d694;
-}
 .collection-item a:hover .family-name {
   display: inline-block;
   line-height: 0.8;
-  color: #00d694;
 }
 .collection-item a:hover .family-name:hover {
-  border-bottom: 2px solid #00d694;
+  border-bottom: 2px solid #000;
 }
 .collection-item .image-wrapper .image-container {
   padding-bottom: 100%;

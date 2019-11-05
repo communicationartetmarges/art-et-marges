@@ -57,10 +57,10 @@
 .link-border-style {
     display: inline-block;
     line-height: 0.8;
-    color: @green;
+    // color: @green;
 
     &:hover {
-        border-bottom: 2px solid @green;
+        border-bottom: 2px solid #000;
     }
 }
 
@@ -68,11 +68,11 @@
 /******** MIXINS ********/
 
 .absolute(@top: initial;
-@right: initial;
-@bottom: initial;
-@left: initial;
+    @right: initial;
+    @bottom: initial;
+    @left: initial;
 
-@z-index: 1) {
+    @z-index: 1) {
     position: absolute;
     top: @top;
     right: @right;
@@ -82,12 +82,12 @@
 }
 
 .font(@family: @baseFontFamilly;
-@weight: normal;
-@style: initial;
-@size: 18px;
-@line-height: @baseLineHeight;
+    @weight: normal;
+    @style: initial;
+    @size: 18px;
+    @line-height: @baseLineHeight;
 
-@color: @baseFontColor) {
+    @color: @baseFontColor) {
     font-family: @family;
     font-weight: @weight;
     font-style: @style;
