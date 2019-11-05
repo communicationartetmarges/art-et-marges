@@ -37,7 +37,7 @@ def main():
             slug = slugify(row['PRENOM'] + '-' + row['NOM'])
 
             paragraphs = '\n'.join(
-            ['<p>{}</p>'.format(p) for p in row['BIOGRAPHIE'].split('\n')])
+                ['<p>{}</p>'.format(p) for p in row['BIOGRAPHIE'].split('\n')])
             row['BIOGRAPHIE'] = paragraphs
 
             image = row['IMAGE'].split('.')[0]
