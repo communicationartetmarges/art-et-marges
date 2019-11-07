@@ -586,6 +586,52 @@ a {
 ul li {
   padding-top: 3px;
 }
+.splash {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 1000;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.splash--close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+  width: 75px;
+}
+.splash--play {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 2;
+  border-radius: 100%;
+  padding: 70px;
+}
+.splash--content {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.splash.hidden {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .splash {
+    display: none;
+  }
+}
 .header {
   height: calc(1.5rem + 10px * 2);
   display: flex;
@@ -1267,7 +1313,7 @@ ul li {
 }
 .carousel {
   width: 100%;
-  height: calc(100vh - 1.5rem - 10px * 2);
+  height: calc(90vh - 1.5rem - 10px * 2);
   z-index: 1;
 }
 .carousel-cell {

@@ -15,9 +15,29 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="shortcut icon" type="image/png" href="../styles/images/favicon.png" />
+
+    <script type="text/javascript" src="/js/splash.js"></script>
+
 </head>
 
 <body class="page-expo">
+    <!-- Splash box -->
+    <div class="splash" id="Splash">
+        <div id="video-pause" class="splash--close" title="Fermer">
+            <img src="../styles/svg/close.svg" alt="Fermer">
+        </div>
+        <div class="splash--content">
+            <div id="video-play" class="splash--play">
+                <img src="../styles/svg/play.svg" alt="Jouer la vidéo">
+            </div>
+
+            <video id="video1" width="auto" height="95%">
+                <source src="../files/amexpa720.mp4" type="video/mp4">
+                Désolé, votre navigateur ne peut pas lire cette vidéo.
+            </video>
+        </div>
+    </div>
+
     <div class="mobile-header">
         <div class="logo"><a href="../fr/index.html"><img src="../styles/svg/logo-am.svg"
                     alt="Art et marges musée" /></a></div>
