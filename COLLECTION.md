@@ -22,12 +22,29 @@ le script Python ```www/collection/gen.py``` génère les fiches et imprime à l
 
 exemple:
 ```
-./www/collection/gen.py\
-templates/fr-collection-10artistes-06042017.csv \
-templates/fiche-artiste.html\
-www/collection/fr\
-templates/link-artiste.html\
-/collection/fr
+./www/collection/gen.py \
+templates/collection-all-fr.csv \
+templates/fiche-artiste-fr.html \
+www/collection/fr \
+templates/link-artiste.html \
+/collection/fr \
+| pbcopy
+
+./www/collection/gen.py \
+templates/collection-all-nl.csv \
+templates/fiche-artiste-nl.html \
+www/collection/nl \
+templates/link-artiste.html \
+/collection/nl \
+| pbcopy
+
+./www/collection/gen.py \
+templates/collection-all-en.csv \
+templates/fiche-artiste-en.html \
+www/collection/en \
+templates/link-artiste.html \
+/collection/en \
+| pbcopy
 ```
 
 #### extra
