@@ -9,34 +9,34 @@
 
     .c8 {
         .col-8;
-        padding-left: calc(~"@{logoW} + @{margin}");
+        padding-left: calc(~'@{logoW} + @{margin}');
     }
 
     .c4 {
         .col-4;
     }
 
-    >div {
+    > div {
         display: flex;
         justify-content: space-between;
     }
 
     img {
-        height: @headerInnerH ;
+        height: @headerInnerH;
     }
 
     a {
         color: initial;
-        border-bottom: 2px solid transparent;
+        border-bottom: 1px solid transparent;
         text-decoration: none;
 
         &:hover {
-            border-bottom: 2px solid black;
+            border-bottom: 1px solid black;
         }
     }
 
     .active a {
-        border-bottom: 2px solid black;
+        border-bottom: 1px solid black;
     }
 
     .logo {
@@ -77,24 +77,23 @@
 
         .c8 {
             padding: 0;
-
         }
 
-        >div {
+        > div {
             flex-direction: column;
             width: 100% !important;
 
             div {
                 width: 100%;
-                font-size: 3rem;
+                .big-title();
                 text-align: right;
-                height: 1.3em;
+                // height: 1.3em;
                 padding-right: @margin;
                 // margin-bottom: @margin * 2;
             }
 
             .logo {
-                width: @logoWmob  !important;
+                width: @logoWmob !important;
                 position: fixed;
             }
 
@@ -131,7 +130,7 @@
             .absolute(@margin, auto, auto, @margin);
 
             img {
-                height: @headerInnerH ;
+                height: @headerInnerH;
             }
         }
 
@@ -147,17 +146,16 @@
 
         a {
             color: initial;
-            border-bottom: 2px solid transparent;
+            border-bottom: 1px solid transparent;
             text-decoration: none;
 
             &:hover {
-                border-bottom: 2px solid black;
+                border-bottom: 1px solid black;
             }
         }
 
         .active a {
-            border-bottom: 2px solid black;
+            border-bottom: 1px solid black;
         }
     }
-
 }
