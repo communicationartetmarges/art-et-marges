@@ -510,7 +510,7 @@ body {
   font-weight: normal;
   font-style: initial;
   font-size: 18px;
-  line-height: 110%;
+  line-height: 115%;
   color: #000;
   scrollbar-width: initial;
   scrollbar-color: #ffcab3 white;
@@ -586,6 +586,16 @@ a {
 ul li {
   padding-top: 3px;
 }
+.title {
+  margin-top: 10px;
+}
+.title * {
+  line-height: 85%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 .splash {
   position: absolute;
   top: 0px;
@@ -602,17 +612,17 @@ ul li {
   top: 10px;
   right: 10px;
   z-index: 2;
-  width: 75px;
+  width: 50px;
 }
 .splash--play {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.5);
   z-index: 2;
   border-radius: 100%;
-  padding: 70px;
+  padding: 30px;
 }
 .splash--content {
   position: absolute;
@@ -657,14 +667,14 @@ ul li {
 }
 .header a {
   color: initial;
-  border-bottom: 2px solid transparent;
+  border-bottom: 1px solid transparent;
   text-decoration: none;
 }
 .header a:hover {
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
 }
 .header .active a {
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
 }
 .header .logo {
   position: absolute;
@@ -703,9 +713,13 @@ ul li {
   }
   .header > div div {
     width: 100%;
-    font-size: 3rem;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: 85%;
     text-align: right;
-    height: 1.3em;
     padding-right: 10px;
   }
   .header > div .logo {
@@ -750,14 +764,14 @@ ul li {
   }
   .mobile-header a {
     color: initial;
-    border-bottom: 2px solid transparent;
+    border-bottom: 1px solid transparent;
     text-decoration: none;
   }
   .mobile-header a:hover {
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
   }
   .mobile-header .active a {
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
   }
 }
 .content {
