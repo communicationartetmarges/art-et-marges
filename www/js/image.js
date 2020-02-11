@@ -51,14 +51,18 @@
     function generate_style() {
         var elementList = document.querySelectorAll(selector(IMG_ATTRIBUTE));
         var attr = IMG_ATTRIBUTE;
-        if (elementList.length < 1) {
-            elementList = document.querySelectorAll(selector(GIF_ATTRIBUTE));
-            attr = GIF_ATTRIBUTE;
-        }
+
+        var elementListGif = document.querySelectorAll(selector(GIF_ATTRIBUTE));
+        var attrGif = GIF_ATTRIBUTE;
+
         var style = [];
         for (var i = 0; i < elementList.length; i++) {
             style.push(generate_block(elementList[i], attr));
         }
+        for (var i = 0; i < elementListGif.length; i++) {
+            style.push(generate_block(elementListGif[i], attrGif));
+        }
+
 
         return style.join('\n');
     }
