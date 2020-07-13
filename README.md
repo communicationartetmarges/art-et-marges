@@ -14,6 +14,7 @@ OUI : `"image-expo_v2.jpg"`
 Les images stockées dans le dossier `medias/images/` sont insérées comme suit dans le html : 
 
 `<div class="image-container" data-image = "nom_image">`
+ou, pour les gif: `<div class="image-container" data-gif = "nom_image">`
 
 
 ## ! 

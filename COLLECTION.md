@@ -58,3 +58,4 @@ mogrify -path www/medias/images/collection/thumbnails/ \
 -extent 400x400 \
 www/medias/images/collection/source/*
 ``` 
+!! certains thumbnails sont actuellement importés manuellement, séparément. C'est le cas pour Cosijn et Delaunay. Il faut les sauvegarder puis les remettre dans le dossier pour ne pas qu'ils soient écrasés par le thumbnail automatique.
