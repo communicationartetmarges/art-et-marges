@@ -624,6 +624,11 @@ ul li {
   border-radius: 100%;
   padding: 30px;
 }
+.splash--text {
+  position: absolute;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  padding: 100px;
+}
 .splash--content {
   position: absolute;
   top: 30px;
