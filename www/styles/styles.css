@@ -1138,6 +1138,12 @@ ul li {
 .col-soutien .label {
   padding-left: 10px;
 }
+.info {
+  padding: 10px;
+}
+.info .credits img {
+  width: 60%;
+}
 .team-item-function {
   margin-left: 2rem;
 }
