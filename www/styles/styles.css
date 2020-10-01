@@ -912,6 +912,15 @@ ul li {
   font-size: 8px;
   display: block;
 }
+.article .videos-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.article .videos-wrapper video {
+  width: calc(100%/5 - 4*10px);
+  margin-bottom: 10px;
+}
 .page-expo .c8 {
   scrollbar-width: initial;
   scrollbar-color: #006dff #ffffff;

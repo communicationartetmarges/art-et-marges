@@ -32,4 +32,14 @@
         display: block;
     }
 
+    .videos-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        video {
+            width: calc(~"100%/5 - 4*@{margin}");
+            margin-bottom: @margin;
+        }
+    }
+
 }
