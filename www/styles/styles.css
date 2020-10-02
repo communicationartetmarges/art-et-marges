@@ -917,7 +917,7 @@ ul li {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.article .videos-wrapper video {
+.article .videos-wrapper iframe {
   width: calc(100%/5 - 4*10px);
   margin-bottom: 10px;
 }
