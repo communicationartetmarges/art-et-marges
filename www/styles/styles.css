@@ -336,7 +336,7 @@ https://flickity.metafizzy.co
 /* ---- flickity-button ---- */
 .flickity-button {
   position: absolute;
-  background: hsla(0, 0%, 100%, 0.75);
+  background: rgba(255, 255, 255, 0.75);
   border: none;
   color: #333;
 }
@@ -511,9 +511,9 @@ body {
   font-style: initial;
   font-size: 18px;
   line-height: 115%;
-  color: #000;
+  color: #000000;
   scrollbar-width: initial;
-  scrollbar-color: #ffcab3 white;
+  scrollbar-color: #ffcab3 #ffffff;
   /* width */
   /* Track */
   /* Handle */
@@ -533,7 +533,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 * {
   scrollbar-width: initial;
-  scrollbar-color: #006dff white;
+  scrollbar-color: #006dff #ffffff;
   /* width */
   /* Track */
   /* Handle */
@@ -827,7 +827,7 @@ ul li {
   position: fixed;
   bottom: 0;
   background: transparent;
-  background: linear-gradient(0deg, #fff 10%, transparent 100%);
+  background: linear-gradient(0deg, #ffffff 10%, transparent 100%);
 }
 @media only screen and (max-width: 767px) {
   .content .c4:after,
@@ -930,7 +930,7 @@ ul li {
 }
 .page-expo .c8 {
   scrollbar-width: initial;
-  scrollbar-color: #006dff white;
+  scrollbar-color: #006dff #ffffff;
   /* width */
   /* Track */
   /* Handle */
@@ -962,7 +962,7 @@ ul li {
 }
 .page-expo .content .c4 {
   scrollbar-width: initial;
-  scrollbar-color: #00d694 white;
+  scrollbar-color: #00d694 #ffffff;
   /* width */
   /* Track */
   /* Handle */
@@ -1009,7 +1009,7 @@ ul li {
 }
 .page-info .content .c4.col-infos {
   scrollbar-width: initial;
-  scrollbar-color: #00d694 white;
+  scrollbar-color: #00d694 #ffffff;
   /* width */
   /* Track */
   /* Handle */
@@ -1047,7 +1047,7 @@ ul li {
 }
 .page-info .content .c4.col-contact {
   scrollbar-width: initial;
-  scrollbar-color: #006dff white;
+  scrollbar-color: #006dff #ffffff;
   /* width */
   /* Track */
   /* Handle */
@@ -1082,7 +1082,7 @@ ul li {
 }
 .page-info .content .c4.col-soutien {
   scrollbar-width: initial;
-  scrollbar-color: #ffcab3 white;
+  scrollbar-color: #ffcab3 #ffffff;
   /* width */
   /* Track */
   /* Handle */
@@ -1158,14 +1158,14 @@ ul li {
   padding: 10px;
 }
 .info .credits img {
-  width: 60%;
+  width: 100%;
 }
 .team-item-function {
   margin-left: 2rem;
 }
 .page-activity .content .c8 {
   scrollbar-width: initial;
-  scrollbar-color: #ffcab3 white;
+  scrollbar-color: #ffcab3 #ffffff;
   /* width */
   /* Track */
   /* Handle */
@@ -1189,7 +1189,7 @@ ul li {
 }
 .page-activity .content .c4 {
   scrollbar-width: initial;
-  scrollbar-color: #00d694 white;
+  scrollbar-color: #00d694 #ffffff;
   /* width */
   /* Track */
   /* Handle */
@@ -1240,7 +1240,7 @@ ul li {
 }
 .page-museum .content .c4 {
   scrollbar-width: initial;
-  scrollbar-color: #ffcab3 white;
+  scrollbar-color: #ffcab3 #ffffff;
   /* width */
   /* Track */
   /* Handle */
@@ -1353,7 +1353,7 @@ ul li {
 }
 .carousel {
   width: 100%;
-  height: calc(90vh - 1.5rem - 10px * 2);
+  height: calc(68.5vh);
   z-index: 1;
 }
 .carousel-cell {
