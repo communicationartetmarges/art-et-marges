@@ -1163,6 +1163,9 @@ ul li {
 .info .credits .linked-logo {
   width: 10%;
 }
+.info .credits .credits-info {
+  font-size: 0.6em;
+}
 .team-item-function {
   margin-left: 2rem;
 }
