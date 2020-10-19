@@ -1158,7 +1158,10 @@ ul li {
   padding: 10px;
 }
 .info .credits img {
-  width: 100%;
+  width: 75%;
+}
+.info .credits .linked-logo {
+  width: 10%;
 }
 .team-item-function {
   margin-left: 2rem;
