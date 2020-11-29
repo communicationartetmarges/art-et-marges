@@ -1356,11 +1356,25 @@ body.page-qr .content {
   width: 100%;
   background-color: #00d694;
 }
-body.page-qr .content .video {
-  height: 100%;
-  width: 100%;
+body.page-qr .content.video-fs {
   display: flex;
   align-items: center;
+}
+body.page-qr .content .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+}
+body.page-qr .content .video-container iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 /*************** Override flickity.css  ****************/
 @media only screen and (min-width: 767px) {
