@@ -336,7 +336,7 @@ https://flickity.metafizzy.co
 /* ---- flickity-button ---- */
 .flickity-button {
   position: absolute;
-  background: rgba(255, 255, 255, 0.75);
+  background: hsla(0, 0%, 100%, 0.75);
   border: none;
   color: #333;
 }
@@ -511,9 +511,9 @@ body {
   font-style: initial;
   font-size: 18px;
   line-height: 115%;
-  color: #000000;
+  color: #000;
   scrollbar-width: initial;
-  scrollbar-color: #ffcab3 #ffffff;
+  scrollbar-color: #ffcab3 white;
   /* width */
   /* Track */
   /* Handle */
@@ -533,7 +533,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 * {
   scrollbar-width: initial;
-  scrollbar-color: #006dff #ffffff;
+  scrollbar-color: #006dff white;
   /* width */
   /* Track */
   /* Handle */
@@ -827,7 +827,7 @@ ul li {
   position: fixed;
   bottom: 0;
   background: transparent;
-  background: linear-gradient(0deg, #ffffff 10%, transparent 100%);
+  background: linear-gradient(0deg, #fff 10%, transparent 100%);
 }
 @media only screen and (max-width: 767px) {
   .content .c4:after,
@@ -930,7 +930,7 @@ ul li {
 }
 .page-expo .c8 {
   scrollbar-width: initial;
-  scrollbar-color: #006dff #ffffff;
+  scrollbar-color: #006dff white;
   /* width */
   /* Track */
   /* Handle */
@@ -962,7 +962,7 @@ ul li {
 }
 .page-expo .content .c4 {
   scrollbar-width: initial;
-  scrollbar-color: #00d694 #ffffff;
+  scrollbar-color: #00d694 white;
   /* width */
   /* Track */
   /* Handle */
@@ -1009,7 +1009,7 @@ ul li {
 }
 .page-info .content .c4.col-infos {
   scrollbar-width: initial;
-  scrollbar-color: #00d694 #ffffff;
+  scrollbar-color: #00d694 white;
   /* width */
   /* Track */
   /* Handle */
@@ -1047,7 +1047,7 @@ ul li {
 }
 .page-info .content .c4.col-contact {
   scrollbar-width: initial;
-  scrollbar-color: #006dff #ffffff;
+  scrollbar-color: #006dff white;
   /* width */
   /* Track */
   /* Handle */
@@ -1082,7 +1082,7 @@ ul li {
 }
 .page-info .content .c4.col-soutien {
   scrollbar-width: initial;
-  scrollbar-color: #ffcab3 #ffffff;
+  scrollbar-color: #ffcab3 white;
   /* width */
   /* Track */
   /* Handle */
@@ -1171,7 +1171,7 @@ ul li {
 }
 .page-activity .content .c8 {
   scrollbar-width: initial;
-  scrollbar-color: #ffcab3 #ffffff;
+  scrollbar-color: #ffcab3 white;
   /* width */
   /* Track */
   /* Handle */
@@ -1195,7 +1195,7 @@ ul li {
 }
 .page-activity .content .c4 {
   scrollbar-width: initial;
-  scrollbar-color: #00d694 #ffffff;
+  scrollbar-color: #00d694 white;
   /* width */
   /* Track */
   /* Handle */
@@ -1246,7 +1246,7 @@ ul li {
 }
 .page-museum .content .c4 {
   scrollbar-width: initial;
-  scrollbar-color: #ffcab3 #ffffff;
+  scrollbar-color: #ffcab3 white;
   /* width */
   /* Track */
   /* Handle */
@@ -1335,6 +1335,56 @@ ul li {
     height: 100vw;
   }
 }
+body.page-qr .logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+  width: 55px;
+  height: 55px;
+}
+body.page-qr .logo img {
+  width: 100%;
+}
+body.page-qr .content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #00d694;
+}
+body.page-qr .content.video-fs {
+  display: flex;
+  align-items: center;
+}
+body.page-qr .content .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+}
+body.page-qr .content .video-container iframe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+body.page-qr .content.qr-list {
+  padding: 100px;
+}
+body.page-qr .content.qr-list > div {
+  margin: 10px;
+}
+body.page-qr .content.qr-list .code-img img {
+  width: 100px;
+}
 /*************** Override flickity.css  ****************/
 @media only screen and (min-width: 767px) {
   .header {
@@ -1359,7 +1409,7 @@ ul li {
 }
 .carousel {
   width: 100%;
-  height: calc(68.5vh);
+  height: calc(90vh - 1.5rem - 10px * 2);
   z-index: 1;
 }
 .carousel-cell {
