@@ -1,0 +1,131 @@
+/* STYLE FOR RESERVATION SYSTEM, IT OVERIDES DEFAULT WP STYLE, AND LOAD ART&MARGES PRIMARY STYLES */
+
+html {
+    font-size: 18px;
+}
+
+body.theme-twentytwenty {
+    .header-titles-wrapper,
+    .woocommerce-product-gallery.woocommerce-product-gallery--without-images.woocommerce-product-gallery--columns-4.images,
+    .woocommerce-products-header__title.page-title,
+    .wc-bookings-date-picker-timezone-block,
+    #site-footer {
+        display: none;
+    }
+
+    * {
+        font-size: 1rem;
+    }
+
+    .woocommerce #content div.product div.summary,
+    .woocommerce div.product div.summary,
+    .woocommerce-page #content div.product div.summary,
+    .woocommerce-page div.product div.summary {
+        float: initial;
+        width: 48%;
+        margin: auto;
+        clear: initial;
+    }
+
+    body {
+        background-color: @green !important;
+    }
+
+    #site-header {
+        height: 44px;
+        display: flex;
+        align-items: center;
+        /* font-size: 1rem; */
+    }
+
+    .header-inner.section-inner {
+        padding: 0;
+    }
+
+    #site-header::before {
+        content: ' ';
+        width: 55px;
+        height: 55px;
+        background-image: url('http://www.artetmarges.be/styles/svg/logo-am-10ans.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: @margin / 2;
+        left: 0;
+    }
+
+    .header-navigation-wrapper {
+        margin-left: auto;
+    }
+
+    .header-navigation-wrapper * {
+        color: black !important;
+    }
+
+    .woocommerce .content-area .site-main {
+        margin: 0;
+    }
+
+    .woocommerce section {
+        padding-bottom: @margin * 4;
+    }
+
+    form.cart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .single-product .entry-title {
+        margin: 0;
+        padding: 0 @margin;
+    }
+
+    .single-product .summary p.price {
+        margin-bottom: @margin * 2;
+    }
+
+    .wc_bookings_field_persons_67 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wc_bookings_field_persons_67 label {
+        font-size: 1rem;
+        font-weight: bold;
+        order: 2;
+        margin-top: @margin;
+    }
+
+    .wc_bookings_field_persons_67 input {
+        order: 3;
+        min-width: 200px;
+        font-size: 1rem;
+    }
+
+    .wc-bookings-date-picker {
+        padding: 0;
+        border: 0px;
+    }
+
+    .summary.entry-summary {
+        width: 100% !important;
+        max-width: 500px;
+    }
+
+    .wc-bookings-booking-form {
+        background: @grey;
+    }
+
+    button,
+    .button,
+    .single-product .single_add_to_cart_button {
+        font-size: 1rem;
+        background-color: @blue;
+        color: white;
+        padding: 1rem 2rem;
+        text-transform: lowercase;
+        font-weight: normal;
+    }
+}
