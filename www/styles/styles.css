@@ -692,6 +692,19 @@ ul li {
   height: auto;
   width: 100%;
 }
+.header .ticket-link {
+  text-transform: uppercase;
+  padding: 2.5px 10px;
+  background-color: #006dff;
+  color: #fff;
+  margin-top: -5px;
+}
+.header .ticket-link a {
+  color: #fff;
+}
+.header .ticket-link a:hover {
+  border-bottom-color: #fff;
+}
 .mobile-header {
   display: none;
 }
@@ -1115,6 +1128,23 @@ ul li {
     display: none;
   }
 }
+.page-info .content .c4.col-soutien .ticket-link {
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #006dff;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+.page-info .content .c4.col-soutien .ticket-link a {
+  color: #fff;
+  text-decoration: none;
+}
+.page-info .content .c4.col-soutien .ticket-link a:hover {
+  border-bottom: 1px solid #fff;
+}
 .page-info .content .c4 > div {
   padding: 0 10px;
 }
@@ -1129,7 +1159,7 @@ ul li {
   background: left no-repeat;
   background-size: cover;
   mix-blend-mode: multiply;
-  background-image: url("../medias/images/tour-de-brol.jpg");
+  background-image: url('../medias/images/tour-de-brol.jpg');
 }
 @media only screen and (max-width: 767px) {
   .info-content .article.info-img {
