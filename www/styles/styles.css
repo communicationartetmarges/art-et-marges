@@ -1498,6 +1498,9 @@ body.page-qr .content.qr-list .code-img img {
 html {
   font-size: 18px;
 }
+body.theme-twentytwenty {
+  background-color: #00d694 !important;
+}
 body.theme-twentytwenty .header-titles-wrapper,
 body.theme-twentytwenty .woocommerce-product-gallery.woocommerce-product-gallery--without-images.woocommerce-product-gallery--columns-4.images,
 body.theme-twentytwenty .woocommerce-products-header__title.page-title,
@@ -1516,9 +1519,6 @@ body.theme-twentytwenty .woocommerce-page div.product div.summary {
   width: 48%;
   margin: auto;
   clear: initial;
-}
-body.theme-twentytwenty body {
-  background-color: #00d694 !important;
 }
 body.theme-twentytwenty #site-header {
   height: 44px;
