@@ -596,6 +596,22 @@ ul li {
   padding-top: 0px;
   padding-bottom: 0px;
 }
+.ticket-link {
+  padding: 10px !important;
+  background-color: #006dff;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  width: 60%;
+  max-width: 300px;
+}
+.ticket-link a {
+  color: #fff;
+  text-decoration: none;
+}
+.ticket-link a:hover {
+  border-bottom: 1px solid #fff;
+}
 .splash {
   position: absolute;
   top: 0px;
@@ -692,17 +708,17 @@ ul li {
   height: auto;
   width: 100%;
 }
-.header .ticket-link {
+.header .ticket-link-header {
   text-transform: uppercase;
   padding: 2.5px 10px;
   background-color: #006dff;
   color: #fff;
   margin-top: -5px;
 }
-.header .ticket-link a {
+.header .ticket-link-header a {
   color: #fff;
 }
-.header .ticket-link a:hover {
+.header .ticket-link-header a:hover {
   border-bottom-color: #fff;
 }
 .mobile-header {
@@ -1127,23 +1143,6 @@ ul li {
   .page-info .content .c4.col-soutien:after {
     display: none;
   }
-}
-.page-info .content .c4.col-soutien .ticket-link {
-  padding: 10px;
-  margin: 10px 0;
-  background-color: #006dff;
-  text-transform: uppercase;
-  display: block;
-  text-align: center;
-  width: 60%;
-  margin: 0 auto;
-}
-.page-info .content .c4.col-soutien .ticket-link a {
-  color: #fff;
-  text-decoration: none;
-}
-.page-info .content .c4.col-soutien .ticket-link a:hover {
-  border-bottom: 1px solid #fff;
 }
 .page-info .content .c4 > div {
   padding: 0 10px;
