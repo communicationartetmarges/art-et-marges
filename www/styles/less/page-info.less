@@ -1,24 +1,23 @@
 .page-info {
-
-    .content .c4{
-        &.col-infos{
+    .content .c4 {
+        &.col-infos {
             .scroll-mixin(@green);
-            background-color:@lightgrey;
+            background-color: @lightgrey;
             &:after {
                 .columnGradient(@lightgrey);
             }
             .label {
-                padding-left: calc(~"@{logoW} + @{margin} * 2");
+                padding-left: calc(~'@{logoW} + @{margin} * 2');
             }
         }
-        &.col-contact{
+        &.col-contact {
             .scroll-mixin(@blue);
-            background-color:@pink;
+            background-color: @pink;
             &:after {
                 .columnGradient(@pink);
             }
         }
-        &.col-soutien{
+        &.col-soutien {
             .scroll-mixin(@pink);
             background-color: @green;
             &:after {
@@ -31,7 +30,6 @@
         }
     }
 }
-
 
 /**BACKGROUND IMAGE SYSTEM**/
 
@@ -47,16 +45,17 @@
             background: left no-repeat;
             background-size: cover;
             mix-blend-mode: multiply;
-            background-image:url("../medias/images/tour-de-brol.jpg");
+            background-image: url('../medias/images/tour-de-brol.jpg');
 
-            @media @xs {display: none;}
+            @media @xs {
+                display: none;
+            }
         }
     }
 
     .newsletter {
         background-color: transparent;
     }
-
 }
 
 // .col-infos {
@@ -71,23 +70,26 @@
 //     background: #b0baff;
 // }
 
-
 .col-infos,
 .col-contact,
 .col-soutien {
     padding: 0 !important;
-    .info {padding: @margin;}
-    .label {padding-left: @margin;}
+    .info {
+        padding: @margin;
+    }
+    .label {
+        padding-left: @margin;
+    }
 }
 
-.info {padding: @margin;
+.info {
+    padding: @margin;
     .credits {
         img {
             width: 75%;
-            
         }
         .linked-logo {
-            width: 10%
+            width: 10%;
         }
         .credits-info {
             font-size: 0.6em;
