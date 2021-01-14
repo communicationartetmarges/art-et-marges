@@ -3,7 +3,7 @@ A website for Art et Marges Museum
 
 
 ## Insertion d'images
-Dimensions images : max 2048 x 2048 px  
+Dimensions images : Idéalement 1350 x 2048 px - max 2048 x 2048 px  
 nom de fichier propres : pas de charactères bizares ni d'espaces dans le nom.  
 
 Exemples :  
