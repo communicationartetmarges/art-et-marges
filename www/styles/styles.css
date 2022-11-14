@@ -669,6 +669,7 @@ ul li {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  text-transform: uppercase;
   padding: 10px;
   background: #fff;
 }
@@ -699,7 +700,7 @@ ul li {
 }
 .header .logo {
   position: absolute;
-  top: 5px;
+  top: 10px / 2;
   left: 0;
   z-index: 10;
   width: 55px;
@@ -707,19 +708,6 @@ ul li {
 .header .logo img {
   height: auto;
   width: 100%;
-}
-.header .ticket-link-header {
-  text-transform: uppercase;
-  padding: 2.5px 10px;
-  background-color: #006dff;
-  color: #fff;
-  margin-top: -5px;
-}
-.header .ticket-link-header a {
-  color: #fff;
-}
-.header .ticket-link-header a:hover {
-  border-bottom-color: #fff;
 }
 .mobile-header {
   display: none;
@@ -835,7 +823,7 @@ ul li {
 }
 .content .c8 {
   padding-left: 10px;
-  padding-right: 5px;
+  padding-right: 10px / 2;
 }
 .content .c4,
 .content .c8 {
@@ -1564,7 +1552,7 @@ body.theme-twentytwenty #site-header::before {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: 5px;
+  top: 10px / 2;
   left: 0;
 }
 body.theme-twentytwenty .header-navigation-wrapper {

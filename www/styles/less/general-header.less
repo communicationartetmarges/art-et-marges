@@ -4,6 +4,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    text-transform: uppercase;
     padding: @margin;
     background: #fff;
 
@@ -16,7 +17,7 @@
         .col-4;
     }
 
-    > div {
+    >div {
         display: flex;
         justify-content: space-between;
     }
@@ -52,20 +53,8 @@
         }
     }
 
-    .ticket-link-header {
-        text-transform: uppercase;
-        padding: @margin / 4 @margin;
-        background-color: @blue;
-        color: #fff;
-        margin-top: -5px;
 
-        a {
-            color: #fff;
-            &:hover {
-                border-bottom-color: #fff;
-            }
-        }
-    }
+
     // .share {
     //     display: flex;
     //     align-items: center;
@@ -113,7 +102,7 @@
             padding: 0;
         }
 
-        > div {
+        >div {
             flex-direction: column;
             width: 100% !important;
 
@@ -127,7 +116,7 @@
             }
 
             .logo {
-                width: @logoWmob !important;
+                width: @logoWmob  !important;
                 position: fixed;
             }
 
