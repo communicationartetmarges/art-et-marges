@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Fichier de vérification de la propriété du domaine pour Microsoft 365 : placer dans la racine du site web",
+  "Domain": "artetmarges.be",
+  "Id": "cfdf4d0e-2e2f-4f27-b158-bad81f1477aa"
+}
