@@ -1228,6 +1228,12 @@ ul li {
 .page-activity .content .c4::-webkit-scrollbar-thumb:hover {
   background: #00d694;
 }
+.page-activity .content .c4 .article {
+  color: white;
+}
+.page-activity .content .c4 .article a {
+  color: white;
+}
 .page-activity .content .c4:after {
   content: ' ';
   width: inherit;
