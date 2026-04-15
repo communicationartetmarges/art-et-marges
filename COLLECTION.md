@@ -51,11 +51,11 @@ templates/link-artiste.html \
 -   pour générer les vignette avec ImageMagick depuis la racine du dépot, utiliser :
 
 ```
-mogrify -path www/medias/images/collection/thumbnails/ \
+mogrify -path www/medias/images/collection/thumbnails/new \
 -resize 400x400^ \
 -gravity Center \
 -extent 400x400 \
-www/medias/images/collection/source/*
+www/medias/images/collection/new/*
 ```
 
 !! certains thumbnails sont actuellement importés manuellement, séparément. C'est le cas pour Cosijn et Delaunay. Il faut les sauvegarder puis les remettre dans le dossier pour ne pas qu'ils soient écrasés par le thumbnail automatique.
