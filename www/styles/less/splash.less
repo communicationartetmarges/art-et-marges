@@ -24,6 +24,22 @@ dialog {
     width: 50px;
     height: 50px;
     z-index: 2;
+
+    background: white;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+
+    &:hover {
+      box-shadow:
+        0px 0px 10px blue,
+        0px 0px 10px blue,
+        0px 0px 10px blue,
+        0px 0px 10px blue;
+    }
   }
 
   button.close {
@@ -39,16 +55,23 @@ dialog {
     max-width: 50rem;
 
     h1 {
-      position: absolute;
+      // position: absolute;
       width: 100%;
       top: 0;
       padding: 30px;
+      padding-left: 0;
       font-size: 3.5rem;
       line-height: 100%;
       color: white;
-      text-shadow: 0px 0px 10px #ffcab3, 0px 0px 10px #ffcab3,
-        0px 0px 10px #ffcab3, 0px 0px 10px #ffcab3, 0px 0px 10px #ffcab3,
-        0px 0px 10px #ffcab3, 0px 0px 10px #ffcab3, 0px 0px 10px #ffcab3,
+      text-shadow:
+        0px 0px 10px #ffcab3,
+        0px 0px 10px #ffcab3,
+        0px 0px 10px #ffcab3,
+        0px 0px 10px #ffcab3,
+        0px 0px 10px #ffcab3,
+        0px 0px 10px #ffcab3,
+        0px 0px 10px #ffcab3,
+        0px 0px 10px #ffcab3,
         0px 0px 10px #ffcab3;
     }
 
@@ -58,16 +81,22 @@ dialog {
     }
 
     .pitch {
-      position: absolute;
-      bottom: 30px;
+      // position: absolute;
+      // bottom: 30px;
       line-height: 100%;
-      padding: 30px;
+      // padding: 30px;
 
-      font-size: 2.5rem;
+      font-size: 1.5rem;
       color: white;
-      text-shadow: 0px 0px 10px #00d694, 0px 0px 10px #00d694,
-        0px 0px 10px #00d694, 0px 0px 10px #00d694, 0px 0px 10px #00d694,
-        0px 0px 10px #00d694, 0px 0px 10px #00d694, 0px 0px 10px #00d694,
+      text-shadow:
+        0px 0px 10px #00d694,
+        0px 0px 10px #00d694,
+        0px 0px 10px #00d694,
+        0px 0px 10px #00d694,
+        0px 0px 10px #00d694,
+        0px 0px 10px #00d694,
+        0px 0px 10px #00d694,
+        0px 0px 10px #00d694,
         0px 0px 10px #00d694;
     }
   }
@@ -81,9 +110,15 @@ dialog {
     color: #006dff;
     font-size: 1.2rem;
     text-transform: uppercase;
-    text-shadow: 0px 0px 10px #ffffff, 0px 0px 10px #ffffff,
-      0px 0px 10px #ffffff, 0px 0px 10px #ffffff, 0px 0px 10px #ffffff,
-      0px 0px 10px #ffffff, 0px 0px 10px #ffffff, 0px 0px 10px #ffffff,
+    text-shadow:
+      0px 0px 10px #ffffff,
+      0px 0px 10px #ffffff,
+      0px 0px 10px #ffffff,
+      0px 0px 10px #ffffff,
+      0px 0px 10px #ffffff,
+      0px 0px 10px #ffffff,
+      0px 0px 10px #ffffff,
+      0px 0px 10px #ffffff,
       0px 0px 10px #ffffff;
   }
 }
