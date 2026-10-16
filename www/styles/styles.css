@@ -733,7 +733,7 @@ dialog .small-text {
 }
 .header .logo {
   position: absolute;
-  top: 5px;
+  top: 10px / 2;
   left: 0;
   z-index: 10;
   width: 55px;
@@ -856,7 +856,7 @@ dialog .small-text {
 }
 .content .c8 {
   padding-left: 10px;
-  padding-right: 5px;
+  padding-right: 10px / 2;
 }
 .content .c4,
 .content .c8 {
@@ -938,6 +938,7 @@ dialog .small-text {
   padding-bottom: 66%;
   background-size: cover;
   background-color: #00d694;
+  background-position: top center;
 }
 .article .image-wrapper img {
   width: 100%;
@@ -1591,7 +1592,7 @@ body.theme-twentytwenty #site-header::before {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: 5px;
+  top: 10px / 2;
   left: 0;
 }
 body.theme-twentytwenty .header-navigation-wrapper {
